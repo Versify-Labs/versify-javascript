@@ -90,12 +90,6 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property features (base name: "features")', function() {
-      // uncomment below and update the code to test the property features
-      //var instance = new VersifyClient.Account();
-      //expect(instance).to.be();
-    });
-
     it('should have the property metadata (base name: "metadata")', function() {
       // uncomment below and update the code to test the property metadata
       //var instance = new VersifyClient.Account();
