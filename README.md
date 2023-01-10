@@ -296,7 +296,6 @@ Class | Method | HTTP request | Description
  - [VersifyClient.Account1](docs/Account1.md)
  - [VersifyClient.Account2](docs/Account2.md)
  - [VersifyClient.AccountCreate](docs/AccountCreate.md)
- - [VersifyClient.AccountFeatures](docs/AccountFeatures.md)
  - [VersifyClient.AccountMetrics](docs/AccountMetrics.md)
  - [VersifyClient.AccountStatus](docs/AccountStatus.md)
  - [VersifyClient.AccountUpdate](docs/AccountUpdate.md)
