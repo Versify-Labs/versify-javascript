@@ -10,7 +10,6 @@ Name | Type | Description | Notes
 **brand** | [**BrandingSettings**](BrandingSettings.md) |  | [optional] 
 **created** | **Number** | The timestamp when the event was created | [optional] 
 **domain** | **String** | The domain of the account | 
-**features** | [**AccountFeatures**](AccountFeatures.md) |  | [optional] 
 **metadata** | **Object** | Arbitrary metadata associated with the object | [optional] 
 **name** | **String** | The name of the account | 
 **object** | **String** | The object type | [optional] [default to &#39;account&#39;]
