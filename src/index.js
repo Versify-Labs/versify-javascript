@@ -17,7 +17,6 @@ import Account from './model/Account';
 import Account1 from './model/Account1';
 import Account2 from './model/Account2';
 import AccountCreate from './model/AccountCreate';
-import AccountFeatures from './model/AccountFeatures';
 import AccountMetrics from './model/AccountMetrics';
 import AccountStatus from './model/AccountStatus';
 import AccountUpdate from './model/AccountUpdate';
@@ -217,12 +216,6 @@ export {
      * @property {module:model/AccountCreate}
      */
     AccountCreate,
-
-    /**
-     * The AccountFeatures model constructor.
-     * @property {module:model/AccountFeatures}
-     */
-    AccountFeatures,
 
     /**
      * The AccountMetrics model constructor.

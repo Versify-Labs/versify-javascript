@@ -12,7 +12,6 @@
  */
 
 import ApiClient from '../ApiClient';
-import AccountFeatures from './AccountFeatures';
 import AccountStatus from './AccountStatus';
 import App from './App';
 import BillingSettings from './BillingSettings';
@@ -76,9 +75,6 @@ class Account {
             if (data.hasOwnProperty('domain')) {
                 obj['domain'] = ApiClient.convertToType(data['domain'], 'String');
             }
-            if (data.hasOwnProperty('features')) {
-                obj['features'] = AccountFeatures.constructFromObject(data['features']);
-            }
             if (data.hasOwnProperty('metadata')) {
                 obj['metadata'] = ApiClient.convertToType(data['metadata'], Object);
             }
@@ -138,10 +134,6 @@ class Account {
         // ensure the json data is a string
         if (data['domain'] && !(typeof data['domain'] === 'string' || data['domain'] instanceof String)) {
             throw new Error("Expected the field `domain` to be a primitive type in the JSON string but got " + data['domain']);
-        }
-        // validate the optional field `features`
-        if (data['features']) { // data not null
-          AccountFeatures.validateJSON(data['features']);
         }
         // ensure the json data is a string
         if (data['name'] && !(typeof data['name'] === 'string' || data['name'] instanceof String)) {
@@ -207,11 +199,6 @@ Account.prototype['created'] = undefined;
  * @member {String} domain
  */
 Account.prototype['domain'] = undefined;
-
-/**
- * @member {module:model/AccountFeatures} features
- */
-Account.prototype['features'] = undefined;
 
 /**
  * Arbitrary metadata associated with the object
