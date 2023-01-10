@@ -1,8 +1,11 @@
-name: Node.js Package
+name: Publish GitHub Package (dev)
 
 on:
-  release:
-    types: [created, edited, published, released, unpublished]
+  push:
+    branches:
+      - dev
+  # release:
+  #   types: [created, edited, published, released, unpublished]
 
 jobs:
   build:
