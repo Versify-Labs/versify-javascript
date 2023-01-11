@@ -17,8 +17,7 @@ jobs:
           node-version: "16.x"
           registry-url: "https://npm.pkg.github.com"
           scope: "@versify"
-      # - run: npm config set always-auth true
-      # - run: npm config set @versify:registry https://npm.pkg.github.com
+          always-auth: true
       - run: cat .npmrc
       - run: npm install
       - run: npm ci
