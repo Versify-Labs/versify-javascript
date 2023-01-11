@@ -1,8 +1,9 @@
-name: Node.js Package
+name: Publish GitHub Package (dev)
 
 on:
-  release:
-    types: [created, edited, published, released, unpublished]
+  push:
+    branches:
+      - dev
 
 jobs:
   build:
@@ -12,9 +13,9 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
+      - run: npm install
       - run: npm ci
       - run: npm test
-
   publish-gpr:
     needs: build
     runs-on: ubuntu-latest
@@ -27,6 +28,7 @@ jobs:
         with:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
+      - run: npm install
       - run: npm ci
       - run: npm publish
         env:
