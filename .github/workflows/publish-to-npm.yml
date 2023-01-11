@@ -17,10 +17,8 @@ jobs:
           node-version: "16.x"
           registry-url: "https://npm.pkg.github.com"
           scope: "@versify"
-      - name: Authenticate GPR
-        run: |
-          echo "//npm.pkg.github.com:_authToken=${{ secrets.GITHUB_TOKEN }}" > ~/.npmrc
-      - run: cat $NPM_CONFIG_USERCONFIG
+          always-auth: true
+      - run: echo "//npm.pkg.github.com:_authToken=${{ secrets.GITHUB_TOKEN }}" > ~/.npmrc
       - run: npm install
       - run: npm ci
       - run: npm publish
