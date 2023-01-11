@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.Location();
+    instance = new VersifyClient.Address1();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,28 +47,28 @@
       object[property] = value;
   }
 
-  describe('Location', function() {
-    it('should create an instance of Location', function() {
-      // uncomment below and update the code to test Location
-      //var instance = new VersifyClient.Location();
-      //expect(instance).to.be.a(VersifyClient.Location);
+  describe('Address1', function() {
+    it('should create an instance of Address1', function() {
+      // uncomment below and update the code to test Address1
+      //var instance = new VersifyClient.Address1();
+      //expect(instance).to.be.a(VersifyClient.Address1);
     });
 
     it('should have the property city (base name: "city")', function() {
       // uncomment below and update the code to test the property city
-      //var instance = new VersifyClient.Location();
+      //var instance = new VersifyClient.Address1();
       //expect(instance).to.be();
     });
 
     it('should have the property country (base name: "country")', function() {
       // uncomment below and update the code to test the property country
-      //var instance = new VersifyClient.Location();
+      //var instance = new VersifyClient.Address1();
       //expect(instance).to.be();
     });
 
     it('should have the property region (base name: "region")', function() {
       // uncomment below and update the code to test the property region
-      //var instance = new VersifyClient.Location();
+      //var instance = new VersifyClient.Address1();
       //expect(instance).to.be();
     });
 

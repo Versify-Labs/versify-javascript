@@ -24,6 +24,8 @@ import Action from './model/Action';
 import ActionConfig from './model/ActionConfig';
 import ActionConfiguration from './model/ActionConfiguration';
 import ActionType from './model/ActionType';
+import Address from './model/Address';
+import Address1 from './model/Address1';
 import ApiDeleteResponse from './model/ApiDeleteResponse';
 import ApiListResponse from './model/ApiListResponse';
 import ApiSearchResponse from './model/ApiSearchResponse';
@@ -82,9 +84,7 @@ import IdentityProvider from './model/IdentityProvider';
 import Journey from './model/Journey';
 import JourneyCreate from './model/JourneyCreate';
 import JourneyUpdate from './model/JourneyUpdate';
-import Location from './model/Location';
-import Location1 from './model/Location1';
-import Location2Inner from './model/Location2Inner';
+import LocationInner from './model/LocationInner';
 import Message from './model/Message';
 import MessageCreate from './model/MessageCreate';
 import MessageType from './model/MessageType';
@@ -258,6 +258,18 @@ export {
      * @property {module:model/ActionType}
      */
     ActionType,
+
+    /**
+     * The Address model constructor.
+     * @property {module:model/Address}
+     */
+    Address,
+
+    /**
+     * The Address1 model constructor.
+     * @property {module:model/Address1}
+     */
+    Address1,
 
     /**
      * The ApiDeleteResponse model constructor.
@@ -608,22 +620,10 @@ export {
     JourneyUpdate,
 
     /**
-     * The Location model constructor.
-     * @property {module:model/Location}
+     * The LocationInner model constructor.
+     * @property {module:model/LocationInner}
      */
-    Location,
-
-    /**
-     * The Location1 model constructor.
-     * @property {module:model/Location1}
-     */
-    Location1,
-
-    /**
-     * The Location2Inner model constructor.
-     * @property {module:model/Location2Inner}
-     */
-    Location2Inner,
+    LocationInner,
 
     /**
      * The Message model constructor.

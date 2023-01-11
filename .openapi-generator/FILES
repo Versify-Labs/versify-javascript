@@ -15,6 +15,8 @@ docs/Action.md
 docs/ActionConfig.md
 docs/ActionConfiguration.md
 docs/ActionType.md
+docs/Address.md
+docs/Address1.md
 docs/ApiDeleteResponse.md
 docs/ApiListResponse.md
 docs/ApiSearchResponse.md
@@ -79,9 +81,7 @@ docs/Journey.md
 docs/JourneyCreate.md
 docs/JourneyUpdate.md
 docs/JourneysApi.md
-docs/Location.md
-docs/Location1.md
-docs/Location2Inner.md
+docs/LocationInner.md
 docs/Message.md
 docs/MessageCreate.md
 docs/MessageType.md
@@ -174,6 +174,8 @@ src/model/Action.js
 src/model/ActionConfig.js
 src/model/ActionConfiguration.js
 src/model/ActionType.js
+src/model/Address.js
+src/model/Address1.js
 src/model/ApiDeleteResponse.js
 src/model/ApiListResponse.js
 src/model/ApiSearchResponse.js
@@ -232,9 +234,7 @@ src/model/IdentityProvider.js
 src/model/Journey.js
 src/model/JourneyCreate.js
 src/model/JourneyUpdate.js
-src/model/Location.js
-src/model/Location1.js
-src/model/Location2Inner.js
+src/model/LocationInner.js
 src/model/Message.js
 src/model/MessageCreate.js
 src/model/MessageType.js
@@ -314,6 +314,8 @@ test/model/Action.spec.js
 test/model/ActionConfig.spec.js
 test/model/ActionConfiguration.spec.js
 test/model/ActionType.spec.js
+test/model/Address.spec.js
+test/model/Address1.spec.js
 test/model/ApiDeleteResponse.spec.js
 test/model/ApiListResponse.spec.js
 test/model/ApiSearchResponse.spec.js
@@ -372,9 +374,7 @@ test/model/IdentityProvider.spec.js
 test/model/Journey.spec.js
 test/model/JourneyCreate.spec.js
 test/model/JourneyUpdate.spec.js
-test/model/Location.spec.js
-test/model/Location1.spec.js
-test/model/Location2Inner.spec.js
+test/model/LocationInner.spec.js
 test/model/Message.spec.js
 test/model/MessageCreate.spec.js
 test/model/MessageType.spec.js

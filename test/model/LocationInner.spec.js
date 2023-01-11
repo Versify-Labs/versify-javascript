@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.Location2Inner();
+    instance = new VersifyClient.LocationInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,11 +47,11 @@
       object[property] = value;
   }
 
-  describe('Location2Inner', function() {
-    it('should create an instance of Location2Inner', function() {
-      // uncomment below and update the code to test Location2Inner
-      //var instance = new VersifyClient.Location2Inner();
-      //expect(instance).to.be.a(VersifyClient.Location2Inner);
+  describe('LocationInner', function() {
+    it('should create an instance of LocationInner', function() {
+      // uncomment below and update the code to test LocationInner
+      //var instance = new VersifyClient.LocationInner();
+      //expect(instance).to.be.a(VersifyClient.LocationInner);
     });
 
   });

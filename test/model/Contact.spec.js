@@ -66,6 +66,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property address (base name: "address")', function() {
+      // uncomment below and update the code to test the property address
+      //var instance = new VersifyClient.Contact();
+      //expect(instance).to.be();
+    });
+
     it('should have the property avatar (base name: "avatar")', function() {
       // uncomment below and update the code to test the property avatar
       //var instance = new VersifyClient.Contact();
@@ -92,12 +98,6 @@
 
     it('should have the property lastSeen (base name: "last_seen")', function() {
       // uncomment below and update the code to test the property lastSeen
-      //var instance = new VersifyClient.Contact();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property location (base name: "location")', function() {
-      // uncomment below and update the code to test the property location
       //var instance = new VersifyClient.Contact();
       //expect(instance).to.be();
     });

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**loc** | [**[Location2Inner]**](Location2Inner.md) |  | 
+**loc** | [**[LocationInner]**](LocationInner.md) |  | 
 **msg** | **String** |  | 
 **type** | **String** |  | 
 
