@@ -1,7 +1,7 @@
 {
   "name": "versify-client",
   "version": "1.0.0",
-  "description": "Versify API documentation",
+  "description": "Versify API",
   "license": "Unlicense",
   "main": "dist/index.js",
   "scripts": {
