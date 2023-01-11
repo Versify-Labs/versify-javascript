@@ -1,6 +1,6 @@
 /**
  * Versify API
- * Versify API documentation
+ * Versify API
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -156,7 +156,7 @@ import WebhooksApi from './api/WebhooksApi';
 
 
 /**
-* Versify API documentation.<br>
+* Versify API.<br>
 * The <code>index</code> module provides access to constructors for all the classes which comprise the public API.
 * <p>
 * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:

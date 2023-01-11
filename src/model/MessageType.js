@@ -1,6 +1,6 @@
 /**
  * Versify API
- * Versify API documentation
+ * Versify API
  *
  * The version of the OpenAPI document: 1.0.0
  * 
