@@ -75,6 +75,9 @@ class Account {
             if (data.hasOwnProperty('domain')) {
                 obj['domain'] = ApiClient.convertToType(data['domain'], 'String');
             }
+            if (data.hasOwnProperty('livemoed')) {
+                obj['livemoed'] = ApiClient.convertToType(data['livemoed'], 'Boolean');
+            }
             if (data.hasOwnProperty('metadata')) {
                 obj['metadata'] = ApiClient.convertToType(data['metadata'], Object);
             }
@@ -199,6 +202,13 @@ Account.prototype['created'] = undefined;
  * @member {String} domain
  */
 Account.prototype['domain'] = undefined;
+
+/**
+ * Whether the account is in live mode
+ * @member {Boolean} livemoed
+ * @default false
+ */
+Account.prototype['livemoed'] = false;
 
 /**
  * Arbitrary metadata associated with the object
