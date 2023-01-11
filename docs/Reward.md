@@ -1,4 +1,4 @@
-# VersifyClient.Reward
+# VersifylabsVersifyClient.Reward
 
 ## Properties
 

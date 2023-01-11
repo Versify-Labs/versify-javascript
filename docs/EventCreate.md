@@ -1,4 +1,4 @@
-# VersifyClient.EventCreate
+# VersifylabsVersifyClient.EventCreate
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# VersifyClient.Journey
+# VersifylabsVersifyClient.Journey
 
 ## Properties
 

@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.Brand();
+    instance = new VersifylabsVersifyClient.Brand();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,73 +50,73 @@
   describe('Brand', function() {
     it('should create an instance of Brand', function() {
       // uncomment below and update the code to test Brand
-      //var instance = new VersifyClient.Brand();
-      //expect(instance).to.be.a(VersifyClient.Brand);
+      //var instance = new VersifylabsVersifyClient.Brand();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.Brand);
     });
 
     it('should have the property actionColor (base name: "action_color")', function() {
       // uncomment below and update the code to test the property actionColor
-      //var instance = new VersifyClient.Brand();
+      //var instance = new VersifylabsVersifyClient.Brand();
       //expect(instance).to.be();
     });
 
     it('should have the property backgroundColor (base name: "background_color")', function() {
       // uncomment below and update the code to test the property backgroundColor
-      //var instance = new VersifyClient.Brand();
+      //var instance = new VersifylabsVersifyClient.Brand();
       //expect(instance).to.be();
     });
 
     it('should have the property logo (base name: "logo")', function() {
       // uncomment below and update the code to test the property logo
-      //var instance = new VersifyClient.Brand();
+      //var instance = new VersifylabsVersifyClient.Brand();
       //expect(instance).to.be();
     });
 
     it('should have the property primaryColor (base name: "primary_color")', function() {
       // uncomment below and update the code to test the property primaryColor
-      //var instance = new VersifyClient.Brand();
+      //var instance = new VersifylabsVersifyClient.Brand();
       //expect(instance).to.be();
     });
 
     it('should have the property secondaryColor (base name: "secondary_color")', function() {
       // uncomment below and update the code to test the property secondaryColor
-      //var instance = new VersifyClient.Brand();
+      //var instance = new VersifylabsVersifyClient.Brand();
       //expect(instance).to.be();
     });
 
     it('should have the property tertiaryColor (base name: "tertiary_color")', function() {
       // uncomment below and update the code to test the property tertiaryColor
-      //var instance = new VersifyClient.Brand();
+      //var instance = new VersifylabsVersifyClient.Brand();
       //expect(instance).to.be();
     });
 
     it('should have the property walletActionColor (base name: "wallet_action_color")', function() {
       // uncomment below and update the code to test the property walletActionColor
-      //var instance = new VersifyClient.Brand();
+      //var instance = new VersifylabsVersifyClient.Brand();
       //expect(instance).to.be();
     });
 
     it('should have the property walletBackgroundColor (base name: "wallet_background_color")', function() {
       // uncomment below and update the code to test the property walletBackgroundColor
-      //var instance = new VersifyClient.Brand();
+      //var instance = new VersifylabsVersifyClient.Brand();
       //expect(instance).to.be();
     });
 
     it('should have the property walletDisplayFilters (base name: "wallet_display_filters")', function() {
       // uncomment below and update the code to test the property walletDisplayFilters
-      //var instance = new VersifyClient.Brand();
+      //var instance = new VersifylabsVersifyClient.Brand();
       //expect(instance).to.be();
     });
 
     it('should have the property walletPosition (base name: "wallet_position")', function() {
       // uncomment below and update the code to test the property walletPosition
-      //var instance = new VersifyClient.Brand();
+      //var instance = new VersifylabsVersifyClient.Brand();
       //expect(instance).to.be();
     });
 
     it('should have the property walletWelcomeMessage (base name: "wallet_welcome_message")', function() {
       // uncomment below and update the code to test the property walletWelcomeMessage
-      //var instance = new VersifyClient.Brand();
+      //var instance = new VersifylabsVersifyClient.Brand();
       //expect(instance).to.be();
     });
 

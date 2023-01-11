@@ -1,4 +1,4 @@
-# VersifyClient.UsersApi
+# VersifylabsVersifyClient.UsersApi
 
 All URIs are relative to *http://localhost*
 
@@ -20,13 +20,13 @@ Get current user
 ### Example
 
 ```javascript
-import VersifyClient from 'versify-client';
-let defaultClient = VersifyClient.ApiClient.instance;
+import VersifylabsVersifyClient from '@versifylabs/versify-client';
+let defaultClient = VersifylabsVersifyClient.ApiClient.instance;
 // Configure Bearer access token for authorization: HTTPBearer
 let HTTPBearer = defaultClient.authentications['HTTPBearer'];
 HTTPBearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new VersifyClient.UsersApi();
+let apiInstance = new VersifylabsVersifyClient.UsersApi();
 apiInstance.getCurrentUserV2UsersMeGet((error, data, response) => {
   if (error) {
     console.error(error);
@@ -65,13 +65,13 @@ Update current user
 ### Example
 
 ```javascript
-import VersifyClient from 'versify-client';
-let defaultClient = VersifyClient.ApiClient.instance;
+import VersifylabsVersifyClient from '@versifylabs/versify-client';
+let defaultClient = VersifylabsVersifyClient.ApiClient.instance;
 // Configure Bearer access token for authorization: HTTPBearer
 let HTTPBearer = defaultClient.authentications['HTTPBearer'];
 HTTPBearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new VersifyClient.UsersApi();
+let apiInstance = new VersifylabsVersifyClient.UsersApi();
 let user1 = {"avatar":"https://example.com/avatar.png","name":{"first_name":"Jane","last_name":"Doe"}}; // User1 | 
 apiInstance.updateCurrentUserV2UsersMePut(user1, (error, data, response) => {
   if (error) {

@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.SearchContacts();
+    instance = new VersifylabsVersifyClient.SearchContacts();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('SearchContacts', function() {
     it('should create an instance of SearchContacts', function() {
       // uncomment below and update the code to test SearchContacts
-      //var instance = new VersifyClient.SearchContacts();
-      //expect(instance).to.be.a(VersifyClient.SearchContacts);
+      //var instance = new VersifylabsVersifyClient.SearchContacts();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.SearchContacts);
     });
 
     it('should have the property pageNum (base name: "page_num")', function() {
       // uncomment below and update the code to test the property pageNum
-      //var instance = new VersifyClient.SearchContacts();
+      //var instance = new VersifylabsVersifyClient.SearchContacts();
       //expect(instance).to.be();
     });
 
     it('should have the property pageSize (base name: "page_size")', function() {
       // uncomment below and update the code to test the property pageSize
-      //var instance = new VersifyClient.SearchContacts();
+      //var instance = new VersifylabsVersifyClient.SearchContacts();
       //expect(instance).to.be();
     });
 
     it('should have the property query (base name: "query")', function() {
       // uncomment below and update the code to test the property query
-      //var instance = new VersifyClient.SearchContacts();
+      //var instance = new VersifylabsVersifyClient.SearchContacts();
       //expect(instance).to.be();
     });
 

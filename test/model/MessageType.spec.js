@@ -20,9 +20,9 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
@@ -49,8 +49,8 @@
   describe('MessageType', function() {
     it('should create an instance of MessageType', function() {
       // uncomment below and update the code to test MessageType
-      //var instance = new VersifyClient.MessageType();
-      //expect(instance).to.be.a(VersifyClient.MessageType);
+      //var instance = new VersifylabsVersifyClient.MessageType();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.MessageType);
     });
 
   });

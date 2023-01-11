@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.Journey();
+    instance = new VersifylabsVersifyClient.Journey();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,79 +50,79 @@
   describe('Journey', function() {
     it('should create an instance of Journey', function() {
       // uncomment below and update the code to test Journey
-      //var instance = new VersifyClient.Journey();
-      //expect(instance).to.be.a(VersifyClient.Journey);
+      //var instance = new VersifylabsVersifyClient.Journey();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.Journey);
     });
 
     it('should have the property id (base name: "_id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new VersifyClient.Journey();
+      //var instance = new VersifylabsVersifyClient.Journey();
       //expect(instance).to.be();
     });
 
     it('should have the property account (base name: "account")', function() {
       // uncomment below and update the code to test the property account
-      //var instance = new VersifyClient.Journey();
+      //var instance = new VersifylabsVersifyClient.Journey();
       //expect(instance).to.be();
     });
 
     it('should have the property active (base name: "active")', function() {
       // uncomment below and update the code to test the property active
-      //var instance = new VersifyClient.Journey();
+      //var instance = new VersifylabsVersifyClient.Journey();
       //expect(instance).to.be();
     });
 
     it('should have the property created (base name: "created")', function() {
       // uncomment below and update the code to test the property created
-      //var instance = new VersifyClient.Journey();
+      //var instance = new VersifylabsVersifyClient.Journey();
       //expect(instance).to.be();
     });
 
     it('should have the property description (base name: "description")', function() {
       // uncomment below and update the code to test the property description
-      //var instance = new VersifyClient.Journey();
+      //var instance = new VersifylabsVersifyClient.Journey();
       //expect(instance).to.be();
     });
 
     it('should have the property metadata (base name: "metadata")', function() {
       // uncomment below and update the code to test the property metadata
-      //var instance = new VersifyClient.Journey();
+      //var instance = new VersifylabsVersifyClient.Journey();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new VersifyClient.Journey();
+      //var instance = new VersifylabsVersifyClient.Journey();
       //expect(instance).to.be();
     });
 
     it('should have the property object (base name: "object")', function() {
       // uncomment below and update the code to test the property object
-      //var instance = new VersifyClient.Journey();
+      //var instance = new VersifylabsVersifyClient.Journey();
       //expect(instance).to.be();
     });
 
     it('should have the property start (base name: "start")', function() {
       // uncomment below and update the code to test the property start
-      //var instance = new VersifyClient.Journey();
+      //var instance = new VersifylabsVersifyClient.Journey();
       //expect(instance).to.be();
     });
 
     it('should have the property states (base name: "states")', function() {
       // uncomment below and update the code to test the property states
-      //var instance = new VersifyClient.Journey();
+      //var instance = new VersifylabsVersifyClient.Journey();
       //expect(instance).to.be();
     });
 
     it('should have the property trigger (base name: "trigger")', function() {
       // uncomment below and update the code to test the property trigger
-      //var instance = new VersifyClient.Journey();
+      //var instance = new VersifylabsVersifyClient.Journey();
       //expect(instance).to.be();
     });
 
     it('should have the property updated (base name: "updated")', function() {
       // uncomment below and update the code to test the property updated
-      //var instance = new VersifyClient.Journey();
+      //var instance = new VersifylabsVersifyClient.Journey();
       //expect(instance).to.be();
     });
 

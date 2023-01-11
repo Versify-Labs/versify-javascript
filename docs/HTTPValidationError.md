@@ -1,4 +1,4 @@
-# VersifyClient.HTTPValidationError
+# VersifylabsVersifyClient.HTTPValidationError
 
 ## Properties
 

@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.JourneyUpdate();
+    instance = new VersifylabsVersifyClient.JourneyUpdate();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('JourneyUpdate', function() {
     it('should create an instance of JourneyUpdate', function() {
       // uncomment below and update the code to test JourneyUpdate
-      //var instance = new VersifyClient.JourneyUpdate();
-      //expect(instance).to.be.a(VersifyClient.JourneyUpdate);
+      //var instance = new VersifylabsVersifyClient.JourneyUpdate();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.JourneyUpdate);
     });
 
     it('should have the property metadata (base name: "metadata")', function() {
       // uncomment below and update the code to test the property metadata
-      //var instance = new VersifyClient.JourneyUpdate();
+      //var instance = new VersifylabsVersifyClient.JourneyUpdate();
       //expect(instance).to.be();
     });
 

@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.Contact10();
+    instance = new VersifylabsVersifyClient.Contact10();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('Contact10', function() {
     it('should create an instance of Contact10', function() {
       // uncomment below and update the code to test Contact10
-      //var instance = new VersifyClient.Contact10();
-      //expect(instance).to.be.a(VersifyClient.Contact10);
+      //var instance = new VersifylabsVersifyClient.Contact10();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.Contact10);
     });
 
     it('should have the property metadata (base name: "metadata")', function() {
       // uncomment below and update the code to test the property metadata
-      //var instance = new VersifyClient.Contact10();
+      //var instance = new VersifylabsVersifyClient.Contact10();
       //expect(instance).to.be();
     });
 

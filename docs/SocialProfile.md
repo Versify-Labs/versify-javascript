@@ -1,4 +1,4 @@
-# VersifyClient.SocialProfile
+# VersifylabsVersifyClient.SocialProfile
 
 ## Properties
 

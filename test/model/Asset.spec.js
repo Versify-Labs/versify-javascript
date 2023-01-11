@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.Asset();
+    instance = new VersifylabsVersifyClient.Asset();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,97 +50,97 @@
   describe('Asset', function() {
     it('should create an instance of Asset', function() {
       // uncomment below and update the code to test Asset
-      //var instance = new VersifyClient.Asset();
-      //expect(instance).to.be.a(VersifyClient.Asset);
+      //var instance = new VersifylabsVersifyClient.Asset();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.Asset);
     });
 
     it('should have the property id (base name: "_id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new VersifyClient.Asset();
+      //var instance = new VersifylabsVersifyClient.Asset();
       //expect(instance).to.be();
     });
 
     it('should have the property account (base name: "account")', function() {
       // uncomment below and update the code to test the property account
-      //var instance = new VersifyClient.Asset();
+      //var instance = new VersifylabsVersifyClient.Asset();
       //expect(instance).to.be();
     });
 
     it('should have the property chain (base name: "chain")', function() {
       // uncomment below and update the code to test the property chain
-      //var instance = new VersifyClient.Asset();
+      //var instance = new VersifylabsVersifyClient.Asset();
       //expect(instance).to.be();
     });
 
     it('should have the property collection (base name: "collection")', function() {
       // uncomment below and update the code to test the property collection
-      //var instance = new VersifyClient.Asset();
+      //var instance = new VersifylabsVersifyClient.Asset();
       //expect(instance).to.be();
     });
 
     it('should have the property contractAddress (base name: "contract_address")', function() {
       // uncomment below and update the code to test the property contractAddress
-      //var instance = new VersifyClient.Asset();
+      //var instance = new VersifylabsVersifyClient.Asset();
       //expect(instance).to.be();
     });
 
     it('should have the property created (base name: "created")', function() {
       // uncomment below and update the code to test the property created
-      //var instance = new VersifyClient.Asset();
+      //var instance = new VersifylabsVersifyClient.Asset();
       //expect(instance).to.be();
     });
 
     it('should have the property description (base name: "description")', function() {
       // uncomment below and update the code to test the property description
-      //var instance = new VersifyClient.Asset();
+      //var instance = new VersifylabsVersifyClient.Asset();
       //expect(instance).to.be();
     });
 
     it('should have the property image (base name: "image")', function() {
       // uncomment below and update the code to test the property image
-      //var instance = new VersifyClient.Asset();
+      //var instance = new VersifylabsVersifyClient.Asset();
       //expect(instance).to.be();
     });
 
     it('should have the property metadata (base name: "metadata")', function() {
       // uncomment below and update the code to test the property metadata
-      //var instance = new VersifyClient.Asset();
+      //var instance = new VersifylabsVersifyClient.Asset();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new VersifyClient.Asset();
+      //var instance = new VersifylabsVersifyClient.Asset();
       //expect(instance).to.be();
     });
 
     it('should have the property object (base name: "object")', function() {
       // uncomment below and update the code to test the property object
-      //var instance = new VersifyClient.Asset();
+      //var instance = new VersifylabsVersifyClient.Asset();
       //expect(instance).to.be();
     });
 
     it('should have the property properties (base name: "properties")', function() {
       // uncomment below and update the code to test the property properties
-      //var instance = new VersifyClient.Asset();
+      //var instance = new VersifylabsVersifyClient.Asset();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instance = new VersifyClient.Asset();
+      //var instance = new VersifylabsVersifyClient.Asset();
       //expect(instance).to.be();
     });
 
     it('should have the property tokenId (base name: "token_id")', function() {
       // uncomment below and update the code to test the property tokenId
-      //var instance = new VersifyClient.Asset();
+      //var instance = new VersifylabsVersifyClient.Asset();
       //expect(instance).to.be();
     });
 
     it('should have the property updated (base name: "updated")', function() {
       // uncomment below and update the code to test the property updated
-      //var instance = new VersifyClient.Asset();
+      //var instance = new VersifylabsVersifyClient.Asset();
       //expect(instance).to.be();
     });
 

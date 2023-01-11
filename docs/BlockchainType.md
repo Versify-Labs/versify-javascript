@@ -1,4 +1,4 @@
-# VersifyClient.BlockchainType
+# VersifylabsVersifyClient.BlockchainType
 
 ## Enum
 

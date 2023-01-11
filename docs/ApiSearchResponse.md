@@ -1,4 +1,4 @@
-# VersifyClient.ApiSearchResponse
+# VersifylabsVersifyClient.ApiSearchResponse
 
 ## Properties
 

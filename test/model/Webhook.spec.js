@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.Webhook();
+    instance = new VersifylabsVersifyClient.Webhook();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,67 +50,67 @@
   describe('Webhook', function() {
     it('should create an instance of Webhook', function() {
       // uncomment below and update the code to test Webhook
-      //var instance = new VersifyClient.Webhook();
-      //expect(instance).to.be.a(VersifyClient.Webhook);
+      //var instance = new VersifylabsVersifyClient.Webhook();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.Webhook);
     });
 
     it('should have the property id (base name: "_id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new VersifyClient.Webhook();
+      //var instance = new VersifylabsVersifyClient.Webhook();
       //expect(instance).to.be();
     });
 
     it('should have the property account (base name: "account")', function() {
       // uncomment below and update the code to test the property account
-      //var instance = new VersifyClient.Webhook();
+      //var instance = new VersifylabsVersifyClient.Webhook();
       //expect(instance).to.be();
     });
 
     it('should have the property active (base name: "active")', function() {
       // uncomment below and update the code to test the property active
-      //var instance = new VersifyClient.Webhook();
+      //var instance = new VersifylabsVersifyClient.Webhook();
       //expect(instance).to.be();
     });
 
     it('should have the property created (base name: "created")', function() {
       // uncomment below and update the code to test the property created
-      //var instance = new VersifyClient.Webhook();
+      //var instance = new VersifylabsVersifyClient.Webhook();
       //expect(instance).to.be();
     });
 
     it('should have the property description (base name: "description")', function() {
       // uncomment below and update the code to test the property description
-      //var instance = new VersifyClient.Webhook();
+      //var instance = new VersifylabsVersifyClient.Webhook();
       //expect(instance).to.be();
     });
 
     it('should have the property enabledEvents (base name: "enabled_events")', function() {
       // uncomment below and update the code to test the property enabledEvents
-      //var instance = new VersifyClient.Webhook();
+      //var instance = new VersifylabsVersifyClient.Webhook();
       //expect(instance).to.be();
     });
 
     it('should have the property metadata (base name: "metadata")', function() {
       // uncomment below and update the code to test the property metadata
-      //var instance = new VersifyClient.Webhook();
+      //var instance = new VersifylabsVersifyClient.Webhook();
       //expect(instance).to.be();
     });
 
     it('should have the property object (base name: "object")', function() {
       // uncomment below and update the code to test the property object
-      //var instance = new VersifyClient.Webhook();
+      //var instance = new VersifylabsVersifyClient.Webhook();
       //expect(instance).to.be();
     });
 
     it('should have the property updated (base name: "updated")', function() {
       // uncomment below and update the code to test the property updated
-      //var instance = new VersifyClient.Webhook();
+      //var instance = new VersifylabsVersifyClient.Webhook();
       //expect(instance).to.be();
     });
 
     it('should have the property url (base name: "url")', function() {
       // uncomment below and update the code to test the property url
-      //var instance = new VersifyClient.Webhook();
+      //var instance = new VersifylabsVersifyClient.Webhook();
       //expect(instance).to.be();
     });
 

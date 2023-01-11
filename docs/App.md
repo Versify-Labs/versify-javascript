@@ -1,4 +1,4 @@
-# VersifyClient.App
+# VersifylabsVersifyClient.App
 
 ## Properties
 

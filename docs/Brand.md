@@ -1,4 +1,4 @@
-# VersifyClient.Brand
+# VersifylabsVersifyClient.Brand
 
 ## Properties
 

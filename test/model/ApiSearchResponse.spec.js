@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.ApiSearchResponse();
+    instance = new VersifylabsVersifyClient.ApiSearchResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,37 +50,37 @@
   describe('ApiSearchResponse', function() {
     it('should create an instance of ApiSearchResponse', function() {
       // uncomment below and update the code to test ApiSearchResponse
-      //var instance = new VersifyClient.ApiSearchResponse();
-      //expect(instance).to.be.a(VersifyClient.ApiSearchResponse);
+      //var instance = new VersifylabsVersifyClient.ApiSearchResponse();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.ApiSearchResponse);
     });
 
     it('should have the property count (base name: "count")', function() {
       // uncomment below and update the code to test the property count
-      //var instance = new VersifyClient.ApiSearchResponse();
+      //var instance = new VersifylabsVersifyClient.ApiSearchResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property data (base name: "data")', function() {
       // uncomment below and update the code to test the property data
-      //var instance = new VersifyClient.ApiSearchResponse();
+      //var instance = new VersifylabsVersifyClient.ApiSearchResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property hasMore (base name: "has_more")', function() {
       // uncomment below and update the code to test the property hasMore
-      //var instance = new VersifyClient.ApiSearchResponse();
+      //var instance = new VersifylabsVersifyClient.ApiSearchResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property object (base name: "object")', function() {
       // uncomment below and update the code to test the property object
-      //var instance = new VersifyClient.ApiSearchResponse();
+      //var instance = new VersifylabsVersifyClient.ApiSearchResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property url (base name: "url")', function() {
       // uncomment below and update the code to test the property url
-      //var instance = new VersifyClient.ApiSearchResponse();
+      //var instance = new VersifylabsVersifyClient.ApiSearchResponse();
       //expect(instance).to.be();
     });
 

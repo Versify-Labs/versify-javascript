@@ -1,4 +1,4 @@
-# VersifyClient.MessageType
+# VersifylabsVersifyClient.MessageType
 
 ## Enum
 

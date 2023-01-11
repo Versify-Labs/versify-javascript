@@ -1,4 +1,4 @@
-# VersifyClient.QueryValue
+# VersifylabsVersifyClient.QueryValue
 
 ## Properties
 

@@ -20,9 +20,9 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
@@ -49,8 +49,8 @@
   describe('ActionType', function() {
     it('should create an instance of ActionType', function() {
       // uncomment below and update the code to test ActionType
-      //var instance = new VersifyClient.ActionType();
-      //expect(instance).to.be.a(VersifyClient.ActionType);
+      //var instance = new VersifylabsVersifyClient.ActionType();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.ActionType);
     });
 
   });

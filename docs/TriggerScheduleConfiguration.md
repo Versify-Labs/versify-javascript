@@ -1,4 +1,4 @@
-# VersifyClient.TriggerScheduleConfiguration
+# VersifylabsVersifyClient.TriggerScheduleConfiguration
 
 ## Properties
 

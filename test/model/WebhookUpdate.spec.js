@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.WebhookUpdate();
+    instance = new VersifylabsVersifyClient.WebhookUpdate();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('WebhookUpdate', function() {
     it('should create an instance of WebhookUpdate', function() {
       // uncomment below and update the code to test WebhookUpdate
-      //var instance = new VersifyClient.WebhookUpdate();
-      //expect(instance).to.be.a(VersifyClient.WebhookUpdate);
+      //var instance = new VersifylabsVersifyClient.WebhookUpdate();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.WebhookUpdate);
     });
 
     it('should have the property metadata (base name: "metadata")', function() {
       // uncomment below and update the code to test the property metadata
-      //var instance = new VersifyClient.WebhookUpdate();
+      //var instance = new VersifylabsVersifyClient.WebhookUpdate();
       //expect(instance).to.be();
     });
 

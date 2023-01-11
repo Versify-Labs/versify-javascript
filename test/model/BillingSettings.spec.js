@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.BillingSettings();
+    instance = new VersifylabsVersifyClient.BillingSettings();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('BillingSettings', function() {
     it('should create an instance of BillingSettings', function() {
       // uncomment below and update the code to test BillingSettings
-      //var instance = new VersifyClient.BillingSettings();
-      //expect(instance).to.be.a(VersifyClient.BillingSettings);
+      //var instance = new VersifylabsVersifyClient.BillingSettings();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.BillingSettings);
     });
 
     it('should have the property stripeCustomerId (base name: "stripe_customer_id")', function() {
       // uncomment below and update the code to test the property stripeCustomerId
-      //var instance = new VersifyClient.BillingSettings();
+      //var instance = new VersifylabsVersifyClient.BillingSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property subscriptionPlan (base name: "subscription_plan")', function() {
       // uncomment below and update the code to test the property subscriptionPlan
-      //var instance = new VersifyClient.BillingSettings();
+      //var instance = new VersifylabsVersifyClient.BillingSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property subscriptionStatus (base name: "subscription_status")', function() {
       // uncomment below and update the code to test the property subscriptionStatus
-      //var instance = new VersifyClient.BillingSettings();
+      //var instance = new VersifylabsVersifyClient.BillingSettings();
       //expect(instance).to.be();
     });
 

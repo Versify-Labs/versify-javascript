@@ -1,4 +1,4 @@
-# VersifyClient.Message
+# VersifylabsVersifyClient.Message
 
 ## Properties
 

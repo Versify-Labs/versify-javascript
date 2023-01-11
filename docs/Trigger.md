@@ -1,4 +1,4 @@
-# VersifyClient.Trigger
+# VersifylabsVersifyClient.Trigger
 
 ## Properties
 

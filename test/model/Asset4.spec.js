@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.Asset4();
+    instance = new VersifylabsVersifyClient.Asset4();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('Asset4', function() {
     it('should create an instance of Asset4', function() {
       // uncomment below and update the code to test Asset4
-      //var instance = new VersifyClient.Asset4();
-      //expect(instance).to.be.a(VersifyClient.Asset4);
+      //var instance = new VersifylabsVersifyClient.Asset4();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.Asset4);
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instance = new VersifyClient.Asset4();
+      //var instance = new VersifylabsVersifyClient.Asset4();
       //expect(instance).to.be();
     });
 
     it('should have the property metadata (base name: "metadata")', function() {
       // uncomment below and update the code to test the property metadata
-      //var instance = new VersifyClient.Asset4();
+      //var instance = new VersifylabsVersifyClient.Asset4();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new VersifyClient.Asset4();
+      //var instance = new VersifylabsVersifyClient.Asset4();
       //expect(instance).to.be();
     });
 
     it('should have the property phoneNumber (base name: "phone_number")', function() {
       // uncomment below and update the code to test the property phoneNumber
-      //var instance = new VersifyClient.Asset4();
+      //var instance = new VersifylabsVersifyClient.Asset4();
       //expect(instance).to.be();
     });
 

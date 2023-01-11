@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.SocialProfile();
+    instance = new VersifylabsVersifyClient.SocialProfile();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('SocialProfile', function() {
     it('should create an instance of SocialProfile', function() {
       // uncomment below and update the code to test SocialProfile
-      //var instance = new VersifyClient.SocialProfile();
-      //expect(instance).to.be.a(VersifyClient.SocialProfile);
+      //var instance = new VersifylabsVersifyClient.SocialProfile();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.SocialProfile);
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new VersifyClient.SocialProfile();
+      //var instance = new VersifylabsVersifyClient.SocialProfile();
       //expect(instance).to.be();
     });
 
     it('should have the property url (base name: "url")', function() {
       // uncomment below and update the code to test the property url
-      //var instance = new VersifyClient.SocialProfile();
+      //var instance = new VersifylabsVersifyClient.SocialProfile();
       //expect(instance).to.be();
     });
 

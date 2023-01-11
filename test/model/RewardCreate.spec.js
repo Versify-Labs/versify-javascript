@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.RewardCreate();
+    instance = new VersifylabsVersifyClient.RewardCreate();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,49 +50,49 @@
   describe('RewardCreate', function() {
     it('should create an instance of RewardCreate', function() {
       // uncomment below and update the code to test RewardCreate
-      //var instance = new VersifyClient.RewardCreate();
-      //expect(instance).to.be.a(VersifyClient.RewardCreate);
+      //var instance = new VersifylabsVersifyClient.RewardCreate();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.RewardCreate);
     });
 
     it('should have the property asset (base name: "asset")', function() {
       // uncomment below and update the code to test the property asset
-      //var instance = new VersifyClient.RewardCreate();
+      //var instance = new VersifylabsVersifyClient.RewardCreate();
       //expect(instance).to.be();
     });
 
     it('should have the property assetQuantity (base name: "asset_quantity")', function() {
       // uncomment below and update the code to test the property assetQuantity
-      //var instance = new VersifyClient.RewardCreate();
+      //var instance = new VersifylabsVersifyClient.RewardCreate();
       //expect(instance).to.be();
     });
 
     it('should have the property description (base name: "description")', function() {
       // uncomment below and update the code to test the property description
-      //var instance = new VersifyClient.RewardCreate();
+      //var instance = new VersifylabsVersifyClient.RewardCreate();
       //expect(instance).to.be();
     });
 
     it('should have the property image (base name: "image")', function() {
       // uncomment below and update the code to test the property image
-      //var instance = new VersifyClient.RewardCreate();
+      //var instance = new VersifylabsVersifyClient.RewardCreate();
       //expect(instance).to.be();
     });
 
     it('should have the property metadata (base name: "metadata")', function() {
       // uncomment below and update the code to test the property metadata
-      //var instance = new VersifyClient.RewardCreate();
+      //var instance = new VersifylabsVersifyClient.RewardCreate();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new VersifyClient.RewardCreate();
+      //var instance = new VersifylabsVersifyClient.RewardCreate();
       //expect(instance).to.be();
     });
 
     it('should have the property rewardType (base name: "reward_type")', function() {
       // uncomment below and update the code to test the property rewardType
-      //var instance = new VersifyClient.RewardCreate();
+      //var instance = new VersifylabsVersifyClient.RewardCreate();
       //expect(instance).to.be();
     });
 

@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.TriggerConfiguration();
+    instance = new VersifylabsVersifyClient.TriggerConfiguration();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('TriggerConfiguration', function() {
     it('should create an instance of TriggerConfiguration', function() {
       // uncomment below and update the code to test TriggerConfiguration
-      //var instance = new VersifyClient.TriggerConfiguration();
-      //expect(instance).to.be.a(VersifyClient.TriggerConfiguration);
+      //var instance = new VersifylabsVersifyClient.TriggerConfiguration();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.TriggerConfiguration);
     });
 
     it('should have the property detailFilters (base name: "detail_filters")', function() {
       // uncomment below and update the code to test the property detailFilters
-      //var instance = new VersifyClient.TriggerConfiguration();
+      //var instance = new VersifylabsVersifyClient.TriggerConfiguration();
       //expect(instance).to.be();
     });
 
     it('should have the property detailType (base name: "detail_type")', function() {
       // uncomment below and update the code to test the property detailType
-      //var instance = new VersifyClient.TriggerConfiguration();
+      //var instance = new VersifylabsVersifyClient.TriggerConfiguration();
       //expect(instance).to.be();
     });
 
     it('should have the property schedule (base name: "schedule")', function() {
       // uncomment below and update the code to test the property schedule
-      //var instance = new VersifyClient.TriggerConfiguration();
+      //var instance = new VersifylabsVersifyClient.TriggerConfiguration();
       //expect(instance).to.be();
     });
 
     it('should have the property source (base name: "source")', function() {
       // uncomment below and update the code to test the property source
-      //var instance = new VersifyClient.TriggerConfiguration();
+      //var instance = new VersifylabsVersifyClient.TriggerConfiguration();
       //expect(instance).to.be();
     });
 

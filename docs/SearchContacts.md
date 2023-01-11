@@ -1,4 +1,4 @@
-# VersifyClient.SearchContacts
+# VersifylabsVersifyClient.SearchContacts
 
 ## Properties
 

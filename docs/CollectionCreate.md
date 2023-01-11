@@ -1,4 +1,4 @@
-# VersifyClient.CollectionCreate
+# VersifylabsVersifyClient.CollectionCreate
 
 ## Properties
 

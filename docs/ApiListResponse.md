@@ -1,4 +1,4 @@
-# VersifyClient.ApiListResponse
+# VersifylabsVersifyClient.ApiListResponse
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# VersifyClient.User
+# VersifylabsVersifyClient.User
 
 ## Properties
 

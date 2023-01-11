@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.Asset7();
+    instance = new VersifylabsVersifyClient.Asset7();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('Asset7', function() {
     it('should create an instance of Asset7', function() {
       // uncomment below and update the code to test Asset7
-      //var instance = new VersifyClient.Asset7();
-      //expect(instance).to.be.a(VersifyClient.Asset7);
+      //var instance = new VersifylabsVersifyClient.Asset7();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.Asset7);
     });
 
     it('should have the property contentBody (base name: "content_body")', function() {
       // uncomment below and update the code to test the property contentBody
-      //var instance = new VersifyClient.Asset7();
+      //var instance = new VersifylabsVersifyClient.Asset7();
       //expect(instance).to.be();
     });
 
     it('should have the property metadata (base name: "metadata")', function() {
       // uncomment below and update the code to test the property metadata
-      //var instance = new VersifyClient.Asset7();
+      //var instance = new VersifylabsVersifyClient.Asset7();
       //expect(instance).to.be();
     });
 

@@ -20,9 +20,9 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
@@ -49,8 +49,8 @@
   describe('MintStatus', function() {
     it('should create an instance of MintStatus', function() {
       // uncomment below and update the code to test MintStatus
-      //var instance = new VersifyClient.MintStatus();
-      //expect(instance).to.be.a(VersifyClient.MintStatus);
+      //var instance = new VersifylabsVersifyClient.MintStatus();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.MintStatus);
     });
 
   });

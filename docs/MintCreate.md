@@ -1,4 +1,4 @@
-# VersifyClient.MintCreate
+# VersifylabsVersifyClient.MintCreate
 
 ## Properties
 

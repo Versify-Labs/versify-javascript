@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.AccountCreate();
+    instance = new VersifylabsVersifyClient.AccountCreate();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('AccountCreate', function() {
     it('should create an instance of AccountCreate', function() {
       // uncomment below and update the code to test AccountCreate
-      //var instance = new VersifyClient.AccountCreate();
-      //expect(instance).to.be.a(VersifyClient.AccountCreate);
+      //var instance = new VersifylabsVersifyClient.AccountCreate();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.AccountCreate);
     });
 
     it('should have the property domain (base name: "domain")', function() {
       // uncomment below and update the code to test the property domain
-      //var instance = new VersifyClient.AccountCreate();
+      //var instance = new VersifylabsVersifyClient.AccountCreate();
       //expect(instance).to.be();
     });
 
     it('should have the property metadata (base name: "metadata")', function() {
       // uncomment below and update the code to test the property metadata
-      //var instance = new VersifyClient.AccountCreate();
+      //var instance = new VersifylabsVersifyClient.AccountCreate();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new VersifyClient.AccountCreate();
+      //var instance = new VersifylabsVersifyClient.AccountCreate();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# VersifyClient.AccountUpdate
+# VersifylabsVersifyClient.AccountUpdate
 
 ## Properties
 

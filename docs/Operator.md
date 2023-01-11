@@ -1,4 +1,4 @@
-# VersifyClient.Operator
+# VersifylabsVersifyClient.Operator
 
 ## Enum
 

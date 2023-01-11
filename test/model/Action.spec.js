@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.Action();
+    instance = new VersifylabsVersifyClient.Action();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,37 +50,37 @@
   describe('Action', function() {
     it('should create an instance of Action', function() {
       // uncomment below and update the code to test Action
-      //var instance = new VersifyClient.Action();
-      //expect(instance).to.be.a(VersifyClient.Action);
+      //var instance = new VersifylabsVersifyClient.Action();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.Action);
     });
 
     it('should have the property actionType (base name: "action_type")', function() {
       // uncomment below and update the code to test the property actionType
-      //var instance = new VersifyClient.Action();
+      //var instance = new VersifylabsVersifyClient.Action();
       //expect(instance).to.be();
     });
 
     it('should have the property comment (base name: "comment")', function() {
       // uncomment below and update the code to test the property comment
-      //var instance = new VersifyClient.Action();
+      //var instance = new VersifylabsVersifyClient.Action();
       //expect(instance).to.be();
     });
 
     it('should have the property config (base name: "config")', function() {
       // uncomment below and update the code to test the property config
-      //var instance = new VersifyClient.Action();
+      //var instance = new VersifylabsVersifyClient.Action();
       //expect(instance).to.be();
     });
 
     it('should have the property end (base name: "end")', function() {
       // uncomment below and update the code to test the property end
-      //var instance = new VersifyClient.Action();
+      //var instance = new VersifylabsVersifyClient.Action();
       //expect(instance).to.be();
     });
 
     it('should have the property next (base name: "next")', function() {
       // uncomment below and update the code to test the property next
-      //var instance = new VersifyClient.Action();
+      //var instance = new VersifylabsVersifyClient.Action();
       //expect(instance).to.be();
     });
 

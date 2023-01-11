@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.AccountMetrics();
+    instance = new VersifylabsVersifyClient.AccountMetrics();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,43 +50,43 @@
   describe('AccountMetrics', function() {
     it('should create an instance of AccountMetrics', function() {
       // uncomment below and update the code to test AccountMetrics
-      //var instance = new VersifyClient.AccountMetrics();
-      //expect(instance).to.be.a(VersifyClient.AccountMetrics);
+      //var instance = new VersifylabsVersifyClient.AccountMetrics();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.AccountMetrics);
     });
 
     it('should have the property contacts (base name: "contacts")', function() {
       // uncomment below and update the code to test the property contacts
-      //var instance = new VersifyClient.AccountMetrics();
+      //var instance = new VersifylabsVersifyClient.AccountMetrics();
       //expect(instance).to.be();
     });
 
     it('should have the property journeyRuns (base name: "journey_runs")', function() {
       // uncomment below and update the code to test the property journeyRuns
-      //var instance = new VersifyClient.AccountMetrics();
+      //var instance = new VersifylabsVersifyClient.AccountMetrics();
       //expect(instance).to.be();
     });
 
     it('should have the property journeys (base name: "journeys")', function() {
       // uncomment below and update the code to test the property journeys
-      //var instance = new VersifyClient.AccountMetrics();
+      //var instance = new VersifylabsVersifyClient.AccountMetrics();
       //expect(instance).to.be();
     });
 
     it('should have the property mints (base name: "mints")', function() {
       // uncomment below and update the code to test the property mints
-      //var instance = new VersifyClient.AccountMetrics();
+      //var instance = new VersifylabsVersifyClient.AccountMetrics();
       //expect(instance).to.be();
     });
 
     it('should have the property redemptions (base name: "redemptions")', function() {
       // uncomment below and update the code to test the property redemptions
-      //var instance = new VersifyClient.AccountMetrics();
+      //var instance = new VersifylabsVersifyClient.AccountMetrics();
       //expect(instance).to.be();
     });
 
     it('should have the property rewards (base name: "rewards")', function() {
       // uncomment below and update the code to test the property rewards
-      //var instance = new VersifyClient.AccountMetrics();
+      //var instance = new VersifylabsVersifyClient.AccountMetrics();
       //expect(instance).to.be();
     });
 

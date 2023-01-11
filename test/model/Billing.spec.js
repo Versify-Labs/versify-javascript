@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.Billing();
+    instance = new VersifylabsVersifyClient.Billing();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('Billing', function() {
     it('should create an instance of Billing', function() {
       // uncomment below and update the code to test Billing
-      //var instance = new VersifyClient.Billing();
-      //expect(instance).to.be.a(VersifyClient.Billing);
+      //var instance = new VersifylabsVersifyClient.Billing();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.Billing);
     });
 
     it('should have the property stripeCustomerId (base name: "stripe_customer_id")', function() {
       // uncomment below and update the code to test the property stripeCustomerId
-      //var instance = new VersifyClient.Billing();
+      //var instance = new VersifylabsVersifyClient.Billing();
       //expect(instance).to.be();
     });
 
     it('should have the property subscriptionPlan (base name: "subscription_plan")', function() {
       // uncomment below and update the code to test the property subscriptionPlan
-      //var instance = new VersifyClient.Billing();
+      //var instance = new VersifylabsVersifyClient.Billing();
       //expect(instance).to.be();
     });
 
     it('should have the property subscriptionStatus (base name: "subscription_status")', function() {
       // uncomment below and update the code to test the property subscriptionStatus
-      //var instance = new VersifyClient.Billing();
+      //var instance = new VersifylabsVersifyClient.Billing();
       //expect(instance).to.be();
     });
 

@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.MessageUpdate();
+    instance = new VersifylabsVersifyClient.MessageUpdate();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('MessageUpdate', function() {
     it('should create an instance of MessageUpdate', function() {
       // uncomment below and update the code to test MessageUpdate
-      //var instance = new VersifyClient.MessageUpdate();
-      //expect(instance).to.be.a(VersifyClient.MessageUpdate);
+      //var instance = new VersifylabsVersifyClient.MessageUpdate();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.MessageUpdate);
     });
 
     it('should have the property contentBody (base name: "content_body")', function() {
       // uncomment below and update the code to test the property contentBody
-      //var instance = new VersifyClient.MessageUpdate();
+      //var instance = new VersifylabsVersifyClient.MessageUpdate();
       //expect(instance).to.be();
     });
 
     it('should have the property metadata (base name: "metadata")', function() {
       // uncomment below and update the code to test the property metadata
-      //var instance = new VersifyClient.MessageUpdate();
+      //var instance = new VersifylabsVersifyClient.MessageUpdate();
       //expect(instance).to.be();
     });
 

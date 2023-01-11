@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.Location1();
+    instance = new VersifylabsVersifyClient.Address1();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,28 +47,28 @@
       object[property] = value;
   }
 
-  describe('Location1', function() {
-    it('should create an instance of Location1', function() {
-      // uncomment below and update the code to test Location1
-      //var instance = new VersifyClient.Location1();
-      //expect(instance).to.be.a(VersifyClient.Location1);
+  describe('Address1', function() {
+    it('should create an instance of Address1', function() {
+      // uncomment below and update the code to test Address1
+      //var instance = new VersifylabsVersifyClient.Address1();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.Address1);
     });
 
     it('should have the property city (base name: "city")', function() {
       // uncomment below and update the code to test the property city
-      //var instance = new VersifyClient.Location1();
+      //var instance = new VersifylabsVersifyClient.Address1();
       //expect(instance).to.be();
     });
 
     it('should have the property country (base name: "country")', function() {
       // uncomment below and update the code to test the property country
-      //var instance = new VersifyClient.Location1();
+      //var instance = new VersifylabsVersifyClient.Address1();
       //expect(instance).to.be();
     });
 
     it('should have the property region (base name: "region")', function() {
       // uncomment below and update the code to test the property region
-      //var instance = new VersifyClient.Location1();
+      //var instance = new VersifylabsVersifyClient.Address1();
       //expect(instance).to.be();
     });
 

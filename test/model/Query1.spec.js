@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.Query1();
+    instance = new VersifylabsVersifyClient.Query1();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('Query1', function() {
     it('should create an instance of Query1', function() {
       // uncomment below and update the code to test Query1
-      //var instance = new VersifyClient.Query1();
-      //expect(instance).to.be.a(VersifyClient.Query1);
+      //var instance = new VersifylabsVersifyClient.Query1();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.Query1);
     });
 
     it('should have the property field (base name: "field")', function() {
       // uncomment below and update the code to test the property field
-      //var instance = new VersifyClient.Query1();
+      //var instance = new VersifylabsVersifyClient.Query1();
       //expect(instance).to.be();
     });
 
     it('should have the property operator (base name: "operator")', function() {
       // uncomment below and update the code to test the property operator
-      //var instance = new VersifyClient.Query1();
+      //var instance = new VersifylabsVersifyClient.Query1();
       //expect(instance).to.be();
     });
 
     it('should have the property value (base name: "value")', function() {
       // uncomment below and update the code to test the property value
-      //var instance = new VersifyClient.Query1();
+      //var instance = new VersifylabsVersifyClient.Query1();
       //expect(instance).to.be();
     });
 

@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.SearchQuery();
+    instance = new VersifylabsVersifyClient.SearchQuery();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('SearchQuery', function() {
     it('should create an instance of SearchQuery', function() {
       // uncomment below and update the code to test SearchQuery
-      //var instance = new VersifyClient.SearchQuery();
-      //expect(instance).to.be.a(VersifyClient.SearchQuery);
+      //var instance = new VersifylabsVersifyClient.SearchQuery();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.SearchQuery);
     });
 
     it('should have the property pageNum (base name: "page_num")', function() {
       // uncomment below and update the code to test the property pageNum
-      //var instance = new VersifyClient.SearchQuery();
+      //var instance = new VersifylabsVersifyClient.SearchQuery();
       //expect(instance).to.be();
     });
 
     it('should have the property pageSize (base name: "page_size")', function() {
       // uncomment below and update the code to test the property pageSize
-      //var instance = new VersifyClient.SearchQuery();
+      //var instance = new VersifylabsVersifyClient.SearchQuery();
       //expect(instance).to.be();
     });
 
     it('should have the property query (base name: "query")', function() {
       // uncomment below and update the code to test the property query
-      //var instance = new VersifyClient.SearchQuery();
+      //var instance = new VersifylabsVersifyClient.SearchQuery();
       //expect(instance).to.be();
     });
 

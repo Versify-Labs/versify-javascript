@@ -1,4 +1,4 @@
-# VersifyClient.MintStatus
+# VersifylabsVersifyClient.MintStatus
 
 ## Enum
 

@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.NoteCreate();
+    instance = new VersifylabsVersifyClient.NoteCreate();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('NoteCreate', function() {
     it('should create an instance of NoteCreate', function() {
       // uncomment below and update the code to test NoteCreate
-      //var instance = new VersifyClient.NoteCreate();
-      //expect(instance).to.be.a(VersifyClient.NoteCreate);
+      //var instance = new VersifylabsVersifyClient.NoteCreate();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.NoteCreate);
     });
 
     it('should have the property metadata (base name: "metadata")', function() {
       // uncomment below and update the code to test the property metadata
-      //var instance = new VersifyClient.NoteCreate();
+      //var instance = new VersifylabsVersifyClient.NoteCreate();
       //expect(instance).to.be();
     });
 

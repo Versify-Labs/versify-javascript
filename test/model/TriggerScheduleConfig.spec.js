@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.TriggerScheduleConfig();
+    instance = new VersifylabsVersifyClient.TriggerScheduleConfig();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,37 +50,37 @@
   describe('TriggerScheduleConfig', function() {
     it('should create an instance of TriggerScheduleConfig', function() {
       // uncomment below and update the code to test TriggerScheduleConfig
-      //var instance = new VersifyClient.TriggerScheduleConfig();
-      //expect(instance).to.be.a(VersifyClient.TriggerScheduleConfig);
+      //var instance = new VersifylabsVersifyClient.TriggerScheduleConfig();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.TriggerScheduleConfig);
     });
 
     it('should have the property at (base name: "at")', function() {
       // uncomment below and update the code to test the property at
-      //var instance = new VersifyClient.TriggerScheduleConfig();
+      //var instance = new VersifylabsVersifyClient.TriggerScheduleConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property cron (base name: "cron")', function() {
       // uncomment below and update the code to test the property cron
-      //var instance = new VersifyClient.TriggerScheduleConfig();
+      //var instance = new VersifylabsVersifyClient.TriggerScheduleConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property end (base name: "end")', function() {
       // uncomment below and update the code to test the property end
-      //var instance = new VersifyClient.TriggerScheduleConfig();
+      //var instance = new VersifylabsVersifyClient.TriggerScheduleConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property rate (base name: "rate")', function() {
       // uncomment below and update the code to test the property rate
-      //var instance = new VersifyClient.TriggerScheduleConfig();
+      //var instance = new VersifylabsVersifyClient.TriggerScheduleConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property start (base name: "start")', function() {
       // uncomment below and update the code to test the property start
-      //var instance = new VersifyClient.TriggerScheduleConfig();
+      //var instance = new VersifylabsVersifyClient.TriggerScheduleConfig();
       //expect(instance).to.be();
     });
 

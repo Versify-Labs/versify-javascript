@@ -1,4 +1,4 @@
-# VersifyClient.SearchQuery
+# VersifylabsVersifyClient.SearchQuery
 
 ## Properties
 

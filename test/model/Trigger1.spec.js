@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.Trigger1();
+    instance = new VersifylabsVersifyClient.Trigger1();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('Trigger1', function() {
     it('should create an instance of Trigger1', function() {
       // uncomment below and update the code to test Trigger1
-      //var instance = new VersifyClient.Trigger1();
-      //expect(instance).to.be.a(VersifyClient.Trigger1);
+      //var instance = new VersifylabsVersifyClient.Trigger1();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.Trigger1);
     });
 
     it('should have the property config (base name: "config")', function() {
       // uncomment below and update the code to test the property config
-      //var instance = new VersifyClient.Trigger1();
+      //var instance = new VersifylabsVersifyClient.Trigger1();
       //expect(instance).to.be();
     });
 
     it('should have the property triggerType (base name: "trigger_type")', function() {
       // uncomment below and update the code to test the property triggerType
-      //var instance = new VersifyClient.Trigger1();
+      //var instance = new VersifylabsVersifyClient.Trigger1();
       //expect(instance).to.be();
     });
 

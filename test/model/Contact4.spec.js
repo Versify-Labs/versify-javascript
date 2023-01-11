@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.Contact4();
+    instance = new VersifylabsVersifyClient.Contact4();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('Contact4', function() {
     it('should create an instance of Contact4', function() {
       // uncomment below and update the code to test Contact4
-      //var instance = new VersifyClient.Contact4();
-      //expect(instance).to.be.a(VersifyClient.Contact4);
+      //var instance = new VersifylabsVersifyClient.Contact4();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.Contact4);
     });
 
     it('should have the property metadata (base name: "metadata")', function() {
       // uncomment below and update the code to test the property metadata
-      //var instance = new VersifyClient.Contact4();
+      //var instance = new VersifylabsVersifyClient.Contact4();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new VersifyClient.Contact4();
+      //var instance = new VersifylabsVersifyClient.Contact4();
       //expect(instance).to.be();
     });
 
     it('should have the property phoneNumber (base name: "phone_number")', function() {
       // uncomment below and update the code to test the property phoneNumber
-      //var instance = new VersifyClient.Contact4();
+      //var instance = new VersifylabsVersifyClient.Contact4();
       //expect(instance).to.be();
     });
 

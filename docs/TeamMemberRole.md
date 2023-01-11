@@ -1,4 +1,4 @@
-# VersifyClient.TeamMemberRole
+# VersifylabsVersifyClient.TeamMemberRole
 
 ## Enum
 

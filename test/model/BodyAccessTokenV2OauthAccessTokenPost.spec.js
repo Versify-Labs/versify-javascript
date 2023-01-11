@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.Location();
+    instance = new VersifylabsVersifyClient.BodyAccessTokenV2OauthAccessTokenPost();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,28 +47,28 @@
       object[property] = value;
   }
 
-  describe('Location', function() {
-    it('should create an instance of Location', function() {
-      // uncomment below and update the code to test Location
-      //var instance = new VersifyClient.Location();
-      //expect(instance).to.be.a(VersifyClient.Location);
+  describe('BodyAccessTokenV2OauthAccessTokenPost', function() {
+    it('should create an instance of BodyAccessTokenV2OauthAccessTokenPost', function() {
+      // uncomment below and update the code to test BodyAccessTokenV2OauthAccessTokenPost
+      //var instance = new VersifylabsVersifyClient.BodyAccessTokenV2OauthAccessTokenPost();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.BodyAccessTokenV2OauthAccessTokenPost);
     });
 
-    it('should have the property city (base name: "city")', function() {
-      // uncomment below and update the code to test the property city
-      //var instance = new VersifyClient.Location();
+    it('should have the property code (base name: "code")', function() {
+      // uncomment below and update the code to test the property code
+      //var instance = new VersifylabsVersifyClient.BodyAccessTokenV2OauthAccessTokenPost();
       //expect(instance).to.be();
     });
 
-    it('should have the property country (base name: "country")', function() {
-      // uncomment below and update the code to test the property country
-      //var instance = new VersifyClient.Location();
+    it('should have the property customClaims (base name: "custom_claims")', function() {
+      // uncomment below and update the code to test the property customClaims
+      //var instance = new VersifylabsVersifyClient.BodyAccessTokenV2OauthAccessTokenPost();
       //expect(instance).to.be();
     });
 
-    it('should have the property region (base name: "region")', function() {
-      // uncomment below and update the code to test the property region
-      //var instance = new VersifyClient.Location();
+    it('should have the property methodId (base name: "method_id")', function() {
+      // uncomment below and update the code to test the property methodId
+      //var instance = new VersifylabsVersifyClient.BodyAccessTokenV2OauthAccessTokenPost();
       //expect(instance).to.be();
     });
 

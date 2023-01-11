@@ -1,4 +1,4 @@
-# VersifyClient.Webhook
+# VersifylabsVersifyClient.Webhook
 
 ## Properties
 

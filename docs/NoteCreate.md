@@ -1,4 +1,4 @@
-# VersifyClient.NoteCreate
+# VersifylabsVersifyClient.NoteCreate
 
 ## Properties
 

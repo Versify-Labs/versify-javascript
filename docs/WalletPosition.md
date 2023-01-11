@@ -1,4 +1,4 @@
-# VersifyClient.WalletPosition
+# VersifylabsVersifyClient.WalletPosition
 
 ## Enum
 

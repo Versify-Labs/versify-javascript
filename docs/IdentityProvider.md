@@ -1,4 +1,4 @@
-# VersifyClient.IdentityProvider
+# VersifylabsVersifyClient.IdentityProvider
 
 ## Properties
 

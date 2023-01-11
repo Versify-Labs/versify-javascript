@@ -1,4 +1,4 @@
-# VersifyClient.RedemptionsApi
+# VersifylabsVersifyClient.RedemptionsApi
 
 All URIs are relative to *http://localhost*
 
@@ -30,13 +30,13 @@ Create a redemption
 ### Example
 
 ```javascript
-import VersifyClient from 'versify-client';
-let defaultClient = VersifyClient.ApiClient.instance;
+import VersifylabsVersifyClient from '@versifylabs/versify-client';
+let defaultClient = VersifylabsVersifyClient.ApiClient.instance;
 // Configure Bearer access token for authorization: HTTPBearer
 let HTTPBearer = defaultClient.authentications['HTTPBearer'];
 HTTPBearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new VersifyClient.RedemptionsApi();
+let apiInstance = new VersifylabsVersifyClient.RedemptionsApi();
 let asset10 = {"description":"Acme Corp is a fictional company in the Looney Tunes universe.","image":"https://acme.com/logo.png","name":"Acme Corp"}; // Asset10 | 
 let opts = {
   'versifyAccount': act_123123123131231231 // String | Versify Account ID
@@ -83,13 +83,13 @@ Create a redemption
 ### Example
 
 ```javascript
-import VersifyClient from 'versify-client';
-let defaultClient = VersifyClient.ApiClient.instance;
+import VersifylabsVersifyClient from '@versifylabs/versify-client';
+let defaultClient = VersifylabsVersifyClient.ApiClient.instance;
 // Configure Bearer access token for authorization: HTTPBearer
 let HTTPBearer = defaultClient.authentications['HTTPBearer'];
 HTTPBearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new VersifyClient.RedemptionsApi();
+let apiInstance = new VersifylabsVersifyClient.RedemptionsApi();
 let asset10 = {"description":"Acme Corp is a fictional company in the Looney Tunes universe.","image":"https://acme.com/logo.png","name":"Acme Corp"}; // Asset10 | 
 let opts = {
   'versifyAccount': act_123123123131231231 // String | Versify Account ID
@@ -136,13 +136,13 @@ Delete an redemption
 ### Example
 
 ```javascript
-import VersifyClient from 'versify-client';
-let defaultClient = VersifyClient.ApiClient.instance;
+import VersifylabsVersifyClient from '@versifylabs/versify-client';
+let defaultClient = VersifylabsVersifyClient.ApiClient.instance;
 // Configure Bearer access token for authorization: HTTPBearer
 let HTTPBearer = defaultClient.authentications['HTTPBearer'];
 HTTPBearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new VersifyClient.RedemptionsApi();
+let apiInstance = new VersifylabsVersifyClient.RedemptionsApi();
 let redemptionId = con_12121231231231321; // String | Unique identifier of the contact
 let opts = {
   'versifyAccount': act_123123123131231231 // String | Versify Account ID
@@ -189,13 +189,13 @@ Delete an redemption
 ### Example
 
 ```javascript
-import VersifyClient from 'versify-client';
-let defaultClient = VersifyClient.ApiClient.instance;
+import VersifylabsVersifyClient from '@versifylabs/versify-client';
+let defaultClient = VersifylabsVersifyClient.ApiClient.instance;
 // Configure Bearer access token for authorization: HTTPBearer
 let HTTPBearer = defaultClient.authentications['HTTPBearer'];
 HTTPBearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new VersifyClient.RedemptionsApi();
+let apiInstance = new VersifylabsVersifyClient.RedemptionsApi();
 let redemptionId = con_12121231231231321; // String | Unique identifier of the contact
 let opts = {
   'versifyAccount': act_123123123131231231 // String | Versify Account ID
@@ -242,13 +242,13 @@ Get a redemption
 ### Example
 
 ```javascript
-import VersifyClient from 'versify-client';
-let defaultClient = VersifyClient.ApiClient.instance;
+import VersifylabsVersifyClient from '@versifylabs/versify-client';
+let defaultClient = VersifylabsVersifyClient.ApiClient.instance;
 // Configure Bearer access token for authorization: HTTPBearer
 let HTTPBearer = defaultClient.authentications['HTTPBearer'];
 HTTPBearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new VersifyClient.RedemptionsApi();
+let apiInstance = new VersifylabsVersifyClient.RedemptionsApi();
 let redemptionId = con_12121231231231321; // String | Unique identifier of the contact
 let opts = {
   'versifyAccount': act_123123123131231231 // String | Versify Account ID
@@ -295,13 +295,13 @@ Get a redemption
 ### Example
 
 ```javascript
-import VersifyClient from 'versify-client';
-let defaultClient = VersifyClient.ApiClient.instance;
+import VersifylabsVersifyClient from '@versifylabs/versify-client';
+let defaultClient = VersifylabsVersifyClient.ApiClient.instance;
 // Configure Bearer access token for authorization: HTTPBearer
 let HTTPBearer = defaultClient.authentications['HTTPBearer'];
 HTTPBearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new VersifyClient.RedemptionsApi();
+let apiInstance = new VersifylabsVersifyClient.RedemptionsApi();
 let redemptionId = con_12121231231231321; // String | Unique identifier of the contact
 let opts = {
   'versifyAccount': act_123123123131231231 // String | Versify Account ID
@@ -348,13 +348,13 @@ List redemptions with optional filters and pagination parameters
 ### Example
 
 ```javascript
-import VersifyClient from 'versify-client';
-let defaultClient = VersifyClient.ApiClient.instance;
+import VersifylabsVersifyClient from '@versifylabs/versify-client';
+let defaultClient = VersifylabsVersifyClient.ApiClient.instance;
 // Configure Bearer access token for authorization: HTTPBearer
 let HTTPBearer = defaultClient.authentications['HTTPBearer'];
 HTTPBearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new VersifyClient.RedemptionsApi();
+let apiInstance = new VersifylabsVersifyClient.RedemptionsApi();
 let opts = {
   'pageNum': 1, // Number | Page number
   'pageSize': 10, // Number | Page size
@@ -407,13 +407,13 @@ List redemptions with optional filters and pagination parameters
 ### Example
 
 ```javascript
-import VersifyClient from 'versify-client';
-let defaultClient = VersifyClient.ApiClient.instance;
+import VersifylabsVersifyClient from '@versifylabs/versify-client';
+let defaultClient = VersifylabsVersifyClient.ApiClient.instance;
 // Configure Bearer access token for authorization: HTTPBearer
 let HTTPBearer = defaultClient.authentications['HTTPBearer'];
 HTTPBearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new VersifyClient.RedemptionsApi();
+let apiInstance = new VersifylabsVersifyClient.RedemptionsApi();
 let opts = {
   'pageNum': 1, // Number | Page number
   'pageSize': 10, // Number | Page size
@@ -466,13 +466,13 @@ Search redemptions with query string
 ### Example
 
 ```javascript
-import VersifyClient from 'versify-client';
-let defaultClient = VersifyClient.ApiClient.instance;
+import VersifylabsVersifyClient from '@versifylabs/versify-client';
+let defaultClient = VersifylabsVersifyClient.ApiClient.instance;
 // Configure Bearer access token for authorization: HTTPBearer
 let HTTPBearer = defaultClient.authentications['HTTPBearer'];
 HTTPBearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new VersifyClient.RedemptionsApi();
+let apiInstance = new VersifylabsVersifyClient.RedemptionsApi();
 let searchContacts = {"query":{"operator":"AND","value":[{"field":"email","operator":"contains","value":"acme.com"},{"field":"name.first_name","operator":"contains","value":"Jane"}]}}; // SearchContacts | 
 let opts = {
   'versifyAccount': act_123123123131231231 // String | Versify Account ID
@@ -519,13 +519,13 @@ Search redemptions with query string
 ### Example
 
 ```javascript
-import VersifyClient from 'versify-client';
-let defaultClient = VersifyClient.ApiClient.instance;
+import VersifylabsVersifyClient from '@versifylabs/versify-client';
+let defaultClient = VersifylabsVersifyClient.ApiClient.instance;
 // Configure Bearer access token for authorization: HTTPBearer
 let HTTPBearer = defaultClient.authentications['HTTPBearer'];
 HTTPBearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new VersifyClient.RedemptionsApi();
+let apiInstance = new VersifylabsVersifyClient.RedemptionsApi();
 let searchContacts = {"query":{"operator":"AND","value":[{"field":"email","operator":"contains","value":"acme.com"},{"field":"name.first_name","operator":"contains","value":"Jane"}]}}; // SearchContacts | 
 let opts = {
   'versifyAccount': act_123123123131231231 // String | Versify Account ID
@@ -572,13 +572,13 @@ Update an redemption
 ### Example
 
 ```javascript
-import VersifyClient from 'versify-client';
-let defaultClient = VersifyClient.ApiClient.instance;
+import VersifylabsVersifyClient from '@versifylabs/versify-client';
+let defaultClient = VersifylabsVersifyClient.ApiClient.instance;
 // Configure Bearer access token for authorization: HTTPBearer
 let HTTPBearer = defaultClient.authentications['HTTPBearer'];
 HTTPBearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new VersifyClient.RedemptionsApi();
+let apiInstance = new VersifylabsVersifyClient.RedemptionsApi();
 let redemptionId = con_12121231231231321; // String | Unique identifier of the contact
 let contact10 = {"name":{"first_name":"Jane","last_name":"Doe"}}; // Contact10 | 
 let opts = {
@@ -627,13 +627,13 @@ Update an redemption
 ### Example
 
 ```javascript
-import VersifyClient from 'versify-client';
-let defaultClient = VersifyClient.ApiClient.instance;
+import VersifylabsVersifyClient from '@versifylabs/versify-client';
+let defaultClient = VersifylabsVersifyClient.ApiClient.instance;
 // Configure Bearer access token for authorization: HTTPBearer
 let HTTPBearer = defaultClient.authentications['HTTPBearer'];
 HTTPBearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new VersifyClient.RedemptionsApi();
+let apiInstance = new VersifylabsVersifyClient.RedemptionsApi();
 let redemptionId = con_12121231231231321; // String | Unique identifier of the contact
 let contact10 = {"name":{"first_name":"Jane","last_name":"Doe"}}; // Contact10 | 
 let opts = {

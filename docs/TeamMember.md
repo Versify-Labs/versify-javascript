@@ -1,4 +1,4 @@
-# VersifyClient.TeamMember
+# VersifylabsVersifyClient.TeamMember
 
 ## Properties
 

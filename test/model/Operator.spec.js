@@ -20,9 +20,9 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
@@ -49,8 +49,8 @@
   describe('Operator', function() {
     it('should create an instance of Operator', function() {
       // uncomment below and update the code to test Operator
-      //var instance = new VersifyClient.Operator();
-      //expect(instance).to.be.a(VersifyClient.Operator);
+      //var instance = new VersifylabsVersifyClient.Operator();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.Operator);
     });
 
   });

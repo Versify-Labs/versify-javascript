@@ -1,4 +1,4 @@
-# VersifyClient.ApiDeleteResponse
+# VersifylabsVersifyClient.ApiDeleteResponse
 
 ## Properties
 

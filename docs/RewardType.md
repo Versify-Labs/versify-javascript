@@ -1,4 +1,4 @@
-# VersifyClient.RewardType
+# VersifylabsVersifyClient.RewardType
 
 ## Enum
 

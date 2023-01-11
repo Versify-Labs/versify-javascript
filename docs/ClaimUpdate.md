@@ -1,4 +1,4 @@
-# VersifyClient.ClaimUpdate
+# VersifylabsVersifyClient.ClaimUpdate
 
 ## Properties
 

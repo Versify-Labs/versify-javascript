@@ -1,4 +1,4 @@
-# VersifyClient.ClaimCreate
+# VersifylabsVersifyClient.ClaimCreate
 
 ## Properties
 

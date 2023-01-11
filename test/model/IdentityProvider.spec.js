@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.IdentityProvider();
+    instance = new VersifylabsVersifyClient.IdentityProvider();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('IdentityProvider', function() {
     it('should create an instance of IdentityProvider', function() {
       // uncomment below and update the code to test IdentityProvider
-      //var instance = new VersifyClient.IdentityProvider();
-      //expect(instance).to.be.a(VersifyClient.IdentityProvider);
+      //var instance = new VersifylabsVersifyClient.IdentityProvider();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.IdentityProvider);
     });
 
     it('should have the property providerSubject (base name: "provider_subject")', function() {
       // uncomment below and update the code to test the property providerSubject
-      //var instance = new VersifyClient.IdentityProvider();
+      //var instance = new VersifylabsVersifyClient.IdentityProvider();
       //expect(instance).to.be();
     });
 
     it('should have the property providerType (base name: "provider_type")', function() {
       // uncomment below and update the code to test the property providerType
-      //var instance = new VersifyClient.IdentityProvider();
+      //var instance = new VersifylabsVersifyClient.IdentityProvider();
       //expect(instance).to.be();
     });
 

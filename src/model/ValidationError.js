@@ -12,7 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import Location2Inner from './Location2Inner';
+import LocationInner from './LocationInner';
 
 /**
  * The ValidationError model module.
@@ -23,7 +23,7 @@ class ValidationError {
     /**
      * Constructs a new <code>ValidationError</code>.
      * @alias module:model/ValidationError
-     * @param loc {Array.<module:model/Location2Inner>} 
+     * @param loc {Array.<module:model/LocationInner>} 
      * @param msg {String} 
      * @param type {String} 
      */
@@ -55,7 +55,7 @@ class ValidationError {
             obj = obj || new ValidationError();
 
             if (data.hasOwnProperty('loc')) {
-                obj['loc'] = ApiClient.convertToType(data['loc'], [Location2Inner]);
+                obj['loc'] = ApiClient.convertToType(data['loc'], [LocationInner]);
             }
             if (data.hasOwnProperty('msg')) {
                 obj['msg'] = ApiClient.convertToType(data['msg'], 'String');
@@ -86,7 +86,7 @@ class ValidationError {
             }
             // validate the optional field `loc` (array)
             for (const item of data['loc']) {
-                Location2Inner.validateJsonObject(item);
+                LocationInner.validateJsonObject(item);
             };
         }
         // ensure the json data is a string
@@ -107,7 +107,7 @@ class ValidationError {
 ValidationError.RequiredProperties = ["loc", "msg", "type"];
 
 /**
- * @member {Array.<module:model/Location2Inner>} loc
+ * @member {Array.<module:model/LocationInner>} loc
  */
 ValidationError.prototype['loc'] = undefined;
 

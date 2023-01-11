@@ -24,6 +24,8 @@ import Action from './model/Action';
 import ActionConfig from './model/ActionConfig';
 import ActionConfiguration from './model/ActionConfiguration';
 import ActionType from './model/ActionType';
+import Address from './model/Address';
+import Address1 from './model/Address1';
 import ApiDeleteResponse from './model/ApiDeleteResponse';
 import ApiListResponse from './model/ApiListResponse';
 import ApiSearchResponse from './model/ApiSearchResponse';
@@ -48,6 +50,7 @@ import AssetUpdate from './model/AssetUpdate';
 import Billing from './model/Billing';
 import BillingSettings from './model/BillingSettings';
 import BlockchainType from './model/BlockchainType';
+import BodyAccessTokenV2OauthAccessTokenPost from './model/BodyAccessTokenV2OauthAccessTokenPost';
 import Brand from './model/Brand';
 import BrandSettings from './model/BrandSettings';
 import BrandingSettings from './model/BrandingSettings';
@@ -82,9 +85,7 @@ import IdentityProvider from './model/IdentityProvider';
 import Journey from './model/Journey';
 import JourneyCreate from './model/JourneyCreate';
 import JourneyUpdate from './model/JourneyUpdate';
-import Location from './model/Location';
-import Location1 from './model/Location1';
-import Location2Inner from './model/Location2Inner';
+import LocationInner from './model/LocationInner';
 import Message from './model/Message';
 import MessageCreate from './model/MessageCreate';
 import MessageType from './model/MessageType';
@@ -140,6 +141,7 @@ import WebhookCreate from './model/WebhookCreate';
 import WebhookUpdate from './model/WebhookUpdate';
 import AccountsApi from './api/AccountsApi';
 import AssetsApi from './api/AssetsApi';
+import AuthApi from './api/AuthApi';
 import ClaimsApi from './api/ClaimsApi';
 import CollectionsApi from './api/CollectionsApi';
 import ContactsApi from './api/ContactsApi';
@@ -161,9 +163,9 @@ import WebhooksApi from './api/WebhooksApi';
 * <p>
 * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
 * <pre>
-* var VersifyClient = require('index'); // See note below*.
-* var xxxSvc = new VersifyClient.XxxApi(); // Allocate the API class we're going to use.
-* var yyyModel = new VersifyClient.Yyy(); // Construct a model instance.
+* var VersifylabsVersifyClient = require('index'); // See note below*.
+* var xxxSvc = new VersifylabsVersifyClient.XxxApi(); // Allocate the API class we're going to use.
+* var yyyModel = new VersifylabsVersifyClient.Yyy(); // Construct a model instance.
 * yyyModel.someProperty = 'someValue';
 * ...
 * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
@@ -175,8 +177,8 @@ import WebhooksApi from './api/WebhooksApi';
 * <p>
 * A non-AMD browser application (discouraged) might do something like this:
 * <pre>
-* var xxxSvc = new VersifyClient.XxxApi(); // Allocate the API class we're going to use.
-* var yyy = new VersifyClient.Yyy(); // Construct a model instance.
+* var xxxSvc = new VersifylabsVersifyClient.XxxApi(); // Allocate the API class we're going to use.
+* var yyy = new VersifylabsVersifyClient.Yyy(); // Construct a model instance.
 * yyyModel.someProperty = 'someValue';
 * ...
 * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
@@ -258,6 +260,18 @@ export {
      * @property {module:model/ActionType}
      */
     ActionType,
+
+    /**
+     * The Address model constructor.
+     * @property {module:model/Address}
+     */
+    Address,
+
+    /**
+     * The Address1 model constructor.
+     * @property {module:model/Address1}
+     */
+    Address1,
 
     /**
      * The ApiDeleteResponse model constructor.
@@ -402,6 +416,12 @@ export {
      * @property {module:model/BlockchainType}
      */
     BlockchainType,
+
+    /**
+     * The BodyAccessTokenV2OauthAccessTokenPost model constructor.
+     * @property {module:model/BodyAccessTokenV2OauthAccessTokenPost}
+     */
+    BodyAccessTokenV2OauthAccessTokenPost,
 
     /**
      * The Brand model constructor.
@@ -608,22 +628,10 @@ export {
     JourneyUpdate,
 
     /**
-     * The Location model constructor.
-     * @property {module:model/Location}
+     * The LocationInner model constructor.
+     * @property {module:model/LocationInner}
      */
-    Location,
-
-    /**
-     * The Location1 model constructor.
-     * @property {module:model/Location1}
-     */
-    Location1,
-
-    /**
-     * The Location2Inner model constructor.
-     * @property {module:model/Location2Inner}
-     */
-    Location2Inner,
+    LocationInner,
 
     /**
      * The Message model constructor.
@@ -954,6 +962,12 @@ export {
     * @property {module:api/AssetsApi}
     */
     AssetsApi,
+
+    /**
+    * The AuthApi service constructor.
+    * @property {module:api/AuthApi}
+    */
+    AuthApi,
 
     /**
     * The ClaimsApi service constructor.

@@ -1,4 +1,4 @@
-# VersifyClient.SubscriptionPlan
+# VersifylabsVersifyClient.SubscriptionPlan
 
 ## Enum
 

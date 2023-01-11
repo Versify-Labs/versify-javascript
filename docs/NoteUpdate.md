@@ -1,4 +1,4 @@
-# VersifyClient.NoteUpdate
+# VersifylabsVersifyClient.NoteUpdate
 
 ## Properties
 

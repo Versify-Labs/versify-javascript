@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.QueryValue();
+    instance = new VersifylabsVersifyClient.QueryValue();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,8 +50,8 @@
   describe('QueryValue', function() {
     it('should create an instance of QueryValue', function() {
       // uncomment below and update the code to test QueryValue
-      //var instance = new VersifyClient.QueryValue();
-      //expect(instance).to.be.a(VersifyClient.QueryValue);
+      //var instance = new VersifylabsVersifyClient.QueryValue();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.QueryValue);
     });
 
   });

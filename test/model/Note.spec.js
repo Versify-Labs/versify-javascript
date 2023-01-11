@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.Note();
+    instance = new VersifylabsVersifyClient.Note();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,55 +50,55 @@
   describe('Note', function() {
     it('should create an instance of Note', function() {
       // uncomment below and update the code to test Note
-      //var instance = new VersifyClient.Note();
-      //expect(instance).to.be.a(VersifyClient.Note);
+      //var instance = new VersifylabsVersifyClient.Note();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.Note);
     });
 
     it('should have the property id (base name: "_id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new VersifyClient.Note();
+      //var instance = new VersifylabsVersifyClient.Note();
       //expect(instance).to.be();
     });
 
     it('should have the property account (base name: "account")', function() {
       // uncomment below and update the code to test the property account
-      //var instance = new VersifyClient.Note();
+      //var instance = new VersifylabsVersifyClient.Note();
       //expect(instance).to.be();
     });
 
     it('should have the property created (base name: "created")', function() {
       // uncomment below and update the code to test the property created
-      //var instance = new VersifyClient.Note();
+      //var instance = new VersifylabsVersifyClient.Note();
       //expect(instance).to.be();
     });
 
     it('should have the property creator (base name: "creator")', function() {
       // uncomment below and update the code to test the property creator
-      //var instance = new VersifyClient.Note();
+      //var instance = new VersifylabsVersifyClient.Note();
       //expect(instance).to.be();
     });
 
     it('should have the property metadata (base name: "metadata")', function() {
       // uncomment below and update the code to test the property metadata
-      //var instance = new VersifyClient.Note();
+      //var instance = new VersifylabsVersifyClient.Note();
       //expect(instance).to.be();
     });
 
     it('should have the property note (base name: "note")', function() {
       // uncomment below and update the code to test the property note
-      //var instance = new VersifyClient.Note();
+      //var instance = new VersifylabsVersifyClient.Note();
       //expect(instance).to.be();
     });
 
     it('should have the property object (base name: "object")', function() {
       // uncomment below and update the code to test the property object
-      //var instance = new VersifyClient.Note();
+      //var instance = new VersifylabsVersifyClient.Note();
       //expect(instance).to.be();
     });
 
     it('should have the property updated (base name: "updated")', function() {
       // uncomment below and update the code to test the property updated
-      //var instance = new VersifyClient.Note();
+      //var instance = new VersifylabsVersifyClient.Note();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# VersifyClient.ActionConfiguration
+# VersifylabsVersifyClient.ActionConfiguration
 
 ## Properties
 

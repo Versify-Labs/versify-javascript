@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.Claim();
+    instance = new VersifylabsVersifyClient.Claim();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,67 +50,67 @@
   describe('Claim', function() {
     it('should create an instance of Claim', function() {
       // uncomment below and update the code to test Claim
-      //var instance = new VersifyClient.Claim();
-      //expect(instance).to.be.a(VersifyClient.Claim);
+      //var instance = new VersifylabsVersifyClient.Claim();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.Claim);
     });
 
     it('should have the property id (base name: "_id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new VersifyClient.Claim();
+      //var instance = new VersifylabsVersifyClient.Claim();
       //expect(instance).to.be();
     });
 
     it('should have the property account (base name: "account")', function() {
       // uncomment below and update the code to test the property account
-      //var instance = new VersifyClient.Claim();
+      //var instance = new VersifylabsVersifyClient.Claim();
       //expect(instance).to.be();
     });
 
     it('should have the property asset (base name: "asset")', function() {
       // uncomment below and update the code to test the property asset
-      //var instance = new VersifyClient.Claim();
+      //var instance = new VersifylabsVersifyClient.Claim();
       //expect(instance).to.be();
     });
 
     it('should have the property code (base name: "code")', function() {
       // uncomment below and update the code to test the property code
-      //var instance = new VersifyClient.Claim();
+      //var instance = new VersifylabsVersifyClient.Claim();
       //expect(instance).to.be();
     });
 
     it('should have the property created (base name: "created")', function() {
       // uncomment below and update the code to test the property created
-      //var instance = new VersifyClient.Claim();
+      //var instance = new VersifylabsVersifyClient.Claim();
       //expect(instance).to.be();
     });
 
     it('should have the property metadata (base name: "metadata")', function() {
       // uncomment below and update the code to test the property metadata
-      //var instance = new VersifyClient.Claim();
+      //var instance = new VersifylabsVersifyClient.Claim();
       //expect(instance).to.be();
     });
 
     it('should have the property object (base name: "object")', function() {
       // uncomment below and update the code to test the property object
-      //var instance = new VersifyClient.Claim();
+      //var instance = new VersifylabsVersifyClient.Claim();
       //expect(instance).to.be();
     });
 
     it('should have the property quantity (base name: "quantity")', function() {
       // uncomment below and update the code to test the property quantity
-      //var instance = new VersifyClient.Claim();
+      //var instance = new VersifylabsVersifyClient.Claim();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instance = new VersifyClient.Claim();
+      //var instance = new VersifylabsVersifyClient.Claim();
       //expect(instance).to.be();
     });
 
     it('should have the property updated (base name: "updated")', function() {
       // uncomment below and update the code to test the property updated
-      //var instance = new VersifyClient.Claim();
+      //var instance = new VersifylabsVersifyClient.Claim();
       //expect(instance).to.be();
     });
 

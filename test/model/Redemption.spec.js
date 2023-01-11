@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.Redemption();
+    instance = new VersifylabsVersifyClient.Redemption();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,103 +50,103 @@
   describe('Redemption', function() {
     it('should create an instance of Redemption', function() {
       // uncomment below and update the code to test Redemption
-      //var instance = new VersifyClient.Redemption();
-      //expect(instance).to.be.a(VersifyClient.Redemption);
+      //var instance = new VersifylabsVersifyClient.Redemption();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.Redemption);
     });
 
     it('should have the property id (base name: "_id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new VersifyClient.Redemption();
+      //var instance = new VersifylabsVersifyClient.Redemption();
       //expect(instance).to.be();
     });
 
     it('should have the property account (base name: "account")', function() {
       // uncomment below and update the code to test the property account
-      //var instance = new VersifyClient.Redemption();
+      //var instance = new VersifylabsVersifyClient.Redemption();
       //expect(instance).to.be();
     });
 
     it('should have the property contact (base name: "contact")', function() {
       // uncomment below and update the code to test the property contact
-      //var instance = new VersifyClient.Redemption();
+      //var instance = new VersifylabsVersifyClient.Redemption();
       //expect(instance).to.be();
     });
 
     it('should have the property couponCode (base name: "coupon_code")', function() {
       // uncomment below and update the code to test the property couponCode
-      //var instance = new VersifyClient.Redemption();
+      //var instance = new VersifylabsVersifyClient.Redemption();
       //expect(instance).to.be();
     });
 
     it('should have the property created (base name: "created")', function() {
       // uncomment below and update the code to test the property created
-      //var instance = new VersifyClient.Redemption();
+      //var instance = new VersifylabsVersifyClient.Redemption();
       //expect(instance).to.be();
     });
 
     it('should have the property discountAmount (base name: "discount_amount")', function() {
       // uncomment below and update the code to test the property discountAmount
-      //var instance = new VersifyClient.Redemption();
+      //var instance = new VersifylabsVersifyClient.Redemption();
       //expect(instance).to.be();
     });
 
     it('should have the property discountCode (base name: "discount_code")', function() {
       // uncomment below and update the code to test the property discountCode
-      //var instance = new VersifyClient.Redemption();
+      //var instance = new VersifylabsVersifyClient.Redemption();
       //expect(instance).to.be();
     });
 
     it('should have the property giftAmount (base name: "gift_amount")', function() {
       // uncomment below and update the code to test the property giftAmount
-      //var instance = new VersifyClient.Redemption();
+      //var instance = new VersifylabsVersifyClient.Redemption();
       //expect(instance).to.be();
     });
 
     it('should have the property giftCode (base name: "gift_code")', function() {
       // uncomment below and update the code to test the property giftCode
-      //var instance = new VersifyClient.Redemption();
+      //var instance = new VersifylabsVersifyClient.Redemption();
       //expect(instance).to.be();
     });
 
     it('should have the property metadata (base name: "metadata")', function() {
       // uncomment below and update the code to test the property metadata
-      //var instance = new VersifyClient.Redemption();
+      //var instance = new VersifylabsVersifyClient.Redemption();
       //expect(instance).to.be();
     });
 
     it('should have the property object (base name: "object")', function() {
       // uncomment below and update the code to test the property object
-      //var instance = new VersifyClient.Redemption();
+      //var instance = new VersifylabsVersifyClient.Redemption();
       //expect(instance).to.be();
     });
 
     it('should have the property passBarcode (base name: "pass_barcode")', function() {
       // uncomment below and update the code to test the property passBarcode
-      //var instance = new VersifyClient.Redemption();
+      //var instance = new VersifylabsVersifyClient.Redemption();
       //expect(instance).to.be();
     });
 
     it('should have the property passPlatform (base name: "pass_platform")', function() {
       // uncomment below and update the code to test the property passPlatform
-      //var instance = new VersifyClient.Redemption();
+      //var instance = new VersifylabsVersifyClient.Redemption();
       //expect(instance).to.be();
     });
 
     it('should have the property passSerialNumber (base name: "pass_serial_number")', function() {
       // uncomment below and update the code to test the property passSerialNumber
-      //var instance = new VersifyClient.Redemption();
+      //var instance = new VersifylabsVersifyClient.Redemption();
       //expect(instance).to.be();
     });
 
     it('should have the property reward (base name: "reward")', function() {
       // uncomment below and update the code to test the property reward
-      //var instance = new VersifyClient.Redemption();
+      //var instance = new VersifylabsVersifyClient.Redemption();
       //expect(instance).to.be();
     });
 
     it('should have the property updated (base name: "updated")', function() {
       // uncomment below and update the code to test the property updated
-      //var instance = new VersifyClient.Redemption();
+      //var instance = new VersifylabsVersifyClient.Redemption();
       //expect(instance).to.be();
     });
 

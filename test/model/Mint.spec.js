@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.Mint();
+    instance = new VersifylabsVersifyClient.Mint();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,103 +50,103 @@
   describe('Mint', function() {
     it('should create an instance of Mint', function() {
       // uncomment below and update the code to test Mint
-      //var instance = new VersifyClient.Mint();
-      //expect(instance).to.be.a(VersifyClient.Mint);
+      //var instance = new VersifylabsVersifyClient.Mint();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.Mint);
     });
 
     it('should have the property id (base name: "_id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new VersifyClient.Mint();
+      //var instance = new VersifylabsVersifyClient.Mint();
       //expect(instance).to.be();
     });
 
     it('should have the property account (base name: "account")', function() {
       // uncomment below and update the code to test the property account
-      //var instance = new VersifyClient.Mint();
+      //var instance = new VersifylabsVersifyClient.Mint();
       //expect(instance).to.be();
     });
 
     it('should have the property asset (base name: "asset")', function() {
       // uncomment below and update the code to test the property asset
-      //var instance = new VersifyClient.Mint();
+      //var instance = new VersifylabsVersifyClient.Mint();
       //expect(instance).to.be();
     });
 
     it('should have the property contact (base name: "contact")', function() {
       // uncomment below and update the code to test the property contact
-      //var instance = new VersifyClient.Mint();
+      //var instance = new VersifylabsVersifyClient.Mint();
       //expect(instance).to.be();
     });
 
     it('should have the property created (base name: "created")', function() {
       // uncomment below and update the code to test the property created
-      //var instance = new VersifyClient.Mint();
+      //var instance = new VersifylabsVersifyClient.Mint();
       //expect(instance).to.be();
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instance = new VersifyClient.Mint();
+      //var instance = new VersifylabsVersifyClient.Mint();
       //expect(instance).to.be();
     });
 
     it('should have the property journey (base name: "journey")', function() {
       // uncomment below and update the code to test the property journey
-      //var instance = new VersifyClient.Mint();
+      //var instance = new VersifylabsVersifyClient.Mint();
       //expect(instance).to.be();
     });
 
     it('should have the property metadata (base name: "metadata")', function() {
       // uncomment below and update the code to test the property metadata
-      //var instance = new VersifyClient.Mint();
+      //var instance = new VersifylabsVersifyClient.Mint();
       //expect(instance).to.be();
     });
 
     it('should have the property object (base name: "object")', function() {
       // uncomment below and update the code to test the property object
-      //var instance = new VersifyClient.Mint();
+      //var instance = new VersifylabsVersifyClient.Mint();
       //expect(instance).to.be();
     });
 
     it('should have the property quantity (base name: "quantity")', function() {
       // uncomment below and update the code to test the property quantity
-      //var instance = new VersifyClient.Mint();
+      //var instance = new VersifylabsVersifyClient.Mint();
       //expect(instance).to.be();
     });
 
     it('should have the property run (base name: "run")', function() {
       // uncomment below and update the code to test the property run
-      //var instance = new VersifyClient.Mint();
+      //var instance = new VersifylabsVersifyClient.Mint();
       //expect(instance).to.be();
     });
 
     it('should have the property signature (base name: "signature")', function() {
       // uncomment below and update the code to test the property signature
-      //var instance = new VersifyClient.Mint();
+      //var instance = new VersifylabsVersifyClient.Mint();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instance = new VersifyClient.Mint();
+      //var instance = new VersifylabsVersifyClient.Mint();
       //expect(instance).to.be();
     });
 
     it('should have the property transaction (base name: "transaction")', function() {
       // uncomment below and update the code to test the property transaction
-      //var instance = new VersifyClient.Mint();
+      //var instance = new VersifylabsVersifyClient.Mint();
       //expect(instance).to.be();
     });
 
     it('should have the property updated (base name: "updated")', function() {
       // uncomment below and update the code to test the property updated
-      //var instance = new VersifyClient.Mint();
+      //var instance = new VersifylabsVersifyClient.Mint();
       //expect(instance).to.be();
     });
 
     it('should have the property walletAddress (base name: "wallet_address")', function() {
       // uncomment below and update the code to test the property walletAddress
-      //var instance = new VersifyClient.Mint();
+      //var instance = new VersifylabsVersifyClient.Mint();
       //expect(instance).to.be();
     });
 

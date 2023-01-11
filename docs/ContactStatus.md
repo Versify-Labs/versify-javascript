@@ -1,4 +1,4 @@
-# VersifyClient.ContactStatus
+# VersifylabsVersifyClient.ContactStatus
 
 ## Enum
 

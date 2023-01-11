@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.Reward();
+    instance = new VersifylabsVersifyClient.Reward();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,85 +50,85 @@
   describe('Reward', function() {
     it('should create an instance of Reward', function() {
       // uncomment below and update the code to test Reward
-      //var instance = new VersifyClient.Reward();
-      //expect(instance).to.be.a(VersifyClient.Reward);
+      //var instance = new VersifylabsVersifyClient.Reward();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.Reward);
     });
 
     it('should have the property id (base name: "_id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new VersifyClient.Reward();
+      //var instance = new VersifylabsVersifyClient.Reward();
       //expect(instance).to.be();
     });
 
     it('should have the property account (base name: "account")', function() {
       // uncomment below and update the code to test the property account
-      //var instance = new VersifyClient.Reward();
+      //var instance = new VersifylabsVersifyClient.Reward();
       //expect(instance).to.be();
     });
 
     it('should have the property active (base name: "active")', function() {
       // uncomment below and update the code to test the property active
-      //var instance = new VersifyClient.Reward();
+      //var instance = new VersifylabsVersifyClient.Reward();
       //expect(instance).to.be();
     });
 
     it('should have the property asset (base name: "asset")', function() {
       // uncomment below and update the code to test the property asset
-      //var instance = new VersifyClient.Reward();
+      //var instance = new VersifylabsVersifyClient.Reward();
       //expect(instance).to.be();
     });
 
     it('should have the property assetQuantity (base name: "asset_quantity")', function() {
       // uncomment below and update the code to test the property assetQuantity
-      //var instance = new VersifyClient.Reward();
+      //var instance = new VersifylabsVersifyClient.Reward();
       //expect(instance).to.be();
     });
 
     it('should have the property created (base name: "created")', function() {
       // uncomment below and update the code to test the property created
-      //var instance = new VersifyClient.Reward();
+      //var instance = new VersifylabsVersifyClient.Reward();
       //expect(instance).to.be();
     });
 
     it('should have the property description (base name: "description")', function() {
       // uncomment below and update the code to test the property description
-      //var instance = new VersifyClient.Reward();
+      //var instance = new VersifylabsVersifyClient.Reward();
       //expect(instance).to.be();
     });
 
     it('should have the property image (base name: "image")', function() {
       // uncomment below and update the code to test the property image
-      //var instance = new VersifyClient.Reward();
+      //var instance = new VersifylabsVersifyClient.Reward();
       //expect(instance).to.be();
     });
 
     it('should have the property metadata (base name: "metadata")', function() {
       // uncomment below and update the code to test the property metadata
-      //var instance = new VersifyClient.Reward();
+      //var instance = new VersifylabsVersifyClient.Reward();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new VersifyClient.Reward();
+      //var instance = new VersifylabsVersifyClient.Reward();
       //expect(instance).to.be();
     });
 
     it('should have the property object (base name: "object")', function() {
       // uncomment below and update the code to test the property object
-      //var instance = new VersifyClient.Reward();
+      //var instance = new VersifylabsVersifyClient.Reward();
       //expect(instance).to.be();
     });
 
     it('should have the property rewardType (base name: "reward_type")', function() {
       // uncomment below and update the code to test the property rewardType
-      //var instance = new VersifyClient.Reward();
+      //var instance = new VersifylabsVersifyClient.Reward();
       //expect(instance).to.be();
     });
 
     it('should have the property updated (base name: "updated")', function() {
       // uncomment below and update the code to test the property updated
-      //var instance = new VersifyClient.Reward();
+      //var instance = new VersifylabsVersifyClient.Reward();
       //expect(instance).to.be();
     });
 

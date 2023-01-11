@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.TeamMember();
+    instance = new VersifylabsVersifyClient.TeamMember();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('TeamMember', function() {
     it('should create an instance of TeamMember', function() {
       // uncomment below and update the code to test TeamMember
-      //var instance = new VersifyClient.TeamMember();
-      //expect(instance).to.be.a(VersifyClient.TeamMember);
+      //var instance = new VersifylabsVersifyClient.TeamMember();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.TeamMember);
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instance = new VersifyClient.TeamMember();
+      //var instance = new VersifylabsVersifyClient.TeamMember();
       //expect(instance).to.be();
     });
 
     it('should have the property role (base name: "role")', function() {
       // uncomment below and update the code to test the property role
-      //var instance = new VersifyClient.TeamMember();
+      //var instance = new VersifylabsVersifyClient.TeamMember();
       //expect(instance).to.be();
     });
 
     it('should have the property user (base name: "user")', function() {
       // uncomment below and update the code to test the property user
-      //var instance = new VersifyClient.TeamMember();
+      //var instance = new VersifylabsVersifyClient.TeamMember();
       //expect(instance).to.be();
     });
 

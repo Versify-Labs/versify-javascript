@@ -20,9 +20,9 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
@@ -49,8 +49,8 @@
   describe('SubscriptionPlan', function() {
     it('should create an instance of SubscriptionPlan', function() {
       // uncomment below and update the code to test SubscriptionPlan
-      //var instance = new VersifyClient.SubscriptionPlan();
-      //expect(instance).to.be.a(VersifyClient.SubscriptionPlan);
+      //var instance = new VersifylabsVersifyClient.SubscriptionPlan();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.SubscriptionPlan);
     });
 
   });

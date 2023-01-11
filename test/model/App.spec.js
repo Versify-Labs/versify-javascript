@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.App();
+    instance = new VersifylabsVersifyClient.App();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,49 +50,49 @@
   describe('App', function() {
     it('should create an instance of App', function() {
       // uncomment below and update the code to test App
-      //var instance = new VersifyClient.App();
-      //expect(instance).to.be.a(VersifyClient.App);
+      //var instance = new VersifylabsVersifyClient.App();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.App);
     });
 
     it('should have the property accessScope (base name: "access_scope")', function() {
       // uncomment below and update the code to test the property accessScope
-      //var instance = new VersifyClient.App();
+      //var instance = new VersifylabsVersifyClient.App();
       //expect(instance).to.be();
     });
 
     it('should have the property accessToken (base name: "access_token")', function() {
       // uncomment below and update the code to test the property accessToken
-      //var instance = new VersifyClient.App();
+      //var instance = new VersifylabsVersifyClient.App();
       //expect(instance).to.be();
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new VersifyClient.App();
+      //var instance = new VersifylabsVersifyClient.App();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new VersifyClient.App();
+      //var instance = new VersifylabsVersifyClient.App();
       //expect(instance).to.be();
     });
 
     it('should have the property refreshToken (base name: "refresh_token")', function() {
       // uncomment below and update the code to test the property refreshToken
-      //var instance = new VersifyClient.App();
+      //var instance = new VersifylabsVersifyClient.App();
       //expect(instance).to.be();
     });
 
     it('should have the property url (base name: "url")', function() {
       // uncomment below and update the code to test the property url
-      //var instance = new VersifyClient.App();
+      //var instance = new VersifylabsVersifyClient.App();
       //expect(instance).to.be();
     });
 
     it('should have the property webhookUrl (base name: "webhook_url")', function() {
       // uncomment below and update the code to test the property webhookUrl
-      //var instance = new VersifyClient.App();
+      //var instance = new VersifylabsVersifyClient.App();
       //expect(instance).to.be();
     });
 

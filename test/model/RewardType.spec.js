@@ -20,9 +20,9 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
@@ -49,8 +49,8 @@
   describe('RewardType', function() {
     it('should create an instance of RewardType', function() {
       // uncomment below and update the code to test RewardType
-      //var instance = new VersifyClient.RewardType();
-      //expect(instance).to.be.a(VersifyClient.RewardType);
+      //var instance = new VersifylabsVersifyClient.RewardType();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.RewardType);
     });
 
   });

@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.Location2Inner();
+    instance = new VersifylabsVersifyClient.LocationInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,11 +47,11 @@
       object[property] = value;
   }
 
-  describe('Location2Inner', function() {
-    it('should create an instance of Location2Inner', function() {
-      // uncomment below and update the code to test Location2Inner
-      //var instance = new VersifyClient.Location2Inner();
-      //expect(instance).to.be.a(VersifyClient.Location2Inner);
+  describe('LocationInner', function() {
+    it('should create an instance of LocationInner', function() {
+      // uncomment below and update the code to test LocationInner
+      //var instance = new VersifylabsVersifyClient.LocationInner();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.LocationInner);
     });
 
   });

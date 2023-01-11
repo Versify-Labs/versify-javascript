@@ -1,4 +1,4 @@
-# VersifyClient.BillingSettings
+# VersifylabsVersifyClient.BillingSettings
 
 ## Properties
 

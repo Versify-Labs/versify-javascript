@@ -15,6 +15,8 @@ docs/Action.md
 docs/ActionConfig.md
 docs/ActionConfiguration.md
 docs/ActionType.md
+docs/Address.md
+docs/Address1.md
 docs/ApiDeleteResponse.md
 docs/ApiListResponse.md
 docs/ApiSearchResponse.md
@@ -37,9 +39,11 @@ docs/AssetCreate.md
 docs/AssetStatus.md
 docs/AssetUpdate.md
 docs/AssetsApi.md
+docs/AuthApi.md
 docs/Billing.md
 docs/BillingSettings.md
 docs/BlockchainType.md
+docs/BodyAccessTokenV2OauthAccessTokenPost.md
 docs/Brand.md
 docs/BrandSettings.md
 docs/BrandingSettings.md
@@ -79,9 +83,7 @@ docs/Journey.md
 docs/JourneyCreate.md
 docs/JourneyUpdate.md
 docs/JourneysApi.md
-docs/Location.md
-docs/Location1.md
-docs/Location2Inner.md
+docs/LocationInner.md
 docs/Message.md
 docs/MessageCreate.md
 docs/MessageType.md
@@ -149,6 +151,7 @@ package.json
 src/ApiClient.js
 src/api/AccountsApi.js
 src/api/AssetsApi.js
+src/api/AuthApi.js
 src/api/ClaimsApi.js
 src/api/CollectionsApi.js
 src/api/ContactsApi.js
@@ -174,6 +177,8 @@ src/model/Action.js
 src/model/ActionConfig.js
 src/model/ActionConfiguration.js
 src/model/ActionType.js
+src/model/Address.js
+src/model/Address1.js
 src/model/ApiDeleteResponse.js
 src/model/ApiListResponse.js
 src/model/ApiSearchResponse.js
@@ -198,6 +203,7 @@ src/model/AssetUpdate.js
 src/model/Billing.js
 src/model/BillingSettings.js
 src/model/BlockchainType.js
+src/model/BodyAccessTokenV2OauthAccessTokenPost.js
 src/model/Brand.js
 src/model/BrandSettings.js
 src/model/BrandingSettings.js
@@ -232,9 +238,7 @@ src/model/IdentityProvider.js
 src/model/Journey.js
 src/model/JourneyCreate.js
 src/model/JourneyUpdate.js
-src/model/Location.js
-src/model/Location1.js
-src/model/Location2Inner.js
+src/model/LocationInner.js
 src/model/Message.js
 src/model/MessageCreate.js
 src/model/MessageType.js
@@ -290,6 +294,7 @@ src/model/WebhookCreate.js
 src/model/WebhookUpdate.js
 test/api/AccountsApi.spec.js
 test/api/AssetsApi.spec.js
+test/api/AuthApi.spec.js
 test/api/ClaimsApi.spec.js
 test/api/CollectionsApi.spec.js
 test/api/ContactsApi.spec.js
@@ -314,6 +319,8 @@ test/model/Action.spec.js
 test/model/ActionConfig.spec.js
 test/model/ActionConfiguration.spec.js
 test/model/ActionType.spec.js
+test/model/Address.spec.js
+test/model/Address1.spec.js
 test/model/ApiDeleteResponse.spec.js
 test/model/ApiListResponse.spec.js
 test/model/ApiSearchResponse.spec.js
@@ -338,6 +345,7 @@ test/model/AssetUpdate.spec.js
 test/model/Billing.spec.js
 test/model/BillingSettings.spec.js
 test/model/BlockchainType.spec.js
+test/model/BodyAccessTokenV2OauthAccessTokenPost.spec.js
 test/model/Brand.spec.js
 test/model/BrandSettings.spec.js
 test/model/BrandingSettings.spec.js
@@ -372,9 +380,7 @@ test/model/IdentityProvider.spec.js
 test/model/Journey.spec.js
 test/model/JourneyCreate.spec.js
 test/model/JourneyUpdate.spec.js
-test/model/Location.spec.js
-test/model/Location1.spec.js
-test/model/Location2Inner.spec.js
+test/model/LocationInner.spec.js
 test/model/Message.spec.js
 test/model/MessageCreate.spec.js
 test/model/MessageType.spec.js

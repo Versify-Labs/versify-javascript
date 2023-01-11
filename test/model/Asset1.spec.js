@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.Asset1();
+    instance = new VersifylabsVersifyClient.Asset1();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,37 +50,37 @@
   describe('Asset1', function() {
     it('should create an instance of Asset1', function() {
       // uncomment below and update the code to test Asset1
-      //var instance = new VersifyClient.Asset1();
-      //expect(instance).to.be.a(VersifyClient.Asset1);
+      //var instance = new VersifylabsVersifyClient.Asset1();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.Asset1);
     });
 
     it('should have the property description (base name: "description")', function() {
       // uncomment below and update the code to test the property description
-      //var instance = new VersifyClient.Asset1();
+      //var instance = new VersifylabsVersifyClient.Asset1();
       //expect(instance).to.be();
     });
 
     it('should have the property image (base name: "image")', function() {
       // uncomment below and update the code to test the property image
-      //var instance = new VersifyClient.Asset1();
+      //var instance = new VersifylabsVersifyClient.Asset1();
       //expect(instance).to.be();
     });
 
     it('should have the property metadata (base name: "metadata")', function() {
       // uncomment below and update the code to test the property metadata
-      //var instance = new VersifyClient.Asset1();
+      //var instance = new VersifylabsVersifyClient.Asset1();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new VersifyClient.Asset1();
+      //var instance = new VersifylabsVersifyClient.Asset1();
       //expect(instance).to.be();
     });
 
     it('should have the property properties (base name: "properties")', function() {
       // uncomment below and update the code to test the property properties
-      //var instance = new VersifyClient.Asset1();
+      //var instance = new VersifylabsVersifyClient.Asset1();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# VersifyClient.RedemptionCreate
+# VersifylabsVersifyClient.RedemptionCreate
 
 ## Properties
 

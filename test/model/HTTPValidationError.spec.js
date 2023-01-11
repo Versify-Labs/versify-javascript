@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.HTTPValidationError();
+    instance = new VersifylabsVersifyClient.HTTPValidationError();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('HTTPValidationError', function() {
     it('should create an instance of HTTPValidationError', function() {
       // uncomment below and update the code to test HTTPValidationError
-      //var instance = new VersifyClient.HTTPValidationError();
-      //expect(instance).to.be.a(VersifyClient.HTTPValidationError);
+      //var instance = new VersifylabsVersifyClient.HTTPValidationError();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.HTTPValidationError);
     });
 
     it('should have the property detail (base name: "detail")', function() {
       // uncomment below and update the code to test the property detail
-      //var instance = new VersifyClient.HTTPValidationError();
+      //var instance = new VersifylabsVersifyClient.HTTPValidationError();
       //expect(instance).to.be();
     });
 

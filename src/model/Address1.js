@@ -12,26 +12,26 @@
  */
 
 import ApiClient from '../ApiClient';
-import Location from './Location';
+import Address from './Address';
 
 /**
- * The Location1 model module.
- * @module model/Location1
+ * The Address1 model module.
+ * @module model/Address1
  * @version 1.0.0
  */
-class Location1 {
+class Address1 {
     /**
-     * Constructs a new <code>Location1</code>.
-     * The location of the contact
-     * @alias module:model/Location1
-     * @implements module:model/Location
+     * Constructs a new <code>Address1</code>.
+     * The address of the contact
+     * @alias module:model/Address1
+     * @implements module:model/Address
      * @param city {String} The city of the location
      * @param country {String} The country of the location
      * @param region {String} The region of the location
      */
     constructor(city, country, region) { 
-        Location.initialize(this, city, country, region);
-        Location1.initialize(this, city, country, region);
+        Address.initialize(this, city, country, region);
+        Address1.initialize(this, city, country, region);
     }
 
     /**
@@ -46,16 +46,16 @@ class Location1 {
     }
 
     /**
-     * Constructs a <code>Location1</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>Address1</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/Location1} obj Optional instance to populate.
-     * @return {module:model/Location1} The populated <code>Location1</code> instance.
+     * @param {module:model/Address1} obj Optional instance to populate.
+     * @return {module:model/Address1} The populated <code>Address1</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new Location1();
-            Location.constructFromObject(data, obj);
+            obj = obj || new Address1();
+            Address.constructFromObject(data, obj);
 
             if (data.hasOwnProperty('city')) {
                 obj['city'] = ApiClient.convertToType(data['city'], 'String');
@@ -71,13 +71,13 @@ class Location1 {
     }
 
     /**
-     * Validates the JSON data with respect to <code>Location1</code>.
+     * Validates the JSON data with respect to <code>Address1</code>.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>Location1</code>.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>Address1</code>.
      */
     static validateJSON(data) {
         // check to make sure all required properties are present in the JSON string
-        for (const property of Location1.RequiredProperties) {
+        for (const property of Address1.RequiredProperties) {
             if (!data[property]) {
                 throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
             }
@@ -101,46 +101,46 @@ class Location1 {
 
 }
 
-Location1.RequiredProperties = ["city", "country", "region"];
+Address1.RequiredProperties = ["city", "country", "region"];
 
 /**
  * The city of the location
  * @member {String} city
  */
-Location1.prototype['city'] = undefined;
+Address1.prototype['city'] = undefined;
 
 /**
  * The country of the location
  * @member {String} country
  */
-Location1.prototype['country'] = undefined;
+Address1.prototype['country'] = undefined;
 
 /**
  * The region of the location
  * @member {String} region
  */
-Location1.prototype['region'] = undefined;
+Address1.prototype['region'] = undefined;
 
 
-// Implement Location interface:
+// Implement Address interface:
 /**
  * The city of the location
  * @member {String} city
  */
-Location.prototype['city'] = undefined;
+Address.prototype['city'] = undefined;
 /**
  * The country of the location
  * @member {String} country
  */
-Location.prototype['country'] = undefined;
+Address.prototype['country'] = undefined;
 /**
  * The region of the location
  * @member {String} region
  */
-Location.prototype['region'] = undefined;
+Address.prototype['region'] = undefined;
 
 
 
 
-export default Location1;
+export default Address1;
 

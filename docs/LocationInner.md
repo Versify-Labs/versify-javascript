@@ -1,4 +1,4 @@
-# VersifyClient.Location2Inner
+# VersifylabsVersifyClient.LocationInner
 
 ## Properties
 

@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.MessageCreate();
+    instance = new VersifylabsVersifyClient.MessageCreate();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('MessageCreate', function() {
     it('should create an instance of MessageCreate', function() {
       // uncomment below and update the code to test MessageCreate
-      //var instance = new VersifyClient.MessageCreate();
-      //expect(instance).to.be.a(VersifyClient.MessageCreate);
+      //var instance = new VersifylabsVersifyClient.MessageCreate();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.MessageCreate);
     });
 
     it('should have the property contentBody (base name: "content_body")', function() {
       // uncomment below and update the code to test the property contentBody
-      //var instance = new VersifyClient.MessageCreate();
+      //var instance = new VersifylabsVersifyClient.MessageCreate();
       //expect(instance).to.be();
     });
 
     it('should have the property metadata (base name: "metadata")', function() {
       // uncomment below and update the code to test the property metadata
-      //var instance = new VersifyClient.MessageCreate();
+      //var instance = new VersifylabsVersifyClient.MessageCreate();
       //expect(instance).to.be();
     });
 

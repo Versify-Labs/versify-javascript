@@ -12,8 +12,8 @@
  */
 
 import ApiClient from '../ApiClient';
+import Address1 from './Address1';
 import ContactStatus from './ContactStatus';
-import Location1 from './Location1';
 import Name from './Name';
 import SocialProfile from './SocialProfile';
 
@@ -62,6 +62,9 @@ class Contact {
             if (data.hasOwnProperty('account')) {
                 obj['account'] = ApiClient.convertToType(data['account'], 'String');
             }
+            if (data.hasOwnProperty('address')) {
+                obj['address'] = Address1.constructFromObject(data['address']);
+            }
             if (data.hasOwnProperty('avatar')) {
                 obj['avatar'] = ApiClient.convertToType(data['avatar'], 'String');
             }
@@ -76,9 +79,6 @@ class Contact {
             }
             if (data.hasOwnProperty('last_seen')) {
                 obj['last_seen'] = ApiClient.convertToType(data['last_seen'], 'Number');
-            }
-            if (data.hasOwnProperty('location')) {
-                obj['location'] = Location1.constructFromObject(data['location']);
             }
             if (data.hasOwnProperty('metadata')) {
                 obj['metadata'] = ApiClient.convertToType(data['metadata'], Object);
@@ -128,6 +128,10 @@ class Contact {
         if (data['account'] && !(typeof data['account'] === 'string' || data['account'] instanceof String)) {
             throw new Error("Expected the field `account` to be a primitive type in the JSON string but got " + data['account']);
         }
+        // validate the optional field `address`
+        if (data['address']) { // data not null
+          Address1.validateJSON(data['address']);
+        }
         // ensure the json data is a string
         if (data['avatar'] && !(typeof data['avatar'] === 'string' || data['avatar'] instanceof String)) {
             throw new Error("Expected the field `avatar` to be a primitive type in the JSON string but got " + data['avatar']);
@@ -139,10 +143,6 @@ class Contact {
         // ensure the json data is a string
         if (data['email'] && !(typeof data['email'] === 'string' || data['email'] instanceof String)) {
             throw new Error("Expected the field `email` to be a primitive type in the JSON string but got " + data['email']);
-        }
-        // validate the optional field `location`
-        if (data['location']) { // data not null
-          Location1.validateJSON(data['location']);
         }
         // validate the optional field `name`
         if (data['name']) { // data not null
@@ -196,6 +196,11 @@ Contact.prototype['_id'] = undefined;
 Contact.prototype['account'] = undefined;
 
 /**
+ * @member {module:model/Address1} address
+ */
+Contact.prototype['address'] = undefined;
+
+/**
  * The URL of the contact's avatar
  * @member {String} avatar
  */
@@ -224,11 +229,6 @@ Contact.prototype['email'] = undefined;
  * @member {Number} last_seen
  */
 Contact.prototype['last_seen'] = undefined;
-
-/**
- * @member {module:model/Location1} location
- */
-Contact.prototype['location'] = undefined;
 
 /**
  * Arbitrary metadata associated with the object

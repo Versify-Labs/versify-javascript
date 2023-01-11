@@ -1,4 +1,4 @@
-# VersifyClient.ActionType
+# VersifylabsVersifyClient.ActionType
 
 ## Enum
 

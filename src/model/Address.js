@@ -14,22 +14,22 @@
 import ApiClient from '../ApiClient';
 
 /**
- * The Location model module.
- * @module model/Location
+ * The Address model module.
+ * @module model/Address
  * @version 1.0.0
  */
-class Location {
+class Address {
     /**
-     * Constructs a new <code>Location</code>.
+     * Constructs a new <code>Address</code>.
      * A location for a person.
-     * @alias module:model/Location
+     * @alias module:model/Address
      * @param city {String} The city of the location
      * @param country {String} The country of the location
      * @param region {String} The region of the location
      */
     constructor(city, country, region) { 
         
-        Location.initialize(this, city, country, region);
+        Address.initialize(this, city, country, region);
     }
 
     /**
@@ -44,15 +44,15 @@ class Location {
     }
 
     /**
-     * Constructs a <code>Location</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>Address</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/Location} obj Optional instance to populate.
-     * @return {module:model/Location} The populated <code>Location</code> instance.
+     * @param {module:model/Address} obj Optional instance to populate.
+     * @return {module:model/Address} The populated <code>Address</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new Location();
+            obj = obj || new Address();
 
             if (data.hasOwnProperty('city')) {
                 obj['city'] = ApiClient.convertToType(data['city'], 'String');
@@ -68,13 +68,13 @@ class Location {
     }
 
     /**
-     * Validates the JSON data with respect to <code>Location</code>.
+     * Validates the JSON data with respect to <code>Address</code>.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>Location</code>.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>Address</code>.
      */
     static validateJSON(data) {
         // check to make sure all required properties are present in the JSON string
-        for (const property of Location.RequiredProperties) {
+        for (const property of Address.RequiredProperties) {
             if (!data[property]) {
                 throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
             }
@@ -98,30 +98,30 @@ class Location {
 
 }
 
-Location.RequiredProperties = ["city", "country", "region"];
+Address.RequiredProperties = ["city", "country", "region"];
 
 /**
  * The city of the location
  * @member {String} city
  */
-Location.prototype['city'] = undefined;
+Address.prototype['city'] = undefined;
 
 /**
  * The country of the location
  * @member {String} country
  */
-Location.prototype['country'] = undefined;
+Address.prototype['country'] = undefined;
 
 /**
  * The region of the location
  * @member {String} region
  */
-Location.prototype['region'] = undefined;
+Address.prototype['region'] = undefined;
 
 
 
 
 
 
-export default Location;
+export default Address;
 

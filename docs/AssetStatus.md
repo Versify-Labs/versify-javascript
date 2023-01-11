@@ -1,4 +1,4 @@
-# VersifyClient.AssetStatus
+# VersifylabsVersifyClient.AssetStatus
 
 ## Enum
 

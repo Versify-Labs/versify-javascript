@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.PersonName();
+    instance = new VersifylabsVersifyClient.PersonName();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('PersonName', function() {
     it('should create an instance of PersonName', function() {
       // uncomment below and update the code to test PersonName
-      //var instance = new VersifyClient.PersonName();
-      //expect(instance).to.be.a(VersifyClient.PersonName);
+      //var instance = new VersifylabsVersifyClient.PersonName();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.PersonName);
     });
 
     it('should have the property firstName (base name: "first_name")', function() {
       // uncomment below and update the code to test the property firstName
-      //var instance = new VersifyClient.PersonName();
+      //var instance = new VersifylabsVersifyClient.PersonName();
       //expect(instance).to.be();
     });
 
     it('should have the property lastName (base name: "last_name")', function() {
       // uncomment below and update the code to test the property lastName
-      //var instance = new VersifyClient.PersonName();
+      //var instance = new VersifylabsVersifyClient.PersonName();
       //expect(instance).to.be();
     });
 
     it('should have the property middleName (base name: "middle_name")', function() {
       // uncomment below and update the code to test the property middleName
-      //var instance = new VersifyClient.PersonName();
+      //var instance = new VersifylabsVersifyClient.PersonName();
       //expect(instance).to.be();
     });
 

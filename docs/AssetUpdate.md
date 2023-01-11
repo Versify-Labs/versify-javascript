@@ -1,4 +1,4 @@
-# VersifyClient.AssetUpdate
+# VersifylabsVersifyClient.AssetUpdate
 
 ## Properties
 

@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.Account2();
+    instance = new VersifylabsVersifyClient.Account2();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('Account2', function() {
     it('should create an instance of Account2', function() {
       // uncomment below and update the code to test Account2
-      //var instance = new VersifyClient.Account2();
-      //expect(instance).to.be.a(VersifyClient.Account2);
+      //var instance = new VersifylabsVersifyClient.Account2();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.Account2);
     });
 
     it('should have the property brand (base name: "brand")', function() {
       // uncomment below and update the code to test the property brand
-      //var instance = new VersifyClient.Account2();
+      //var instance = new VersifylabsVersifyClient.Account2();
       //expect(instance).to.be();
     });
 
     it('should have the property domain (base name: "domain")', function() {
       // uncomment below and update the code to test the property domain
-      //var instance = new VersifyClient.Account2();
+      //var instance = new VersifylabsVersifyClient.Account2();
       //expect(instance).to.be();
     });
 
     it('should have the property metadata (base name: "metadata")', function() {
       // uncomment below and update the code to test the property metadata
-      //var instance = new VersifyClient.Account2();
+      //var instance = new VersifylabsVersifyClient.Account2();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new VersifyClient.Account2();
+      //var instance = new VersifylabsVersifyClient.Account2();
       //expect(instance).to.be();
     });
 

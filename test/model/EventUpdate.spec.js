@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.VersifyClient);
+    factory(root.expect, root.VersifylabsVersifyClient);
   }
-}(this, function(expect, VersifyClient) {
+}(this, function(expect, VersifylabsVersifyClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new VersifyClient.EventUpdate();
+    instance = new VersifylabsVersifyClient.EventUpdate();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('EventUpdate', function() {
     it('should create an instance of EventUpdate', function() {
       // uncomment below and update the code to test EventUpdate
-      //var instance = new VersifyClient.EventUpdate();
-      //expect(instance).to.be.a(VersifyClient.EventUpdate);
+      //var instance = new VersifylabsVersifyClient.EventUpdate();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.EventUpdate);
     });
 
     it('should have the property metadata (base name: "metadata")', function() {
       // uncomment below and update the code to test the property metadata
-      //var instance = new VersifyClient.EventUpdate();
+      //var instance = new VersifylabsVersifyClient.EventUpdate();
       //expect(instance).to.be();
     });
 

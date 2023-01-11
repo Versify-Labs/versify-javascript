@@ -1,5 +1,5 @@
 {
-  "name": "versify-client",
+  "name": "@versifylabs/versify-client",
   "version": "1.0.0",
   "description": "Versify API",
   "license": "Unlicense",
