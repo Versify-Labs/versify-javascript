@@ -105,8 +105,11 @@ var defaultClient = VersifylabsVersifyClient.ApiClient.instance;
 var HTTPBearer = defaultClient.authentications['HTTPBearer'];
 HTTPBearer.accessToken = "YOUR ACCESS TOKEN"
 
-var api = new VersifylabsVersifyClient.AccountsApi()
-var account1 = {"domain":"acme.com","name":"Acme Corp"}; // {Account1} 
+var api = new VersifylabsVersifyClient.AssetsApi()
+var asset1 = {"description":"Acme Corp is a fictional company in the Looney Tunes universe.","image":"https://acme.com/logo.png","name":"Acme Corp"}; // {Asset1} 
+var opts = {
+  'versifyAccount': act_123123123131231231 // {String} Versify Account ID
+};
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -114,7 +117,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-api.createAccountV2AccountsPost(account1, callback);
+api.createAssetV2AssetsPost(asset1, opts, callback);
 
 ```
 
@@ -124,36 +127,47 @@ All URIs are relative to *http://localhost*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*VersifylabsVersifyClient.AccountsApi* | [**createAccountV2AccountsPost**](docs/AccountsApi.md#createAccountV2AccountsPost) | **POST** /v2/accounts | Create an account
-*VersifylabsVersifyClient.AccountsApi* | [**deleteAccountV2AccountsAccountIdDelete**](docs/AccountsApi.md#deleteAccountV2AccountsAccountIdDelete) | **DELETE** /v2/accounts/{account_id} | Delete an account
-*VersifylabsVersifyClient.AccountsApi* | [**getAccountMetricsV2AccountsAccountIdMetricsGet**](docs/AccountsApi.md#getAccountMetricsV2AccountsAccountIdMetricsGet) | **GET** /v2/accounts/{account_id}/metrics | Get account metrics
-*VersifylabsVersifyClient.AccountsApi* | [**getAccountV2AccountsAccountIdGet**](docs/AccountsApi.md#getAccountV2AccountsAccountIdGet) | **GET** /v2/accounts/{account_id} | Get an account
-*VersifylabsVersifyClient.AccountsApi* | [**listAccountsV2AccountsGet**](docs/AccountsApi.md#listAccountsV2AccountsGet) | **GET** /v2/accounts | List accounts
-*VersifylabsVersifyClient.AccountsApi* | [**updateAccountV2AccountsAccountIdPut**](docs/AccountsApi.md#updateAccountV2AccountsAccountIdPut) | **PUT** /v2/accounts/{account_id} | Update an account
+*VersifylabsVersifyClient.AssetsApi* | [**createAssetV2AssetsPost**](docs/AssetsApi.md#createAssetV2AssetsPost) | **POST** /v2/assets | Create asset
+*VersifylabsVersifyClient.AssetsApi* | [**createAssetV2AssetsPost_0**](docs/AssetsApi.md#createAssetV2AssetsPost_0) | **POST** /v2/assets | Create asset
+*VersifylabsVersifyClient.AssetsApi* | [**deleteAssetV2AssetsAssetIdDelete**](docs/AssetsApi.md#deleteAssetV2AssetsAssetIdDelete) | **DELETE** /v2/assets/{asset_id} | Delete asset
+*VersifylabsVersifyClient.AssetsApi* | [**deleteAssetV2AssetsAssetIdDelete_0**](docs/AssetsApi.md#deleteAssetV2AssetsAssetIdDelete_0) | **DELETE** /v2/assets/{asset_id} | Delete asset
+*VersifylabsVersifyClient.AssetsApi* | [**getAssetV2AssetsAssetIdGet**](docs/AssetsApi.md#getAssetV2AssetsAssetIdGet) | **GET** /v2/assets/{asset_id} | Get asset
+*VersifylabsVersifyClient.AssetsApi* | [**getAssetV2AssetsAssetIdGet_0**](docs/AssetsApi.md#getAssetV2AssetsAssetIdGet_0) | **GET** /v2/assets/{asset_id} | Get asset
+*VersifylabsVersifyClient.AssetsApi* | [**listAssetsV2AssetsGet**](docs/AssetsApi.md#listAssetsV2AssetsGet) | **GET** /v2/assets | List assets
+*VersifylabsVersifyClient.AssetsApi* | [**listAssetsV2AssetsGet_0**](docs/AssetsApi.md#listAssetsV2AssetsGet_0) | **GET** /v2/assets | List assets
+*VersifylabsVersifyClient.AssetsApi* | [**searchAssetsV2AssetsSearchPost**](docs/AssetsApi.md#searchAssetsV2AssetsSearchPost) | **POST** /v2/assets/search | Search assets
+*VersifylabsVersifyClient.AssetsApi* | [**searchAssetsV2AssetsSearchPost_0**](docs/AssetsApi.md#searchAssetsV2AssetsSearchPost_0) | **POST** /v2/assets/search | Search assets
+*VersifylabsVersifyClient.AssetsApi* | [**updateAssetV2AssetsAssetIdPut**](docs/AssetsApi.md#updateAssetV2AssetsAssetIdPut) | **PUT** /v2/assets/{asset_id} | Update asset
+*VersifylabsVersifyClient.AssetsApi* | [**updateAssetV2AssetsAssetIdPut_0**](docs/AssetsApi.md#updateAssetV2AssetsAssetIdPut_0) | **PUT** /v2/assets/{asset_id} | Update asset
 
 
 ## Documentation for Models
 
  - [VersifylabsVersifyClient.Account](docs/Account.md)
- - [VersifylabsVersifyClient.Account1](docs/Account1.md)
- - [VersifylabsVersifyClient.Account2](docs/Account2.md)
- - [VersifylabsVersifyClient.AccountCreate](docs/AccountCreate.md)
- - [VersifylabsVersifyClient.AccountMetrics](docs/AccountMetrics.md)
  - [VersifylabsVersifyClient.AccountStatus](docs/AccountStatus.md)
- - [VersifylabsVersifyClient.AccountUpdate](docs/AccountUpdate.md)
  - [VersifylabsVersifyClient.ApiDeleteResponse](docs/ApiDeleteResponse.md)
  - [VersifylabsVersifyClient.ApiListResponse](docs/ApiListResponse.md)
+ - [VersifylabsVersifyClient.ApiSearchResponse](docs/ApiSearchResponse.md)
  - [VersifylabsVersifyClient.App](docs/App.md)
+ - [VersifylabsVersifyClient.Asset](docs/Asset.md)
+ - [VersifylabsVersifyClient.Asset1](docs/Asset1.md)
+ - [VersifylabsVersifyClient.AssetCreate](docs/AssetCreate.md)
+ - [VersifylabsVersifyClient.AssetStatus](docs/AssetStatus.md)
+ - [VersifylabsVersifyClient.AssetUpdate](docs/AssetUpdate.md)
  - [VersifylabsVersifyClient.Billing](docs/Billing.md)
  - [VersifylabsVersifyClient.BillingSettings](docs/BillingSettings.md)
+ - [VersifylabsVersifyClient.BlockchainType](docs/BlockchainType.md)
  - [VersifylabsVersifyClient.Brand](docs/Brand.md)
- - [VersifylabsVersifyClient.BrandSettings](docs/BrandSettings.md)
  - [VersifylabsVersifyClient.BrandingSettings](docs/BrandingSettings.md)
+ - [VersifylabsVersifyClient.Contact](docs/Contact.md)
  - [VersifylabsVersifyClient.HTTPValidationError](docs/HTTPValidationError.md)
  - [VersifylabsVersifyClient.LocationInner](docs/LocationInner.md)
  - [VersifylabsVersifyClient.Operator](docs/Operator.md)
  - [VersifylabsVersifyClient.Query](docs/Query.md)
+ - [VersifylabsVersifyClient.Query1](docs/Query1.md)
  - [VersifylabsVersifyClient.QueryValue](docs/QueryValue.md)
+ - [VersifylabsVersifyClient.SearchContacts](docs/SearchContacts.md)
+ - [VersifylabsVersifyClient.SearchQuery](docs/SearchQuery.md)
  - [VersifylabsVersifyClient.SubscriptionPlan](docs/SubscriptionPlan.md)
  - [VersifylabsVersifyClient.SubscriptionStatus](docs/SubscriptionStatus.md)
  - [VersifylabsVersifyClient.TeamMember](docs/TeamMember.md)

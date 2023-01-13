@@ -14,32 +14,37 @@
 
 import ApiClient from './ApiClient';
 import Account from './model/Account';
-import Account1 from './model/Account1';
-import Account2 from './model/Account2';
-import AccountCreate from './model/AccountCreate';
-import AccountMetrics from './model/AccountMetrics';
 import AccountStatus from './model/AccountStatus';
-import AccountUpdate from './model/AccountUpdate';
 import ApiDeleteResponse from './model/ApiDeleteResponse';
 import ApiListResponse from './model/ApiListResponse';
+import ApiSearchResponse from './model/ApiSearchResponse';
 import App from './model/App';
+import Asset from './model/Asset';
+import Asset1 from './model/Asset1';
+import AssetCreate from './model/AssetCreate';
+import AssetStatus from './model/AssetStatus';
+import AssetUpdate from './model/AssetUpdate';
 import Billing from './model/Billing';
 import BillingSettings from './model/BillingSettings';
+import BlockchainType from './model/BlockchainType';
 import Brand from './model/Brand';
-import BrandSettings from './model/BrandSettings';
 import BrandingSettings from './model/BrandingSettings';
+import Contact from './model/Contact';
 import HTTPValidationError from './model/HTTPValidationError';
 import LocationInner from './model/LocationInner';
 import Operator from './model/Operator';
 import Query from './model/Query';
+import Query1 from './model/Query1';
 import QueryValue from './model/QueryValue';
+import SearchContacts from './model/SearchContacts';
+import SearchQuery from './model/SearchQuery';
 import SubscriptionPlan from './model/SubscriptionPlan';
 import SubscriptionStatus from './model/SubscriptionStatus';
 import TeamMember from './model/TeamMember';
 import TeamMemberRole from './model/TeamMemberRole';
 import ValidationError from './model/ValidationError';
 import WalletPosition from './model/WalletPosition';
-import AccountsApi from './api/AccountsApi';
+import AssetsApi from './api/AssetsApi';
 
 
 /**
@@ -87,40 +92,10 @@ export {
     Account,
 
     /**
-     * The Account1 model constructor.
-     * @property {module:model/Account1}
-     */
-    Account1,
-
-    /**
-     * The Account2 model constructor.
-     * @property {module:model/Account2}
-     */
-    Account2,
-
-    /**
-     * The AccountCreate model constructor.
-     * @property {module:model/AccountCreate}
-     */
-    AccountCreate,
-
-    /**
-     * The AccountMetrics model constructor.
-     * @property {module:model/AccountMetrics}
-     */
-    AccountMetrics,
-
-    /**
      * The AccountStatus model constructor.
      * @property {module:model/AccountStatus}
      */
     AccountStatus,
-
-    /**
-     * The AccountUpdate model constructor.
-     * @property {module:model/AccountUpdate}
-     */
-    AccountUpdate,
 
     /**
      * The ApiDeleteResponse model constructor.
@@ -135,10 +110,46 @@ export {
     ApiListResponse,
 
     /**
+     * The ApiSearchResponse model constructor.
+     * @property {module:model/ApiSearchResponse}
+     */
+    ApiSearchResponse,
+
+    /**
      * The App model constructor.
      * @property {module:model/App}
      */
     App,
+
+    /**
+     * The Asset model constructor.
+     * @property {module:model/Asset}
+     */
+    Asset,
+
+    /**
+     * The Asset1 model constructor.
+     * @property {module:model/Asset1}
+     */
+    Asset1,
+
+    /**
+     * The AssetCreate model constructor.
+     * @property {module:model/AssetCreate}
+     */
+    AssetCreate,
+
+    /**
+     * The AssetStatus model constructor.
+     * @property {module:model/AssetStatus}
+     */
+    AssetStatus,
+
+    /**
+     * The AssetUpdate model constructor.
+     * @property {module:model/AssetUpdate}
+     */
+    AssetUpdate,
 
     /**
      * The Billing model constructor.
@@ -153,22 +164,28 @@ export {
     BillingSettings,
 
     /**
+     * The BlockchainType model constructor.
+     * @property {module:model/BlockchainType}
+     */
+    BlockchainType,
+
+    /**
      * The Brand model constructor.
      * @property {module:model/Brand}
      */
     Brand,
 
     /**
-     * The BrandSettings model constructor.
-     * @property {module:model/BrandSettings}
-     */
-    BrandSettings,
-
-    /**
      * The BrandingSettings model constructor.
      * @property {module:model/BrandingSettings}
      */
     BrandingSettings,
+
+    /**
+     * The Contact model constructor.
+     * @property {module:model/Contact}
+     */
+    Contact,
 
     /**
      * The HTTPValidationError model constructor.
@@ -195,10 +212,28 @@ export {
     Query,
 
     /**
+     * The Query1 model constructor.
+     * @property {module:model/Query1}
+     */
+    Query1,
+
+    /**
      * The QueryValue model constructor.
      * @property {module:model/QueryValue}
      */
     QueryValue,
+
+    /**
+     * The SearchContacts model constructor.
+     * @property {module:model/SearchContacts}
+     */
+    SearchContacts,
+
+    /**
+     * The SearchQuery model constructor.
+     * @property {module:model/SearchQuery}
+     */
+    SearchQuery,
 
     /**
      * The SubscriptionPlan model constructor.
@@ -237,8 +272,8 @@ export {
     WalletPosition,
 
     /**
-    * The AccountsApi service constructor.
-    * @property {module:api/AccountsApi}
+    * The AssetsApi service constructor.
+    * @property {module:api/AssetsApi}
     */
-    AccountsApi
+    AssetsApi
 };

@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new VersifylabsVersifyClient.AccountUpdate();
+    instance = new VersifylabsVersifyClient.ApiSearchResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,34 +47,40 @@
       object[property] = value;
   }
 
-  describe('AccountUpdate', function() {
-    it('should create an instance of AccountUpdate', function() {
-      // uncomment below and update the code to test AccountUpdate
-      //var instance = new VersifylabsVersifyClient.AccountUpdate();
-      //expect(instance).to.be.a(VersifylabsVersifyClient.AccountUpdate);
+  describe('ApiSearchResponse', function() {
+    it('should create an instance of ApiSearchResponse', function() {
+      // uncomment below and update the code to test ApiSearchResponse
+      //var instance = new VersifylabsVersifyClient.ApiSearchResponse();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.ApiSearchResponse);
     });
 
-    it('should have the property brand (base name: "brand")', function() {
-      // uncomment below and update the code to test the property brand
-      //var instance = new VersifylabsVersifyClient.AccountUpdate();
+    it('should have the property count (base name: "count")', function() {
+      // uncomment below and update the code to test the property count
+      //var instance = new VersifylabsVersifyClient.ApiSearchResponse();
       //expect(instance).to.be();
     });
 
-    it('should have the property domain (base name: "domain")', function() {
-      // uncomment below and update the code to test the property domain
-      //var instance = new VersifylabsVersifyClient.AccountUpdate();
+    it('should have the property data (base name: "data")', function() {
+      // uncomment below and update the code to test the property data
+      //var instance = new VersifylabsVersifyClient.ApiSearchResponse();
       //expect(instance).to.be();
     });
 
-    it('should have the property metadata (base name: "metadata")', function() {
-      // uncomment below and update the code to test the property metadata
-      //var instance = new VersifylabsVersifyClient.AccountUpdate();
+    it('should have the property hasMore (base name: "has_more")', function() {
+      // uncomment below and update the code to test the property hasMore
+      //var instance = new VersifylabsVersifyClient.ApiSearchResponse();
       //expect(instance).to.be();
     });
 
-    it('should have the property name (base name: "name")', function() {
-      // uncomment below and update the code to test the property name
-      //var instance = new VersifylabsVersifyClient.AccountUpdate();
+    it('should have the property object (base name: "object")', function() {
+      // uncomment below and update the code to test the property object
+      //var instance = new VersifylabsVersifyClient.ApiSearchResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property url (base name: "url")', function() {
+      // uncomment below and update the code to test the property url
+      //var instance = new VersifylabsVersifyClient.ApiSearchResponse();
       //expect(instance).to.be();
     });
 

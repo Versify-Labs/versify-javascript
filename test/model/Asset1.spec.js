@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new VersifylabsVersifyClient.AccountCreate();
+    instance = new VersifylabsVersifyClient.Asset1();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,28 +47,40 @@
       object[property] = value;
   }
 
-  describe('AccountCreate', function() {
-    it('should create an instance of AccountCreate', function() {
-      // uncomment below and update the code to test AccountCreate
-      //var instance = new VersifylabsVersifyClient.AccountCreate();
-      //expect(instance).to.be.a(VersifylabsVersifyClient.AccountCreate);
+  describe('Asset1', function() {
+    it('should create an instance of Asset1', function() {
+      // uncomment below and update the code to test Asset1
+      //var instance = new VersifylabsVersifyClient.Asset1();
+      //expect(instance).to.be.a(VersifylabsVersifyClient.Asset1);
     });
 
-    it('should have the property domain (base name: "domain")', function() {
-      // uncomment below and update the code to test the property domain
-      //var instance = new VersifylabsVersifyClient.AccountCreate();
+    it('should have the property description (base name: "description")', function() {
+      // uncomment below and update the code to test the property description
+      //var instance = new VersifylabsVersifyClient.Asset1();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property image (base name: "image")', function() {
+      // uncomment below and update the code to test the property image
+      //var instance = new VersifylabsVersifyClient.Asset1();
       //expect(instance).to.be();
     });
 
     it('should have the property metadata (base name: "metadata")', function() {
       // uncomment below and update the code to test the property metadata
-      //var instance = new VersifylabsVersifyClient.AccountCreate();
+      //var instance = new VersifylabsVersifyClient.Asset1();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new VersifylabsVersifyClient.AccountCreate();
+      //var instance = new VersifylabsVersifyClient.Asset1();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property properties (base name: "properties")', function() {
+      // uncomment below and update the code to test the property properties
+      //var instance = new VersifylabsVersifyClient.Asset1();
       //expect(instance).to.be();
     });
 
