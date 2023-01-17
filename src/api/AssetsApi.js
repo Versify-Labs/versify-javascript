@@ -17,8 +17,9 @@ import ApiDeleteResponse from '../model/ApiDeleteResponse';
 import ApiListResponse from '../model/ApiListResponse';
 import ApiSearchResponse from '../model/ApiSearchResponse';
 import Asset from '../model/Asset';
-import Asset1 from '../model/Asset1';
-import Contact from '../model/Contact';
+import AssetCreate from '../model/AssetCreate';
+import AssetUpdate from '../model/AssetUpdate';
+import Contact1 from '../model/Contact1';
 import HTTPValidationError from '../model/HTTPValidationError';
 import SearchContacts from '../model/SearchContacts';
 
@@ -45,25 +46,25 @@ export default class AssetsApi {
      * Callback function to receive the result of the createAssetV2AssetsPost operation.
      * @callback module:api/AssetsApi~createAssetV2AssetsPostCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/Asset} data The data returned by the service call.
+     * @param {module:model/AssetCreate} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Create asset
      * Create a asset
-     * @param {module:model/Asset1} asset1 
+     * @param {module:model/AssetCreate} assetCreate 
      * @param {Object} opts Optional parameters
      * @param {String} opts.versifyAccount Versify Account ID
      * @param {module:api/AssetsApi~createAssetV2AssetsPostCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/Asset}
+     * data is of type: {@link module:model/AssetCreate}
      */
-    createAssetV2AssetsPost(asset1, opts, callback) {
+    createAssetV2AssetsPost(assetCreate, opts, callback) {
       opts = opts || {};
-      let postBody = asset1;
-      // verify the required parameter 'asset1' is set
-      if (asset1 === undefined || asset1 === null) {
-        throw new Error("Missing the required parameter 'asset1' when calling createAssetV2AssetsPost");
+      let postBody = assetCreate;
+      // verify the required parameter 'assetCreate' is set
+      if (assetCreate === undefined || assetCreate === null) {
+        throw new Error("Missing the required parameter 'assetCreate' when calling createAssetV2AssetsPost");
       }
 
       let pathParams = {
@@ -79,7 +80,7 @@ export default class AssetsApi {
       let authNames = ['HTTPBearer'];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
-      let returnType = Asset;
+      let returnType = AssetCreate;
       return this.apiClient.callApi(
         '/v2/assets', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -91,25 +92,25 @@ export default class AssetsApi {
      * Callback function to receive the result of the createAssetV2AssetsPost_0 operation.
      * @callback module:api/AssetsApi~createAssetV2AssetsPost_0Callback
      * @param {String} error Error message, if any.
-     * @param {module:model/Asset} data The data returned by the service call.
+     * @param {module:model/AssetCreate} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Create asset
      * Create a asset
-     * @param {module:model/Asset1} asset1 
+     * @param {module:model/AssetCreate} assetCreate 
      * @param {Object} opts Optional parameters
      * @param {String} opts.versifyAccount Versify Account ID
      * @param {module:api/AssetsApi~createAssetV2AssetsPost_0Callback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/Asset}
+     * data is of type: {@link module:model/AssetCreate}
      */
-    createAssetV2AssetsPost_0(asset1, opts, callback) {
+    createAssetV2AssetsPost_0(assetCreate, opts, callback) {
       opts = opts || {};
-      let postBody = asset1;
-      // verify the required parameter 'asset1' is set
-      if (asset1 === undefined || asset1 === null) {
-        throw new Error("Missing the required parameter 'asset1' when calling createAssetV2AssetsPost_0");
+      let postBody = assetCreate;
+      // verify the required parameter 'assetCreate' is set
+      if (assetCreate === undefined || assetCreate === null) {
+        throw new Error("Missing the required parameter 'assetCreate' when calling createAssetV2AssetsPost_0");
       }
 
       let pathParams = {
@@ -125,7 +126,7 @@ export default class AssetsApi {
       let authNames = ['HTTPBearer'];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
-      let returnType = Asset;
+      let returnType = AssetCreate;
       return this.apiClient.callApi(
         '/v2/assets', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -515,7 +516,7 @@ export default class AssetsApi {
      * Callback function to receive the result of the updateAssetV2AssetsAssetIdPut operation.
      * @callback module:api/AssetsApi~updateAssetV2AssetsAssetIdPutCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/Asset} data The data returned by the service call.
+     * @param {module:model/AssetUpdate} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -523,22 +524,22 @@ export default class AssetsApi {
      * Update asset
      * Update an asset
      * @param {String} assetId Unique identifier of the contact
-     * @param {module:model/Contact} contact 
+     * @param {module:model/Contact1} contact1 
      * @param {Object} opts Optional parameters
      * @param {String} opts.versifyAccount Versify Account ID
      * @param {module:api/AssetsApi~updateAssetV2AssetsAssetIdPutCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/Asset}
+     * data is of type: {@link module:model/AssetUpdate}
      */
-    updateAssetV2AssetsAssetIdPut(assetId, contact, opts, callback) {
+    updateAssetV2AssetsAssetIdPut(assetId, contact1, opts, callback) {
       opts = opts || {};
-      let postBody = contact;
+      let postBody = contact1;
       // verify the required parameter 'assetId' is set
       if (assetId === undefined || assetId === null) {
         throw new Error("Missing the required parameter 'assetId' when calling updateAssetV2AssetsAssetIdPut");
       }
-      // verify the required parameter 'contact' is set
-      if (contact === undefined || contact === null) {
-        throw new Error("Missing the required parameter 'contact' when calling updateAssetV2AssetsAssetIdPut");
+      // verify the required parameter 'contact1' is set
+      if (contact1 === undefined || contact1 === null) {
+        throw new Error("Missing the required parameter 'contact1' when calling updateAssetV2AssetsAssetIdPut");
       }
 
       let pathParams = {
@@ -555,7 +556,7 @@ export default class AssetsApi {
       let authNames = ['HTTPBearer'];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
-      let returnType = Asset;
+      let returnType = AssetUpdate;
       return this.apiClient.callApi(
         '/v2/assets/{asset_id}', 'PUT',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -567,7 +568,7 @@ export default class AssetsApi {
      * Callback function to receive the result of the updateAssetV2AssetsAssetIdPut_0 operation.
      * @callback module:api/AssetsApi~updateAssetV2AssetsAssetIdPut_0Callback
      * @param {String} error Error message, if any.
-     * @param {module:model/Asset} data The data returned by the service call.
+     * @param {module:model/AssetUpdate} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -575,22 +576,22 @@ export default class AssetsApi {
      * Update asset
      * Update an asset
      * @param {String} assetId Unique identifier of the contact
-     * @param {module:model/Contact} contact 
+     * @param {module:model/Contact1} contact1 
      * @param {Object} opts Optional parameters
      * @param {String} opts.versifyAccount Versify Account ID
      * @param {module:api/AssetsApi~updateAssetV2AssetsAssetIdPut_0Callback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/Asset}
+     * data is of type: {@link module:model/AssetUpdate}
      */
-    updateAssetV2AssetsAssetIdPut_0(assetId, contact, opts, callback) {
+    updateAssetV2AssetsAssetIdPut_0(assetId, contact1, opts, callback) {
       opts = opts || {};
-      let postBody = contact;
+      let postBody = contact1;
       // verify the required parameter 'assetId' is set
       if (assetId === undefined || assetId === null) {
         throw new Error("Missing the required parameter 'assetId' when calling updateAssetV2AssetsAssetIdPut_0");
       }
-      // verify the required parameter 'contact' is set
-      if (contact === undefined || contact === null) {
-        throw new Error("Missing the required parameter 'contact' when calling updateAssetV2AssetsAssetIdPut_0");
+      // verify the required parameter 'contact1' is set
+      if (contact1 === undefined || contact1 === null) {
+        throw new Error("Missing the required parameter 'contact1' when calling updateAssetV2AssetsAssetIdPut_0");
       }
 
       let pathParams = {
@@ -607,7 +608,7 @@ export default class AssetsApi {
       let authNames = ['HTTPBearer'];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
-      let returnType = Asset;
+      let returnType = AssetUpdate;
       return this.apiClient.callApi(
         '/v2/assets/{asset_id}', 'PUT',
         pathParams, queryParams, headerParams, formParams, postBody,

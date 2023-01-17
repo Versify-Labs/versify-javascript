@@ -54,6 +54,24 @@
       //expect(instance).to.be.a(VersifylabsVersifyClient.AssetUpdate);
     });
 
+    it('should have the property active (base name: "active")', function() {
+      // uncomment below and update the code to test the property active
+      //var instance = new VersifylabsVersifyClient.AssetUpdate();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property created (base name: "created")', function() {
+      // uncomment below and update the code to test the property created
+      //var instance = new VersifylabsVersifyClient.AssetUpdate();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property _default (base name: "default")', function() {
+      // uncomment below and update the code to test the property _default
+      //var instance = new VersifylabsVersifyClient.AssetUpdate();
+      //expect(instance).to.be();
+    });
+
     it('should have the property description (base name: "description")', function() {
       // uncomment below and update the code to test the property description
       //var instance = new VersifylabsVersifyClient.AssetUpdate();
@@ -86,6 +104,12 @@
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
+      //var instance = new VersifylabsVersifyClient.AssetUpdate();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property updated (base name: "updated")', function() {
+      // uncomment below and update the code to test the property updated
       //var instance = new VersifylabsVersifyClient.AssetUpdate();
       //expect(instance).to.be();
     });

@@ -4,11 +4,15 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**description** | **String** | The description of the asset | [optional] 
-**image** | **String** | The image of the asset | [optional] 
-**metadata** | **Object** | Arbitrary metadata associated with the object | [optional] 
-**name** | **String** | The name of the asset. Displayed on third party apps. | [optional] 
-**properties** | **[Object]** | The properties of the asset. Displayed on third party apps. | [optional] 
-**status** | [**AssetStatus**](AssetStatus.md) | The status of the asset | [optional] 
+**active** | **Boolean** |  | [optional] [default to true]
+**created** | **Number** |  | [optional] 
+**_default** | **Boolean** |  | [optional] [default to false]
+**description** | **String** |  | 
+**image** | **String** |  | 
+**metadata** | **Object** |  | [optional] 
+**name** | **String** |  | 
+**properties** | **[Object]** |  | [optional] 
+**status** | [**AssetStatus**](AssetStatus.md) |  | [optional] 
+**updated** | **Number** |  | [optional] 
 
 

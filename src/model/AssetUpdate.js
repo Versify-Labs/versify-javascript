@@ -22,12 +22,15 @@ import AssetStatus from './AssetStatus';
 class AssetUpdate {
     /**
      * Constructs a new <code>AssetUpdate</code>.
-     * A asset update request body.
+     * Base Serializer class.  Almost ALWAYS should be used in conjunction with &#x60;fastapi_contrib.serializers.openapi.patch&#x60; decorator to correctly handle inherited model fields and OpenAPI Schema generation with &#x60;response_model&#x60;.  Responsible for sanitizing data &amp; converting JSON to &amp; from MongoDBModel.  Contains supplemental function, related to MongoDBModel, mostly proxied to corresponding functions inside model (ex. save, update)  Heavily uses &#x60;Meta&#x60; class for fine-tuning input &amp; output. Main fields are:     * exclude - set of fields that are excluded when serializing to dict                 and sanitizing list of dicts     * model - class of the MongoDBModel to use, inherits fields from it     * write_only_fields - set of fields that can be accepted in request,                           but excluded when serializing to dict     * read_only_fields - set of fields that cannot be accepted in request,                           but included when serializing to dict  Example usage:  .. code-block:: python      app &#x3D; FastAPI()       class SomeModel(MongoDBModel):         field1: str       @openapi.patch     class SomeSerializer(Serializer):         read_only1: str &#x3D; \&quot;const\&quot;         write_only2: int         not_visible: str &#x3D; \&quot;42\&quot;          class Meta:             model &#x3D; SomeModel             exclude &#x3D; {\&quot;not_visible\&quot;}             write_only_fields &#x3D; {\&quot;write_only2\&quot;}             read_only_fields &#x3D; {\&quot;read_only1\&quot;}       @app.get(\&quot;/\&quot;, response_model&#x3D;SomeSerializer.response_model)     async def root(serializer: SomeSerializer):         model_instance &#x3D; await serializer.save()         return model_instance.dict()  POST-ing to this route following JSON:  .. code-block:: json      {\&quot;read_only1\&quot;: \&quot;a\&quot;, \&quot;write_only2\&quot;: 123, \&quot;field1\&quot;: \&quot;b\&quot;}  Should return following response:  .. code-block:: json      {\&quot;id\&quot;: 1, \&quot;field1\&quot;: \&quot;b\&quot;, \&quot;read_only1\&quot;: \&quot;const\&quot;}
      * @alias module:model/AssetUpdate
+     * @param description {String} 
+     * @param image {String} 
+     * @param name {String} 
      */
-    constructor() { 
+    constructor(description, image, name) { 
         
-        AssetUpdate.initialize(this);
+        AssetUpdate.initialize(this, description, image, name);
     }
 
     /**
@@ -35,7 +38,10 @@ class AssetUpdate {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj) { 
+    static initialize(obj, description, image, name) { 
+        obj['description'] = description;
+        obj['image'] = image;
+        obj['name'] = name;
     }
 
     /**
@@ -49,6 +55,15 @@ class AssetUpdate {
         if (data) {
             obj = obj || new AssetUpdate();
 
+            if (data.hasOwnProperty('active')) {
+                obj['active'] = ApiClient.convertToType(data['active'], 'Boolean');
+            }
+            if (data.hasOwnProperty('created')) {
+                obj['created'] = ApiClient.convertToType(data['created'], 'Number');
+            }
+            if (data.hasOwnProperty('default')) {
+                obj['default'] = ApiClient.convertToType(data['default'], 'Boolean');
+            }
             if (data.hasOwnProperty('description')) {
                 obj['description'] = ApiClient.convertToType(data['description'], 'String');
             }
@@ -67,6 +82,9 @@ class AssetUpdate {
             if (data.hasOwnProperty('status')) {
                 obj['status'] = ApiClient.convertToType(data['status'], AssetStatus);
             }
+            if (data.hasOwnProperty('updated')) {
+                obj['updated'] = ApiClient.convertToType(data['updated'], 'Number');
+            }
         }
         return obj;
     }
@@ -77,6 +95,12 @@ class AssetUpdate {
      * @return {boolean} to indicate whether the JSON data is valid with respect to <code>AssetUpdate</code>.
      */
     static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of AssetUpdate.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
         // ensure the json data is a string
         if (data['description'] && !(typeof data['description'] === 'string' || data['description'] instanceof String)) {
             throw new Error("Expected the field `description` to be a primitive type in the JSON string but got " + data['description']);
@@ -104,43 +128,59 @@ class AssetUpdate {
 
 }
 
-
+AssetUpdate.RequiredProperties = ["description", "image", "name"];
 
 /**
- * The description of the asset
+ * @member {Boolean} active
+ * @default true
+ */
+AssetUpdate.prototype['active'] = true;
+
+/**
+ * @member {Number} created
+ */
+AssetUpdate.prototype['created'] = undefined;
+
+/**
+ * @member {Boolean} default
+ * @default false
+ */
+AssetUpdate.prototype['default'] = false;
+
+/**
  * @member {String} description
  */
 AssetUpdate.prototype['description'] = undefined;
 
 /**
- * The image of the asset
  * @member {String} image
  */
 AssetUpdate.prototype['image'] = undefined;
 
 /**
- * Arbitrary metadata associated with the object
  * @member {Object} metadata
  */
 AssetUpdate.prototype['metadata'] = undefined;
 
 /**
- * The name of the asset. Displayed on third party apps.
  * @member {String} name
  */
 AssetUpdate.prototype['name'] = undefined;
 
 /**
- * The properties of the asset. Displayed on third party apps.
  * @member {Array.<Object>} properties
  */
 AssetUpdate.prototype['properties'] = undefined;
 
 /**
- * The status of the asset
  * @member {module:model/AssetStatus} status
  */
 AssetUpdate.prototype['status'] = undefined;
+
+/**
+ * @member {Number} updated
+ */
+AssetUpdate.prototype['updated'] = undefined;
 
 
 

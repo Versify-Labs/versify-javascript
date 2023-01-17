@@ -12,7 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import AssetCreate from './AssetCreate';
+import ClaimCreate from './ClaimCreate';
 
 /**
  * The Asset1 model module.
@@ -24,14 +24,13 @@ class Asset1 {
      * Constructs a new <code>Asset1</code>.
      * Asset to create
      * @alias module:model/Asset1
-     * @implements module:model/AssetCreate
-     * @param description {String} The description of the asset
-     * @param image {String} The image of the asset
-     * @param name {String} The name of the asset. Displayed on third party apps.
+     * @implements module:model/ClaimCreate
+     * @param asset {String} The asset being claimed
+     * @param code {String} The code used to submit the claim.
      */
-    constructor(description, image, name) { 
-        AssetCreate.initialize(this, description, image, name);
-        Asset1.initialize(this, description, image, name);
+    constructor(asset, code) { 
+        ClaimCreate.initialize(this, asset, code);
+        Asset1.initialize(this, asset, code);
     }
 
     /**
@@ -39,10 +38,9 @@ class Asset1 {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, description, image, name) { 
-        obj['description'] = description;
-        obj['image'] = image;
-        obj['name'] = name;
+    static initialize(obj, asset, code) { 
+        obj['asset'] = asset;
+        obj['code'] = code;
     }
 
     /**
@@ -55,22 +53,19 @@ class Asset1 {
     static constructFromObject(data, obj) {
         if (data) {
             obj = obj || new Asset1();
-            AssetCreate.constructFromObject(data, obj);
+            ClaimCreate.constructFromObject(data, obj);
 
-            if (data.hasOwnProperty('description')) {
-                obj['description'] = ApiClient.convertToType(data['description'], 'String');
+            if (data.hasOwnProperty('asset')) {
+                obj['asset'] = ApiClient.convertToType(data['asset'], 'String');
             }
-            if (data.hasOwnProperty('image')) {
-                obj['image'] = ApiClient.convertToType(data['image'], 'String');
+            if (data.hasOwnProperty('code')) {
+                obj['code'] = ApiClient.convertToType(data['code'], 'String');
             }
             if (data.hasOwnProperty('metadata')) {
                 obj['metadata'] = ApiClient.convertToType(data['metadata'], Object);
             }
-            if (data.hasOwnProperty('name')) {
-                obj['name'] = ApiClient.convertToType(data['name'], 'String');
-            }
-            if (data.hasOwnProperty('properties')) {
-                obj['properties'] = ApiClient.convertToType(data['properties'], [Object]);
+            if (data.hasOwnProperty('quantity')) {
+                obj['quantity'] = ApiClient.convertToType(data['quantity'], 'Number');
             }
         }
         return obj;
@@ -89,20 +84,12 @@ class Asset1 {
             }
         }
         // ensure the json data is a string
-        if (data['description'] && !(typeof data['description'] === 'string' || data['description'] instanceof String)) {
-            throw new Error("Expected the field `description` to be a primitive type in the JSON string but got " + data['description']);
+        if (data['asset'] && !(typeof data['asset'] === 'string' || data['asset'] instanceof String)) {
+            throw new Error("Expected the field `asset` to be a primitive type in the JSON string but got " + data['asset']);
         }
         // ensure the json data is a string
-        if (data['image'] && !(typeof data['image'] === 'string' || data['image'] instanceof String)) {
-            throw new Error("Expected the field `image` to be a primitive type in the JSON string but got " + data['image']);
-        }
-        // ensure the json data is a string
-        if (data['name'] && !(typeof data['name'] === 'string' || data['name'] instanceof String)) {
-            throw new Error("Expected the field `name` to be a primitive type in the JSON string but got " + data['name']);
-        }
-        // ensure the json data is an array
-        if (!Array.isArray(data['properties'])) {
-            throw new Error("Expected the field `properties` to be an array in the JSON data but got " + data['properties']);
+        if (data['code'] && !(typeof data['code'] === 'string' || data['code'] instanceof String)) {
+            throw new Error("Expected the field `code` to be a primitive type in the JSON string but got " + data['code']);
         }
 
         return true;
@@ -111,19 +98,19 @@ class Asset1 {
 
 }
 
-Asset1.RequiredProperties = ["description", "image", "name"];
+Asset1.RequiredProperties = ["asset", "code"];
 
 /**
- * The description of the asset
- * @member {String} description
+ * The asset being claimed
+ * @member {String} asset
  */
-Asset1.prototype['description'] = undefined;
+Asset1.prototype['asset'] = undefined;
 
 /**
- * The image of the asset
- * @member {String} image
+ * The code used to submit the claim.
+ * @member {String} code
  */
-Asset1.prototype['image'] = undefined;
+Asset1.prototype['code'] = undefined;
 
 /**
  * Arbitrary metadata associated with the object
@@ -132,44 +119,35 @@ Asset1.prototype['image'] = undefined;
 Asset1.prototype['metadata'] = undefined;
 
 /**
- * The name of the asset. Displayed on third party apps.
- * @member {String} name
+ * The number of assets being claimed
+ * @member {Number} quantity
+ * @default 1
  */
-Asset1.prototype['name'] = undefined;
-
-/**
- * The properties of the asset. Displayed on third party apps.
- * @member {Array.<Object>} properties
- */
-Asset1.prototype['properties'] = undefined;
+Asset1.prototype['quantity'] = 1;
 
 
-// Implement AssetCreate interface:
+// Implement ClaimCreate interface:
 /**
- * The description of the asset
- * @member {String} description
+ * The asset being claimed
+ * @member {String} asset
  */
-AssetCreate.prototype['description'] = undefined;
+ClaimCreate.prototype['asset'] = undefined;
 /**
- * The image of the asset
- * @member {String} image
+ * The code used to submit the claim.
+ * @member {String} code
  */
-AssetCreate.prototype['image'] = undefined;
+ClaimCreate.prototype['code'] = undefined;
 /**
  * Arbitrary metadata associated with the object
  * @member {Object} metadata
  */
-AssetCreate.prototype['metadata'] = undefined;
+ClaimCreate.prototype['metadata'] = undefined;
 /**
- * The name of the asset. Displayed on third party apps.
- * @member {String} name
+ * The number of assets being claimed
+ * @member {Number} quantity
+ * @default 1
  */
-AssetCreate.prototype['name'] = undefined;
-/**
- * The properties of the asset. Displayed on third party apps.
- * @member {Array.<Object>} properties
- */
-AssetCreate.prototype['properties'] = undefined;
+ClaimCreate.prototype['quantity'] = 1;
 
 
 

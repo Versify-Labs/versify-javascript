@@ -21,7 +21,7 @@ Method | HTTP request | Description
 
 ## createAssetV2AssetsPost
 
-> Asset createAssetV2AssetsPost(asset1, opts)
+> AssetCreate createAssetV2AssetsPost(assetCreate, opts)
 
 Create asset
 
@@ -37,11 +37,11 @@ let HTTPBearer = defaultClient.authentications['HTTPBearer'];
 HTTPBearer.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new VersifylabsVersifyClient.AssetsApi();
-let asset1 = {"description":"Acme Corp is a fictional company in the Looney Tunes universe.","image":"https://acme.com/logo.png","name":"Acme Corp"}; // Asset1 | 
+let assetCreate = new VersifylabsVersifyClient.AssetCreate(); // AssetCreate | 
 let opts = {
   'versifyAccount': act_123123123131231231 // String | Versify Account ID
 };
-apiInstance.createAssetV2AssetsPost(asset1, opts, (error, data, response) => {
+apiInstance.createAssetV2AssetsPost(assetCreate, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -55,12 +55,12 @@ apiInstance.createAssetV2AssetsPost(asset1, opts, (error, data, response) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **asset1** | [**Asset1**](Asset1.md)|  | 
+ **assetCreate** | [**AssetCreate**](AssetCreate.md)|  | 
  **versifyAccount** | **String**| Versify Account ID | [optional] 
 
 ### Return type
 
-[**Asset**](Asset.md)
+[**AssetCreate**](AssetCreate.md)
 
 ### Authorization
 
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 
 ## createAssetV2AssetsPost_0
 
-> Asset createAssetV2AssetsPost_0(asset1, opts)
+> AssetCreate createAssetV2AssetsPost_0(assetCreate, opts)
 
 Create asset
 
@@ -90,11 +90,11 @@ let HTTPBearer = defaultClient.authentications['HTTPBearer'];
 HTTPBearer.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new VersifylabsVersifyClient.AssetsApi();
-let asset1 = {"description":"Acme Corp is a fictional company in the Looney Tunes universe.","image":"https://acme.com/logo.png","name":"Acme Corp"}; // Asset1 | 
+let assetCreate = new VersifylabsVersifyClient.AssetCreate(); // AssetCreate | 
 let opts = {
   'versifyAccount': act_123123123131231231 // String | Versify Account ID
 };
-apiInstance.createAssetV2AssetsPost_0(asset1, opts, (error, data, response) => {
+apiInstance.createAssetV2AssetsPost_0(assetCreate, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -108,12 +108,12 @@ apiInstance.createAssetV2AssetsPost_0(asset1, opts, (error, data, response) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **asset1** | [**Asset1**](Asset1.md)|  | 
+ **assetCreate** | [**AssetCreate**](AssetCreate.md)|  | 
  **versifyAccount** | **String**| Versify Account ID | [optional] 
 
 ### Return type
 
-[**Asset**](Asset.md)
+[**AssetCreate**](AssetCreate.md)
 
 ### Authorization
 
@@ -563,7 +563,7 @@ Name | Type | Description  | Notes
 
 ## updateAssetV2AssetsAssetIdPut
 
-> Asset updateAssetV2AssetsAssetIdPut(assetId, contact, opts)
+> AssetUpdate updateAssetV2AssetsAssetIdPut(assetId, contact1, opts)
 
 Update asset
 
@@ -580,11 +580,11 @@ HTTPBearer.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new VersifylabsVersifyClient.AssetsApi();
 let assetId = con_12121231231231321; // String | Unique identifier of the contact
-let contact = {"name":{"first_name":"Jane","last_name":"Doe"}}; // Contact | 
+let contact1 = {"name":{"first_name":"Jane","last_name":"Doe"}}; // Contact1 | 
 let opts = {
   'versifyAccount': act_123123123131231231 // String | Versify Account ID
 };
-apiInstance.updateAssetV2AssetsAssetIdPut(assetId, contact, opts, (error, data, response) => {
+apiInstance.updateAssetV2AssetsAssetIdPut(assetId, contact1, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -599,12 +599,12 @@ apiInstance.updateAssetV2AssetsAssetIdPut(assetId, contact, opts, (error, data, 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **assetId** | **String**| Unique identifier of the contact | 
- **contact** | [**Contact**](Contact.md)|  | 
+ **contact1** | [**Contact1**](Contact1.md)|  | 
  **versifyAccount** | **String**| Versify Account ID | [optional] 
 
 ### Return type
 
-[**Asset**](Asset.md)
+[**AssetUpdate**](AssetUpdate.md)
 
 ### Authorization
 
@@ -618,7 +618,7 @@ Name | Type | Description  | Notes
 
 ## updateAssetV2AssetsAssetIdPut_0
 
-> Asset updateAssetV2AssetsAssetIdPut_0(assetId, contact, opts)
+> AssetUpdate updateAssetV2AssetsAssetIdPut_0(assetId, contact1, opts)
 
 Update asset
 
@@ -635,11 +635,11 @@ HTTPBearer.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new VersifylabsVersifyClient.AssetsApi();
 let assetId = con_12121231231231321; // String | Unique identifier of the contact
-let contact = {"name":{"first_name":"Jane","last_name":"Doe"}}; // Contact | 
+let contact1 = {"name":{"first_name":"Jane","last_name":"Doe"}}; // Contact1 | 
 let opts = {
   'versifyAccount': act_123123123131231231 // String | Versify Account ID
 };
-apiInstance.updateAssetV2AssetsAssetIdPut_0(assetId, contact, opts, (error, data, response) => {
+apiInstance.updateAssetV2AssetsAssetIdPut_0(assetId, contact1, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -654,12 +654,12 @@ apiInstance.updateAssetV2AssetsAssetIdPut_0(assetId, contact, opts, (error, data
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **assetId** | **String**| Unique identifier of the contact | 
- **contact** | [**Contact**](Contact.md)|  | 
+ **contact1** | [**Contact1**](Contact1.md)|  | 
  **versifyAccount** | **String**| Versify Account ID | [optional] 
 
 ### Return type
 
-[**Asset**](Asset.md)
+[**AssetUpdate**](AssetUpdate.md)
 
 ### Authorization
 

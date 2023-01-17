@@ -3,8 +3,12 @@
 ## Enum
 
 
-* `active` (value: `"active"`)
+* `draft` (value: `"draft"`)
 
-* `inactive` (value: `"inactive"`)
+* `pending` (value: `"pending"`)
+
+* `minted` (value: `"minted"`)
+
+* `failed` (value: `"failed"`)
 
 

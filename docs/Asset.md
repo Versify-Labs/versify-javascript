@@ -4,13 +4,15 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **String** | Unique identifier for the asset | [optional] 
 **account** | **String** | The account the asset belongs to | 
-**chain** | [**BlockchainType**](BlockchainType.md) | The blockchain the asset is on | [optional] 
+**active** | **Boolean** | Whether the asset is currently available or not. | [optional] [default to true]
+**blockchain** | [**BlockchainType**](BlockchainType.md) | The blockchain the asset is on | [optional] 
 **collection** | **String** | The ID of the collection that the asset belongs to | 
 **contractAddress** | **String** | The contract address of the asset | 
 **created** | **Number** | The timestamp when the event was created | [optional] 
+**_default** | **Boolean** | Whether this is the default asset for the account | [optional] [default to false]
 **description** | **String** | The description of the asset | 
+**id** | **String** | The ID of the asset | [optional] 
 **image** | **String** | The image of the asset | 
 **metadata** | **Object** | Arbitrary metadata associated with the object | [optional] 
 **name** | **String** | The name of the asset. Displayed on third party apps. | 

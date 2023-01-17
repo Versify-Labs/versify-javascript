@@ -54,20 +54,20 @@
       //expect(instance).to.be.a(VersifylabsVersifyClient.Asset);
     });
 
-    it('should have the property id (base name: "_id")', function() {
-      // uncomment below and update the code to test the property id
-      //var instance = new VersifylabsVersifyClient.Asset();
-      //expect(instance).to.be();
-    });
-
     it('should have the property account (base name: "account")', function() {
       // uncomment below and update the code to test the property account
       //var instance = new VersifylabsVersifyClient.Asset();
       //expect(instance).to.be();
     });
 
-    it('should have the property chain (base name: "chain")', function() {
-      // uncomment below and update the code to test the property chain
+    it('should have the property active (base name: "active")', function() {
+      // uncomment below and update the code to test the property active
+      //var instance = new VersifylabsVersifyClient.Asset();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property blockchain (base name: "blockchain")', function() {
+      // uncomment below and update the code to test the property blockchain
       //var instance = new VersifylabsVersifyClient.Asset();
       //expect(instance).to.be();
     });
@@ -90,8 +90,20 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property _default (base name: "default")', function() {
+      // uncomment below and update the code to test the property _default
+      //var instance = new VersifylabsVersifyClient.Asset();
+      //expect(instance).to.be();
+    });
+
     it('should have the property description (base name: "description")', function() {
       // uncomment below and update the code to test the property description
+      //var instance = new VersifylabsVersifyClient.Asset();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property id (base name: "id")', function() {
+      // uncomment below and update the code to test the property id
       //var instance = new VersifylabsVersifyClient.Asset();
       //expect(instance).to.be();
     });

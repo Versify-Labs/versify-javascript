@@ -66,14 +66,44 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property clientId (base name: "client_id")', function() {
+      // uncomment below and update the code to test the property clientId
+      //var instance = new VersifylabsVersifyClient.App();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property clientSecret (base name: "client_secret")', function() {
+      // uncomment below and update the code to test the property clientSecret
+      //var instance = new VersifylabsVersifyClient.App();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property creator (base name: "creator")', function() {
+      // uncomment below and update the code to test the property creator
+      //var instance = new VersifylabsVersifyClient.App();
+      //expect(instance).to.be();
+    });
+
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
       //var instance = new VersifylabsVersifyClient.App();
       //expect(instance).to.be();
     });
 
+    it('should have the property logoUrl (base name: "logo_url")', function() {
+      // uncomment below and update the code to test the property logoUrl
+      //var instance = new VersifylabsVersifyClient.App();
+      //expect(instance).to.be();
+    });
+
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
+      //var instance = new VersifylabsVersifyClient.App();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property redirectUrl (base name: "redirect_url")', function() {
+      // uncomment below and update the code to test the property redirectUrl
       //var instance = new VersifylabsVersifyClient.App();
       //expect(instance).to.be();
     });

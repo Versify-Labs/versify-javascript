@@ -54,14 +54,56 @@
       //expect(instance).to.be.a(VersifylabsVersifyClient.Contact);
     });
 
-    it('should have the property description (base name: "description")', function() {
-      // uncomment below and update the code to test the property description
+    it('should have the property id (base name: "_id")', function() {
+      // uncomment below and update the code to test the property id
       //var instance = new VersifylabsVersifyClient.Contact();
       //expect(instance).to.be();
     });
 
-    it('should have the property image (base name: "image")', function() {
-      // uncomment below and update the code to test the property image
+    it('should have the property account (base name: "account")', function() {
+      // uncomment below and update the code to test the property account
+      //var instance = new VersifylabsVersifyClient.Contact();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property active (base name: "active")', function() {
+      // uncomment below and update the code to test the property active
+      //var instance = new VersifylabsVersifyClient.Contact();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property address (base name: "address")', function() {
+      // uncomment below and update the code to test the property address
+      //var instance = new VersifylabsVersifyClient.Contact();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property avatar (base name: "avatar")', function() {
+      // uncomment below and update the code to test the property avatar
+      //var instance = new VersifylabsVersifyClient.Contact();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property browser (base name: "browser")', function() {
+      // uncomment below and update the code to test the property browser
+      //var instance = new VersifylabsVersifyClient.Contact();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property created (base name: "created")', function() {
+      // uncomment below and update the code to test the property created
+      //var instance = new VersifylabsVersifyClient.Contact();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property email (base name: "email")', function() {
+      // uncomment below and update the code to test the property email
+      //var instance = new VersifylabsVersifyClient.Contact();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property lastSeen (base name: "last_seen")', function() {
+      // uncomment below and update the code to test the property lastSeen
       //var instance = new VersifylabsVersifyClient.Contact();
       //expect(instance).to.be();
     });
@@ -78,14 +120,32 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property properties (base name: "properties")', function() {
-      // uncomment below and update the code to test the property properties
+    it('should have the property object (base name: "object")', function() {
+      // uncomment below and update the code to test the property object
       //var instance = new VersifylabsVersifyClient.Contact();
       //expect(instance).to.be();
     });
 
-    it('should have the property status (base name: "status")', function() {
-      // uncomment below and update the code to test the property status
+    it('should have the property owner (base name: "owner")', function() {
+      // uncomment below and update the code to test the property owner
+      //var instance = new VersifylabsVersifyClient.Contact();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property phoneNumber (base name: "phone_number")', function() {
+      // uncomment below and update the code to test the property phoneNumber
+      //var instance = new VersifylabsVersifyClient.Contact();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property socialProfiles (base name: "social_profiles")', function() {
+      // uncomment below and update the code to test the property socialProfiles
+      //var instance = new VersifylabsVersifyClient.Contact();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property updated (base name: "updated")', function() {
+      // uncomment below and update the code to test the property updated
       //var instance = new VersifylabsVersifyClient.Contact();
       //expect(instance).to.be();
     });

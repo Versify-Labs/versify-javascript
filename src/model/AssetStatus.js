@@ -20,17 +20,31 @@ import ApiClient from '../ApiClient';
 export default class AssetStatus {
     
         /**
-         * value: "active"
+         * value: "draft"
          * @const
          */
-        "active" = "active";
+        "draft" = "draft";
 
     
         /**
-         * value: "inactive"
+         * value: "pending"
          * @const
          */
-        "inactive" = "inactive";
+        "pending" = "pending";
+
+    
+        /**
+         * value: "minted"
+         * @const
+         */
+        "minted" = "minted";
+
+    
+        /**
+         * value: "failed"
+         * @const
+         */
+        "failed" = "failed";
 
     
 

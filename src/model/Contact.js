@@ -12,8 +12,9 @@
  */
 
 import ApiClient from '../ApiClient';
-import AssetStatus from './AssetStatus';
-import AssetUpdate from './AssetUpdate';
+import Address1 from './Address1';
+import Name from './Name';
+import SocialProfile from './SocialProfile';
 
 /**
  * The Contact model module.
@@ -23,13 +24,14 @@ import AssetUpdate from './AssetUpdate';
 class Contact {
     /**
      * Constructs a new <code>Contact</code>.
-     * Contact to update
+     * A contact document in the database.
      * @alias module:model/Contact
-     * @implements module:model/AssetUpdate
+     * @param account {String} The account the contact belongs to
+     * @param email {String} The email address of the contact
      */
-    constructor() { 
-        AssetUpdate.initialize(this);
-        Contact.initialize(this);
+    constructor(account, email) { 
+        
+        Contact.initialize(this, account, email);
     }
 
     /**
@@ -37,7 +39,9 @@ class Contact {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj) { 
+    static initialize(obj, account, email) { 
+        obj['account'] = account;
+        obj['email'] = email;
     }
 
     /**
@@ -50,25 +54,54 @@ class Contact {
     static constructFromObject(data, obj) {
         if (data) {
             obj = obj || new Contact();
-            AssetUpdate.constructFromObject(data, obj);
 
-            if (data.hasOwnProperty('description')) {
-                obj['description'] = ApiClient.convertToType(data['description'], 'String');
+            if (data.hasOwnProperty('_id')) {
+                obj['_id'] = ApiClient.convertToType(data['_id'], 'String');
             }
-            if (data.hasOwnProperty('image')) {
-                obj['image'] = ApiClient.convertToType(data['image'], 'String');
+            if (data.hasOwnProperty('account')) {
+                obj['account'] = ApiClient.convertToType(data['account'], 'String');
+            }
+            if (data.hasOwnProperty('active')) {
+                obj['active'] = ApiClient.convertToType(data['active'], 'Boolean');
+            }
+            if (data.hasOwnProperty('address')) {
+                obj['address'] = Address1.constructFromObject(data['address']);
+            }
+            if (data.hasOwnProperty('avatar')) {
+                obj['avatar'] = ApiClient.convertToType(data['avatar'], 'String');
+            }
+            if (data.hasOwnProperty('browser')) {
+                obj['browser'] = ApiClient.convertToType(data['browser'], 'String');
+            }
+            if (data.hasOwnProperty('created')) {
+                obj['created'] = ApiClient.convertToType(data['created'], 'Number');
+            }
+            if (data.hasOwnProperty('email')) {
+                obj['email'] = ApiClient.convertToType(data['email'], 'String');
+            }
+            if (data.hasOwnProperty('last_seen')) {
+                obj['last_seen'] = ApiClient.convertToType(data['last_seen'], 'Number');
             }
             if (data.hasOwnProperty('metadata')) {
                 obj['metadata'] = ApiClient.convertToType(data['metadata'], Object);
             }
             if (data.hasOwnProperty('name')) {
-                obj['name'] = ApiClient.convertToType(data['name'], 'String');
+                obj['name'] = Name.constructFromObject(data['name']);
             }
-            if (data.hasOwnProperty('properties')) {
-                obj['properties'] = ApiClient.convertToType(data['properties'], [Object]);
+            if (data.hasOwnProperty('object')) {
+                obj['object'] = ApiClient.convertToType(data['object'], 'String');
             }
-            if (data.hasOwnProperty('status')) {
-                obj['status'] = ApiClient.convertToType(data['status'], AssetStatus);
+            if (data.hasOwnProperty('owner')) {
+                obj['owner'] = ApiClient.convertToType(data['owner'], 'String');
+            }
+            if (data.hasOwnProperty('phone_number')) {
+                obj['phone_number'] = ApiClient.convertToType(data['phone_number'], 'String');
+            }
+            if (data.hasOwnProperty('social_profiles')) {
+                obj['social_profiles'] = ApiClient.convertToType(data['social_profiles'], [SocialProfile]);
+            }
+            if (data.hasOwnProperty('updated')) {
+                obj['updated'] = ApiClient.convertToType(data['updated'], 'Number');
             }
         }
         return obj;
@@ -80,25 +113,61 @@ class Contact {
      * @return {boolean} to indicate whether the JSON data is valid with respect to <code>Contact</code>.
      */
     static validateJSON(data) {
-        // ensure the json data is a string
-        if (data['description'] && !(typeof data['description'] === 'string' || data['description'] instanceof String)) {
-            throw new Error("Expected the field `description` to be a primitive type in the JSON string but got " + data['description']);
+        // check to make sure all required properties are present in the JSON string
+        for (const property of Contact.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
         }
         // ensure the json data is a string
-        if (data['image'] && !(typeof data['image'] === 'string' || data['image'] instanceof String)) {
-            throw new Error("Expected the field `image` to be a primitive type in the JSON string but got " + data['image']);
+        if (data['_id'] && !(typeof data['_id'] === 'string' || data['_id'] instanceof String)) {
+            throw new Error("Expected the field `_id` to be a primitive type in the JSON string but got " + data['_id']);
         }
         // ensure the json data is a string
-        if (data['name'] && !(typeof data['name'] === 'string' || data['name'] instanceof String)) {
-            throw new Error("Expected the field `name` to be a primitive type in the JSON string but got " + data['name']);
+        if (data['account'] && !(typeof data['account'] === 'string' || data['account'] instanceof String)) {
+            throw new Error("Expected the field `account` to be a primitive type in the JSON string but got " + data['account']);
         }
-        // ensure the json data is an array
-        if (!Array.isArray(data['properties'])) {
-            throw new Error("Expected the field `properties` to be an array in the JSON data but got " + data['properties']);
+        // validate the optional field `address`
+        if (data['address']) { // data not null
+          Address1.validateJSON(data['address']);
         }
-        // validate the optional field `status`
-        if (data['status']) { // data not null
-          AssetStatus.validateJSON(data['status']);
+        // ensure the json data is a string
+        if (data['avatar'] && !(typeof data['avatar'] === 'string' || data['avatar'] instanceof String)) {
+            throw new Error("Expected the field `avatar` to be a primitive type in the JSON string but got " + data['avatar']);
+        }
+        // ensure the json data is a string
+        if (data['browser'] && !(typeof data['browser'] === 'string' || data['browser'] instanceof String)) {
+            throw new Error("Expected the field `browser` to be a primitive type in the JSON string but got " + data['browser']);
+        }
+        // ensure the json data is a string
+        if (data['email'] && !(typeof data['email'] === 'string' || data['email'] instanceof String)) {
+            throw new Error("Expected the field `email` to be a primitive type in the JSON string but got " + data['email']);
+        }
+        // validate the optional field `name`
+        if (data['name']) { // data not null
+          Name.validateJSON(data['name']);
+        }
+        // ensure the json data is a string
+        if (data['object'] && !(typeof data['object'] === 'string' || data['object'] instanceof String)) {
+            throw new Error("Expected the field `object` to be a primitive type in the JSON string but got " + data['object']);
+        }
+        // ensure the json data is a string
+        if (data['owner'] && !(typeof data['owner'] === 'string' || data['owner'] instanceof String)) {
+            throw new Error("Expected the field `owner` to be a primitive type in the JSON string but got " + data['owner']);
+        }
+        // ensure the json data is a string
+        if (data['phone_number'] && !(typeof data['phone_number'] === 'string' || data['phone_number'] instanceof String)) {
+            throw new Error("Expected the field `phone_number` to be a primitive type in the JSON string but got " + data['phone_number']);
+        }
+        if (data['social_profiles']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['social_profiles'])) {
+                throw new Error("Expected the field `social_profiles` to be an array in the JSON data but got " + data['social_profiles']);
+            }
+            // validate the optional field `social_profiles` (array)
+            for (const item of data['social_profiles']) {
+                SocialProfile.validateJsonObject(item);
+            };
         }
 
         return true;
@@ -107,19 +176,61 @@ class Contact {
 
 }
 
-
-
-/**
- * The description of the asset
- * @member {String} description
- */
-Contact.prototype['description'] = undefined;
+Contact.RequiredProperties = ["account", "email"];
 
 /**
- * The image of the asset
- * @member {String} image
+ * Unique identifier for the contact
+ * @member {String} _id
  */
-Contact.prototype['image'] = undefined;
+Contact.prototype['_id'] = undefined;
+
+/**
+ * The account the contact belongs to
+ * @member {String} account
+ */
+Contact.prototype['account'] = undefined;
+
+/**
+ * Whether the contact is currently available or not.
+ * @member {Boolean} active
+ * @default true
+ */
+Contact.prototype['active'] = true;
+
+/**
+ * @member {module:model/Address1} address
+ */
+Contact.prototype['address'] = undefined;
+
+/**
+ * The URL of the contact's avatar
+ * @member {String} avatar
+ */
+Contact.prototype['avatar'] = undefined;
+
+/**
+ * The browser used by the contact
+ * @member {String} browser
+ */
+Contact.prototype['browser'] = undefined;
+
+/**
+ * The timestamp when the event was created
+ * @member {Number} created
+ */
+Contact.prototype['created'] = undefined;
+
+/**
+ * The email address of the contact
+ * @member {String} email
+ */
+Contact.prototype['email'] = undefined;
+
+/**
+ * The timestamp when the contact was last seen
+ * @member {Number} last_seen
+ */
+Contact.prototype['last_seen'] = undefined;
 
 /**
  * Arbitrary metadata associated with the object
@@ -128,55 +239,42 @@ Contact.prototype['image'] = undefined;
 Contact.prototype['metadata'] = undefined;
 
 /**
- * The name of the asset. Displayed on third party apps.
- * @member {String} name
+ * @member {module:model/Name} name
  */
 Contact.prototype['name'] = undefined;
 
 /**
- * The properties of the asset. Displayed on third party apps.
- * @member {Array.<Object>} properties
+ * The object type. Always 'contact'
+ * @member {String} object
+ * @default 'contact'
  */
-Contact.prototype['properties'] = undefined;
+Contact.prototype['object'] = 'contact';
 
 /**
- * The status of the asset
- * @member {module:model/AssetStatus} status
+ * The ID of the admin user who manages the relationship with the contact
+ * @member {String} owner
  */
-Contact.prototype['status'] = undefined;
+Contact.prototype['owner'] = undefined;
+
+/**
+ * The phone number of the contact
+ * @member {String} phone_number
+ */
+Contact.prototype['phone_number'] = undefined;
+
+/**
+ * The social profiles associated with the contact
+ * @member {Array.<module:model/SocialProfile>} social_profiles
+ */
+Contact.prototype['social_profiles'] = undefined;
+
+/**
+ * The timestamp when the event was last updated
+ * @member {Number} updated
+ */
+Contact.prototype['updated'] = undefined;
 
 
-// Implement AssetUpdate interface:
-/**
- * The description of the asset
- * @member {String} description
- */
-AssetUpdate.prototype['description'] = undefined;
-/**
- * The image of the asset
- * @member {String} image
- */
-AssetUpdate.prototype['image'] = undefined;
-/**
- * Arbitrary metadata associated with the object
- * @member {Object} metadata
- */
-AssetUpdate.prototype['metadata'] = undefined;
-/**
- * The name of the asset. Displayed on third party apps.
- * @member {String} name
- */
-AssetUpdate.prototype['name'] = undefined;
-/**
- * The properties of the asset. Displayed on third party apps.
- * @member {Array.<Object>} properties
- */
-AssetUpdate.prototype['properties'] = undefined;
-/**
- * The status of the asset
- * @member {module:model/AssetStatus} status
- */
-AssetUpdate.prototype['status'] = undefined;
 
 
 

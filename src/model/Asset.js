@@ -23,7 +23,7 @@ import BlockchainType from './BlockchainType';
 class Asset {
     /**
      * Constructs a new <code>Asset</code>.
-     * A asset document in the database.
+     * The asset model
      * @alias module:model/Asset
      * @param account {String} The account the asset belongs to
      * @param collection {String} The ID of the collection that the asset belongs to
@@ -64,14 +64,14 @@ class Asset {
         if (data) {
             obj = obj || new Asset();
 
-            if (data.hasOwnProperty('_id')) {
-                obj['_id'] = ApiClient.convertToType(data['_id'], 'String');
-            }
             if (data.hasOwnProperty('account')) {
                 obj['account'] = ApiClient.convertToType(data['account'], 'String');
             }
-            if (data.hasOwnProperty('chain')) {
-                obj['chain'] = ApiClient.convertToType(data['chain'], BlockchainType);
+            if (data.hasOwnProperty('active')) {
+                obj['active'] = ApiClient.convertToType(data['active'], 'Boolean');
+            }
+            if (data.hasOwnProperty('blockchain')) {
+                obj['blockchain'] = ApiClient.convertToType(data['blockchain'], BlockchainType);
             }
             if (data.hasOwnProperty('collection')) {
                 obj['collection'] = ApiClient.convertToType(data['collection'], 'String');
@@ -82,8 +82,14 @@ class Asset {
             if (data.hasOwnProperty('created')) {
                 obj['created'] = ApiClient.convertToType(data['created'], 'Number');
             }
+            if (data.hasOwnProperty('default')) {
+                obj['default'] = ApiClient.convertToType(data['default'], 'Boolean');
+            }
             if (data.hasOwnProperty('description')) {
                 obj['description'] = ApiClient.convertToType(data['description'], 'String');
+            }
+            if (data.hasOwnProperty('id')) {
+                obj['id'] = ApiClient.convertToType(data['id'], 'String');
             }
             if (data.hasOwnProperty('image')) {
                 obj['image'] = ApiClient.convertToType(data['image'], 'String');
@@ -126,16 +132,12 @@ class Asset {
             }
         }
         // ensure the json data is a string
-        if (data['_id'] && !(typeof data['_id'] === 'string' || data['_id'] instanceof String)) {
-            throw new Error("Expected the field `_id` to be a primitive type in the JSON string but got " + data['_id']);
-        }
-        // ensure the json data is a string
         if (data['account'] && !(typeof data['account'] === 'string' || data['account'] instanceof String)) {
             throw new Error("Expected the field `account` to be a primitive type in the JSON string but got " + data['account']);
         }
-        // validate the optional field `chain`
-        if (data['chain']) { // data not null
-          BlockchainType.validateJSON(data['chain']);
+        // validate the optional field `blockchain`
+        if (data['blockchain']) { // data not null
+          BlockchainType.validateJSON(data['blockchain']);
         }
         // ensure the json data is a string
         if (data['collection'] && !(typeof data['collection'] === 'string' || data['collection'] instanceof String)) {
@@ -148,6 +150,10 @@ class Asset {
         // ensure the json data is a string
         if (data['description'] && !(typeof data['description'] === 'string' || data['description'] instanceof String)) {
             throw new Error("Expected the field `description` to be a primitive type in the JSON string but got " + data['description']);
+        }
+        // ensure the json data is a string
+        if (data['id'] && !(typeof data['id'] === 'string' || data['id'] instanceof String)) {
+            throw new Error("Expected the field `id` to be a primitive type in the JSON string but got " + data['id']);
         }
         // ensure the json data is a string
         if (data['image'] && !(typeof data['image'] === 'string' || data['image'] instanceof String)) {
@@ -183,22 +189,23 @@ class Asset {
 Asset.RequiredProperties = ["account", "collection", "contract_address", "description", "image", "name", "token_id"];
 
 /**
- * Unique identifier for the asset
- * @member {String} _id
- */
-Asset.prototype['_id'] = undefined;
-
-/**
  * The account the asset belongs to
  * @member {String} account
  */
 Asset.prototype['account'] = undefined;
 
 /**
- * The blockchain the asset is on
- * @member {module:model/BlockchainType} chain
+ * Whether the asset is currently available or not.
+ * @member {Boolean} active
+ * @default true
  */
-Asset.prototype['chain'] = undefined;
+Asset.prototype['active'] = true;
+
+/**
+ * The blockchain the asset is on
+ * @member {module:model/BlockchainType} blockchain
+ */
+Asset.prototype['blockchain'] = undefined;
 
 /**
  * The ID of the collection that the asset belongs to
@@ -219,10 +226,23 @@ Asset.prototype['contract_address'] = undefined;
 Asset.prototype['created'] = undefined;
 
 /**
+ * Whether this is the default asset for the account
+ * @member {Boolean} default
+ * @default false
+ */
+Asset.prototype['default'] = false;
+
+/**
  * The description of the asset
  * @member {String} description
  */
 Asset.prototype['description'] = undefined;
+
+/**
+ * The ID of the asset
+ * @member {String} id
+ */
+Asset.prototype['id'] = undefined;
 
 /**
  * The image of the asset

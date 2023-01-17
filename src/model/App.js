@@ -21,7 +21,7 @@ import ApiClient from '../ApiClient';
 class App {
     /**
      * Constructs a new <code>App</code>.
-     * Settings used to configure external integrations.
+     * Settings used to configure external applications.
      * @alias module:model/App
      */
     constructor() { 
@@ -54,11 +54,26 @@ class App {
             if (data.hasOwnProperty('access_token')) {
                 obj['access_token'] = ApiClient.convertToType(data['access_token'], 'String');
             }
+            if (data.hasOwnProperty('client_id')) {
+                obj['client_id'] = ApiClient.convertToType(data['client_id'], 'String');
+            }
+            if (data.hasOwnProperty('client_secret')) {
+                obj['client_secret'] = ApiClient.convertToType(data['client_secret'], 'String');
+            }
+            if (data.hasOwnProperty('creator')) {
+                obj['creator'] = ApiClient.convertToType(data['creator'], 'String');
+            }
             if (data.hasOwnProperty('id')) {
                 obj['id'] = ApiClient.convertToType(data['id'], 'String');
             }
+            if (data.hasOwnProperty('logo_url')) {
+                obj['logo_url'] = ApiClient.convertToType(data['logo_url'], 'String');
+            }
             if (data.hasOwnProperty('name')) {
                 obj['name'] = ApiClient.convertToType(data['name'], 'String');
+            }
+            if (data.hasOwnProperty('redirect_url')) {
+                obj['redirect_url'] = ApiClient.convertToType(data['redirect_url'], 'String');
             }
             if (data.hasOwnProperty('refresh_token')) {
                 obj['refresh_token'] = ApiClient.convertToType(data['refresh_token'], 'String');
@@ -88,12 +103,32 @@ class App {
             throw new Error("Expected the field `access_token` to be a primitive type in the JSON string but got " + data['access_token']);
         }
         // ensure the json data is a string
+        if (data['client_id'] && !(typeof data['client_id'] === 'string' || data['client_id'] instanceof String)) {
+            throw new Error("Expected the field `client_id` to be a primitive type in the JSON string but got " + data['client_id']);
+        }
+        // ensure the json data is a string
+        if (data['client_secret'] && !(typeof data['client_secret'] === 'string' || data['client_secret'] instanceof String)) {
+            throw new Error("Expected the field `client_secret` to be a primitive type in the JSON string but got " + data['client_secret']);
+        }
+        // ensure the json data is a string
+        if (data['creator'] && !(typeof data['creator'] === 'string' || data['creator'] instanceof String)) {
+            throw new Error("Expected the field `creator` to be a primitive type in the JSON string but got " + data['creator']);
+        }
+        // ensure the json data is a string
         if (data['id'] && !(typeof data['id'] === 'string' || data['id'] instanceof String)) {
             throw new Error("Expected the field `id` to be a primitive type in the JSON string but got " + data['id']);
         }
         // ensure the json data is a string
+        if (data['logo_url'] && !(typeof data['logo_url'] === 'string' || data['logo_url'] instanceof String)) {
+            throw new Error("Expected the field `logo_url` to be a primitive type in the JSON string but got " + data['logo_url']);
+        }
+        // ensure the json data is a string
         if (data['name'] && !(typeof data['name'] === 'string' || data['name'] instanceof String)) {
             throw new Error("Expected the field `name` to be a primitive type in the JSON string but got " + data['name']);
+        }
+        // ensure the json data is a string
+        if (data['redirect_url'] && !(typeof data['redirect_url'] === 'string' || data['redirect_url'] instanceof String)) {
+            throw new Error("Expected the field `redirect_url` to be a primitive type in the JSON string but got " + data['redirect_url']);
         }
         // ensure the json data is a string
         if (data['refresh_token'] && !(typeof data['refresh_token'] === 'string' || data['refresh_token'] instanceof String)) {
@@ -129,16 +164,46 @@ App.prototype['access_scope'] = undefined;
 App.prototype['access_token'] = undefined;
 
 /**
+ * The client ID of the app
+ * @member {String} client_id
+ */
+App.prototype['client_id'] = undefined;
+
+/**
+ * The client secret of the app
+ * @member {String} client_secret
+ */
+App.prototype['client_secret'] = undefined;
+
+/**
+ * The ID of the user who created the app
+ * @member {String} creator
+ */
+App.prototype['creator'] = undefined;
+
+/**
  * The ID of the app
  * @member {String} id
  */
 App.prototype['id'] = undefined;
 
 /**
+ * The logo URL of the app
+ * @member {String} logo_url
+ */
+App.prototype['logo_url'] = undefined;
+
+/**
  * The name of the app
  * @member {String} name
  */
 App.prototype['name'] = undefined;
+
+/**
+ * The redirect URL of the app
+ * @member {String} redirect_url
+ */
+App.prototype['redirect_url'] = undefined;
 
 /**
  * The refresh token of the app

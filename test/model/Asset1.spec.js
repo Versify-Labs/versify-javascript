@@ -54,14 +54,14 @@
       //expect(instance).to.be.a(VersifylabsVersifyClient.Asset1);
     });
 
-    it('should have the property description (base name: "description")', function() {
-      // uncomment below and update the code to test the property description
+    it('should have the property asset (base name: "asset")', function() {
+      // uncomment below and update the code to test the property asset
       //var instance = new VersifylabsVersifyClient.Asset1();
       //expect(instance).to.be();
     });
 
-    it('should have the property image (base name: "image")', function() {
-      // uncomment below and update the code to test the property image
+    it('should have the property code (base name: "code")', function() {
+      // uncomment below and update the code to test the property code
       //var instance = new VersifylabsVersifyClient.Asset1();
       //expect(instance).to.be();
     });
@@ -72,14 +72,8 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property name (base name: "name")', function() {
-      // uncomment below and update the code to test the property name
-      //var instance = new VersifylabsVersifyClient.Asset1();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property properties (base name: "properties")', function() {
-      // uncomment below and update the code to test the property properties
+    it('should have the property quantity (base name: "quantity")', function() {
+      // uncomment below and update the code to test the property quantity
       //var instance = new VersifylabsVersifyClient.Asset1();
       //expect(instance).to.be();
     });
